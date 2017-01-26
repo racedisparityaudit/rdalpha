@@ -17,9 +17,10 @@ set -o errexit
 
 # Make sure we're at the root of the repo.
 prog_dir=$(dirname $0)
-cd $prog_dir
+cd $prog_dir/..
 
 # Normally you use "git push heroku master" in heroku.
 # We're likely going to be building all sorts in this repo so
 # we use the following to put our app into a sub directory.
-git subtree push --prefix web heroku master
+#git subtree push --prefix web heroku master
+git push heroku `git subtree split --prefix web master`:master --force
