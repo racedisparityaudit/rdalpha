@@ -13,7 +13,7 @@
 # Make script more robust by failing when there are empty variables or
 # a particular command fails.
 set -o nounset
-set -e errexit
+set -o errexit
 
 # Make sure we're at the root of the repo.
 prog_dir=$(dirname $0)

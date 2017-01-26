@@ -13,7 +13,7 @@
 # Make script more robust by failing when there are empty variables or
 # a particular command fails.
 set -o nounset
-set -e errexit
+set -o errexit
 
 # Make sure we're at the root of the repo.
 prog_dir=$(dirname $0)
@@ -22,4 +22,4 @@ cd $prog_dir
 # Normally you use "git push heroku master" in heroku.
 # We're likely going to be building all sorts in this repo so
 # we use the following to put our app into a sub directory.
-git subtree push --prefix rdalpha heroku master
+git subtree push --prefix web heroku master
