@@ -19,4 +19,7 @@ set -e errexit
 prog_dir=$(dirname $0)
 cd $prog_dir
 
-git push heroku master
+# Normally you use "git push heroku master" in heroku.
+# We're likely going to be building all sorts in this repo so
+# we use the following to put our app into a sub directory.
+git subtree push --prefix rdalpha heroku master
