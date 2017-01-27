@@ -1,0 +1,20 @@
+{% extends "_base.html" %}
+
+{% load static %}
+
+{% block title %}A | Racial Disparity{% endblock %}
+
+{% block js %}
+    {{ block.super }}
+    <script src="{% static "a.js" %}"></script>
+{% endblock %}
+
+{% block css %}
+    {{ block.super }}
+    <link href="{% static "a.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <h1>A</h1>
+    {{ block.super }}
+{% endblock %}
