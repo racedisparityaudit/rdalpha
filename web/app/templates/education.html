@@ -1,0 +1,191 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css">
+	<style>
+		body {
+			padding-top: 5rem;
+		}
+		.header {
+			padding: 3rem 1.5rem;
+			text-align: center;
+		}
+		.btn-group {
+			float:none;
+			margin-bottom:20px;
+		}
+		.data{
+			font-size:150%;
+		}
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+		<a class="navbar-brand" href="#"></a>
+		<ul class="nav navbar-nav">
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Popular</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Browse by department</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">About</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+		<div class="col-sm-4">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary">
+						Ethnic Group: <span class="text-muted">Asian / Asian British</span>
+					</button>
+
+					<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" data-ethnicity="1" href="#">White</a>
+						<a class="dropdown-item" data-ethnicity="1" href="#">Mixed / Multiple</a>
+						<a class="dropdown-item font-weight-bold" data-ethnicity="1" href="#">Asian / Asian British</a>
+						<a class="dropdown-item" data-ethnicity="1" href="#">Black / African / Caribbean / Black British</a>
+						<a class="dropdown-item" data-ethnicity="1" href="#">Other</a>
+					</div>
+				</div>
+
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary">
+						Gender: <span class="text-muted">Female</span>
+					</button>
+
+					<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#" data-gender="males">Male</a>
+						<a class="dropdown-item font-weight-bold" href="#" data-gender="females">Female</a>
+						<a class="dropdown-item" href="#" data-gender="people of other gender">Other</a>
+					</div>
+				</div>
+
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary">
+						Region: <span class="text-muted">Hackney</span>
+					</button>
+
+					<button type="button" class="btn btn-secondary" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-search" aria-hidden="true"></i>
+						<span class="sr-only">Search</span>
+					</button>
+				</div>
+
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary">
+						Statistic: <span class="text-muted">Educational Outcomes</span>
+					</button>
+
+					<button type="button" class="btn btn-secondary" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-search" aria-hidden="true"></i>
+						<span class="sr-only">Search</span>
+					</button>
+				</div>
+			</div>
+			<div class="col-sm-8 data">
+
+				<p><strong>Educational outcomes</strong> for <strong id="group">Asian / Asian British</strong> <strong id="gender">females</strong> in <strong>Hackney</strong> are <strong>better</strong> than the country-wide average.</p>
+
+				<p>People in this demographic did <strong id="key-text">13% better</strong> than the country as a whole.</p>
+
+				<div id="chart" class="c3"></div>
+				<p> Understanding the data </p>
+
+				<p>If one examines posttextual semiotic theory, one is faced with a choice:
+						either accept neoconstructivist deconstruction or conclude that narrative must
+						come from the masses, given that consciousness is distinct from culture. In a
+						sense, the primary theme of the works of Spelling is the paradigm, and some
+						would say the dialectic, of dialectic society.</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		var chart = c3.generate({
+    data: {
+        columns: [
+            ['2015', 30, 200, 100, 400, 150, 250],
+            ['2016', 130, 100, 140, 200, 150, 50]
+        ],
+        type: 'bar'
+    },
+    bar: {
+        width: {
+            ratio: 0.5 // this makes bar width 50% of length between ticks
+        }
+        // or
+        //width: 100 // this makes bar width 100px
+    }
+		});
+
+		function getRandomInt(min, max) {
+	    return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+
+		function reloadChart(){
+			var fifteen = ['2015'];
+			var sixteen = ['2016'];
+
+			var rand = getRandomInt(-100,100);
+
+			var bw = (rand > 0) ? "better" : "worse";
+			$('#key-text').text(getRandomInt(5,15) + "% " + bw);
+
+			for(var i=0; i<6; i++){
+				var val = rand + getRandomInt(-20,20);
+				fifteen.push(val);
+				sixteen.push(val + getRandomInt(-10,10));
+			}
+
+			chart.load({
+        columns: [
+            fifteen,
+            sixteen,
+        ]
+    });
+		}
+
+		$('.dropdown-item').on('click', function(){
+			reloadChart();
+			if($(this).attr('data-gender')){
+				$('#gender').text($(this).attr('data-gender'));
+			}
+			if($(this).attr('data-ethnicity')){
+				$('#group').text($(this).text());
+			}
+			$(this).parent().parent().find('.text-muted').text($(this).text());
+			$(this).parent().find('.dropdown-item').removeClass('font-weight-bold');
+			$(this).addClass('font-weight-bold');
+		})
+	})
+	</script>
+</body>
+</html>
