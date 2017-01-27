@@ -52,6 +52,10 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # Add middleware to very quickly secure the site.
+    # The threat we're worried about is a very early version of the site getting out into the public
+    # domain. This protects us against this.
+    'rdalpha.http_auth.HttpAuthMiddleware',
 ]
 
 ROOT_URLCONF = 'rdalpha.urls'
