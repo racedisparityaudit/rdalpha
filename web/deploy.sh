@@ -24,3 +24,5 @@ cd $prog_dir/..
 # we use the following to put our app into a sub directory.
 #git subtree push --prefix web heroku master
 git push heroku `git subtree split --prefix web master`:master --force
+
+heroku run python manage.py migrate
