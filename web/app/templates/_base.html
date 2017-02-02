@@ -5,13 +5,20 @@
         <title>{% block title %}Race Disparity{% endblock %}</title>
 
         {% block css %}
-            <link href="{% static "app.css" %}" rel="stylesheet">
+            <link href="{% static "css/app.css" %}" rel="stylesheet">
         {% endblock %}
     </head>
     <body>
+        <div class="phase-banner">
+          <p>
+            <strong class="phase-tag">BETA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+          </p>
+        </div>
+
         {% block body %}
             {% block js %}
-                <script src="{% static "app.js" %}"></script>
+                <script src="{% static "js/app.js" %}"></script>
             {% endblock %}
         {% endblock %}
     </body>
