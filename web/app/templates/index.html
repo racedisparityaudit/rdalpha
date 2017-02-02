@@ -2,31 +2,16 @@
 
 {% load static %}
 
-{% block title %}Home | Racial Disparity{% endblock %}
-
-{% block js %}
-    {{ block.super }}
-    <script src="{% static "index.js" %}"></script>
-{% endblock %}
-
-{% block css %}
-    {{ block.super }}
-    <link href="{% static "index.css" %}" rel="stylesheet">
-{% endblock %}
+{% block title %}Race Disparity{% endblock %}
 
 {% block body %}
-    <h1>Home</h1>
-    <p>
-        <a href="{% url 'homepage' %}">Homepage</a>
-    </p>
-    <p>
-        <a href="{% url 'a' %}">A</a>
-    </p>
-    <p>
-        <a href="{% url 'b' %}">B</a>
-    </p>
-    <p>
-        <a href="{% url 'c' %}">C</a>
-    </p>
+    <h1>Race Disparity</h1>
+
+    <ul>
+        <li>
+            <a href="{% url 'education' %}">Education</a> - disparity data about topics relating to schools, universities
+        </li>
+    </ul>
+
     {{ block.super }}
 {% endblock %}
