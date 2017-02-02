@@ -1,0 +1,3 @@
+[submodule "web/govuk_elements"]
+	path = web/govuk_elements
+	url = git@github.com:alphagov/govuk_elements.git
