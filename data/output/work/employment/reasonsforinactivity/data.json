@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Reasons for inactivity page. Source to be decided.",
+    "level": "T3",
+    "name": "Reasons for inactivity",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Work",
+            "uri_part": "work"
+        },
+        "tier_2": {
+            "text": "Employment",
+            "uri_part": "employment"
+        },
+        "tier_3": {
+            "text": "Reasons for inactivity",
+            "uri_part": "reasonsforinactivity"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "work/employment/reasonsforinactivity"
+    },
+    "uri": "work/employment/reasonsforinactivity"
+}

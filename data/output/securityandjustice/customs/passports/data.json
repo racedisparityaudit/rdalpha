@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Passports page. Source to be decided.",
+    "level": "T3",
+    "name": "Passports",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Security & Justice",
+            "uri_part": "securityandjustice"
+        },
+        "tier_2": {
+            "text": "Customs",
+            "uri_part": "customs"
+        },
+        "tier_3": {
+            "text": "Passports",
+            "uri_part": "passports"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "securityandjustice/customs/passports"
+    },
+    "uri": "securityandjustice/customs/passports"
+}

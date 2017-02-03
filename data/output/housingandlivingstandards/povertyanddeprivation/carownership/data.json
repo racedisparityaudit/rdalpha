@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Car ownership page. Source to be decided.",
+    "level": "T3",
+    "name": "Car ownership",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Poverty & Deprivation",
+            "uri_part": "povertyanddeprivation"
+        },
+        "tier_3": {
+            "text": "Car ownership",
+            "uri_part": "carownership"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/povertyanddeprivation/carownership"
+    },
+    "uri": "housingandlivingstandards/povertyanddeprivation/carownership"
+}

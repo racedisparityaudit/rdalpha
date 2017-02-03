@@ -1,0 +1,47 @@
+{
+    "description": "This is a description of the Security & Justice page. Source to be decided.",
+    "level": "T1",
+    "name": "Security & Justice",
+    "subpages": [
+        {
+            "name": "Criminal Justice System",
+            "uri": "securityandjustice/criminaljusticesystem"
+        },
+        {
+            "name": "Crimes",
+            "uri": "securityandjustice/crimes"
+        },
+        {
+            "name": "Police",
+            "uri": "securityandjustice/police"
+        },
+        {
+            "name": "Customs",
+            "uri": "securityandjustice/customs"
+        },
+        {
+            "name": "Defence",
+            "uri": "securityandjustice/defence"
+        }
+    ],
+    "taxonomy": {
+        "tier_1": {
+            "text": "Security & Justice",
+            "uri_part": "securityandjustice"
+        },
+        "tier_2": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "securityandjustice"
+    },
+    "uri": "securityandjustice"
+}

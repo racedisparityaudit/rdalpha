@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Preventing illness page. Source to be decided.",
+    "level": "T2",
+    "name": "Preventing illness",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Health & Social Care",
+            "uri_part": "healthandsocialcare"
+        },
+        "tier_2": {
+            "text": "Preventing illness",
+            "uri_part": "preventingillness"
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "healthandsocialcare/preventingillness"
+    },
+    "uri": "healthandsocialcare/preventingillness"
+}

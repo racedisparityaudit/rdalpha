@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the MPs, peers page. Source to be decided.",
+    "level": "T3",
+    "name": "MPs, peers",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Participation, representation & private life",
+            "uri_part": "participationrepresentationandprivatelife"
+        },
+        "tier_2": {
+            "text": "Representation",
+            "uri_part": "representation"
+        },
+        "tier_3": {
+            "text": "MPs, peers",
+            "uri_part": "mpspeers"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "participationrepresentationandprivatelife/representation/mpspeers"
+    },
+    "uri": "participationrepresentationandprivatelife/representation/mpspeers"
+}

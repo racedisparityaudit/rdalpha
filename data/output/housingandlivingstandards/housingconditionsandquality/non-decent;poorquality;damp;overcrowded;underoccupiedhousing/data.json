@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Non-decent; poor quality; damp; overcrowded;under occupied housing page. Source to be decided.",
+    "level": "T3",
+    "name": "Non-decent; poor quality; damp; overcrowded;under occupied housing",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Housing Conditions & Quality",
+            "uri_part": "housingconditionsandquality"
+        },
+        "tier_3": {
+            "text": "Non-decent; poor quality; damp; overcrowded;under occupied housing",
+            "uri_part": "non-decent;poorquality;damp;overcrowded;underoccupiedhousing"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/housingconditionsandquality/non-decent;poorquality;damp;overcrowded;underoccupiedhousing"
+    },
+    "uri": "housingandlivingstandards/housingconditionsandquality/non-decent;poorquality;damp;overcrowded;underoccupiedhousing"
+}

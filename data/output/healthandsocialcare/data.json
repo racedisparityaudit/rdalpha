@@ -1,0 +1,55 @@
+{
+    "description": "This is a description of the Health & Social Care page. Source to be decided.",
+    "level": "T1",
+    "name": "Health & Social Care",
+    "subpages": [
+        {
+            "name": "Physical & Mental Health (morbidity)",
+            "uri": "healthandsocialcare/physicalandmentalhealth(morbidity)"
+        },
+        {
+            "name": "Preventing illness",
+            "uri": "healthandsocialcare/preventingillness"
+        },
+        {
+            "name": "Quality of care",
+            "uri": "healthandsocialcare/qualityofcare"
+        },
+        {
+            "name": "Access to treatment",
+            "uri": "healthandsocialcare/accesstotreatment"
+        },
+        {
+            "name": "Patient experiences",
+            "uri": "healthandsocialcare/patientexperiences"
+        },
+        {
+            "name": "Patient outcomes",
+            "uri": "healthandsocialcare/patientoutcomes"
+        },
+        {
+            "name": "NHS workforce",
+            "uri": "healthandsocialcare/nhsworkforce"
+        }
+    ],
+    "taxonomy": {
+        "tier_1": {
+            "text": "Health & Social Care",
+            "uri_part": "healthandsocialcare"
+        },
+        "tier_2": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "healthandsocialcare"
+    },
+    "uri": "healthandsocialcare"
+}

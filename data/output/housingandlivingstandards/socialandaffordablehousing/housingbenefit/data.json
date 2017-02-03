@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Housing Benefit page. Source to be decided.",
+    "level": "T3",
+    "name": "Housing Benefit",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Social & Affordable Housing",
+            "uri_part": "socialandaffordablehousing"
+        },
+        "tier_3": {
+            "text": "Housing Benefit",
+            "uri_part": "housingbenefit"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/socialandaffordablehousing/housingbenefit"
+    },
+    "uri": "housingandlivingstandards/socialandaffordablehousing/housingbenefit"
+}

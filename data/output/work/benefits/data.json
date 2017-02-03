@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Benefits page. Source to be decided.",
+    "level": "T2",
+    "name": "Benefits",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Work",
+            "uri_part": "work"
+        },
+        "tier_2": {
+            "text": "Benefits",
+            "uri_part": "benefits"
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "work/benefits"
+    },
+    "uri": "work/benefits"
+}

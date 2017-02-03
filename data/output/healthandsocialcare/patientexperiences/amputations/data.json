@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Amputations page. Source to be decided.",
+    "level": "T3",
+    "name": "Amputations",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Health & Social Care",
+            "uri_part": "healthandsocialcare"
+        },
+        "tier_2": {
+            "text": "Patient experiences",
+            "uri_part": "patientexperiences"
+        },
+        "tier_3": {
+            "text": "Amputations",
+            "uri_part": "amputations"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "healthandsocialcare/patientexperiences/amputations"
+    },
+    "uri": "healthandsocialcare/patientexperiences/amputations"
+}

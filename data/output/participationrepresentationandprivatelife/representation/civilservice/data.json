@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Civil service page. Source to be decided.",
+    "level": "T3",
+    "name": "Civil service",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Participation, representation & private life",
+            "uri_part": "participationrepresentationandprivatelife"
+        },
+        "tier_2": {
+            "text": "Representation",
+            "uri_part": "representation"
+        },
+        "tier_3": {
+            "text": "Civil service",
+            "uri_part": "civilservice"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "participationrepresentationandprivatelife/representation/civilservice"
+    },
+    "uri": "participationrepresentationandprivatelife/representation/civilservice"
+}

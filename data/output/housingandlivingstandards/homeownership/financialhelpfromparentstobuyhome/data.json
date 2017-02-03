@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Financial help from parents to buy home page. Source to be decided.",
+    "level": "T3",
+    "name": "Financial help from parents to buy home",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Home ownership",
+            "uri_part": "homeownership"
+        },
+        "tier_3": {
+            "text": "Financial help from parents to buy home",
+            "uri_part": "financialhelpfromparentstobuyhome"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/homeownership/financialhelpfromparentstobuyhome"
+    },
+    "uri": "housingandlivingstandards/homeownership/financialhelpfromparentstobuyhome"
+}

@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the School choice page. Source to be decided.",
+    "level": "T3",
+    "name": "School choice",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Education",
+            "uri_part": "education"
+        },
+        "tier_2": {
+            "text": "Admissions, choice & quality",
+            "uri_part": "admissionschoiceandquality"
+        },
+        "tier_3": {
+            "text": "School choice",
+            "uri_part": "schoolchoice"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "education/admissionschoiceandquality/schoolchoice"
+    },
+    "uri": "education/admissionschoiceandquality/schoolchoice"
+}

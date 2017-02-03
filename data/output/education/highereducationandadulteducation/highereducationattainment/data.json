@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Higher education attainment page. Source to be decided.",
+    "level": "T3",
+    "name": "Higher education attainment",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Education",
+            "uri_part": "education"
+        },
+        "tier_2": {
+            "text": "Higher Education & Adult Education",
+            "uri_part": "highereducationandadulteducation"
+        },
+        "tier_3": {
+            "text": "Higher education attainment",
+            "uri_part": "highereducationattainment"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "education/highereducationandadulteducation/highereducationattainment"
+    },
+    "uri": "education/highereducationandadulteducation/highereducationattainment"
+}

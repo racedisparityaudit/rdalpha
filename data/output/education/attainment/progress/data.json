@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Progress page. Source to be decided.",
+    "level": "T3",
+    "name": "Progress",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Education",
+            "uri_part": "education"
+        },
+        "tier_2": {
+            "text": "Attainment",
+            "uri_part": "attainment"
+        },
+        "tier_3": {
+            "text": "Progress",
+            "uri_part": "progress"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "education/attainment/progress"
+    },
+    "uri": "education/attainment/progress"
+}

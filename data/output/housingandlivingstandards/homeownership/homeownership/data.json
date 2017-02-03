@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Home ownership page. Source to be decided.",
+    "level": "T3",
+    "name": "Home ownership",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Home ownership",
+            "uri_part": "homeownership"
+        },
+        "tier_3": {
+            "text": "Home ownership",
+            "uri_part": "homeownership"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/homeownership/homeownership"
+    },
+    "uri": "housingandlivingstandards/homeownership/homeownership"
+}

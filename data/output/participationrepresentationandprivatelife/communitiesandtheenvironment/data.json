@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Communities and the environment page. Source to be decided.",
+    "level": "T2",
+    "name": "Communities and the environment",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Participation, representation & private life",
+            "uri_part": "participationrepresentationandprivatelife"
+        },
+        "tier_2": {
+            "text": "Communities and the environment",
+            "uri_part": "communitiesandtheenvironment"
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "participationrepresentationandprivatelife/communitiesandtheenvironment"
+    },
+    "uri": "participationrepresentationandprivatelife/communitiesandtheenvironment"
+}

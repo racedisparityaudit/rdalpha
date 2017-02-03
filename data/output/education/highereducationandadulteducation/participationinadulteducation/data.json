@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Participation in Adult education page. Source to be decided.",
+    "level": "T3",
+    "name": "Participation in Adult education",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Education",
+            "uri_part": "education"
+        },
+        "tier_2": {
+            "text": "Higher Education & Adult Education",
+            "uri_part": "highereducationandadulteducation"
+        },
+        "tier_3": {
+            "text": "Participation in Adult education",
+            "uri_part": "participationinadulteducation"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "education/highereducationandadulteducation/participationinadulteducation"
+    },
+    "uri": "education/highereducationandadulteducation/participationinadulteducation"
+}

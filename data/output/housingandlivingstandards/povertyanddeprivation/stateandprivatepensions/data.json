@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the State & Private pensions page. Source to be decided.",
+    "level": "T3",
+    "name": "State & Private pensions",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Poverty & Deprivation",
+            "uri_part": "povertyanddeprivation"
+        },
+        "tier_3": {
+            "text": "State & Private pensions",
+            "uri_part": "stateandprivatepensions"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/povertyanddeprivation/stateandprivatepensions"
+    },
+    "uri": "housingandlivingstandards/povertyanddeprivation/stateandprivatepensions"
+}

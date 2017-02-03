@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the COCivic action page. Source to be decided.",
+    "level": "T2",
+    "name": "COCivic action",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Participation, representation & private life",
+            "uri_part": "participationrepresentationandprivatelife"
+        },
+        "tier_2": {
+            "text": "COCivic action",
+            "uri_part": "cocivicaction"
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "participationrepresentationandprivatelife/cocivicaction"
+    },
+    "uri": "participationrepresentationandprivatelife/cocivicaction"
+}

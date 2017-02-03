@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Workforce page. Source to be decided.",
+    "level": "T3",
+    "name": "Workforce",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Education",
+            "uri_part": "education"
+        },
+        "tier_2": {
+            "text": "Education workforce",
+            "uri_part": "educationworkforce"
+        },
+        "tier_3": {
+            "text": "Workforce",
+            "uri_part": "workforce"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "education/educationworkforce/workforce"
+    },
+    "uri": "education/educationworkforce/workforce"
+}

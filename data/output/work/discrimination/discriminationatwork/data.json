@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Discrimination at work page. Source to be decided.",
+    "level": "T3",
+    "name": "Discrimination at work",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Work",
+            "uri_part": "work"
+        },
+        "tier_2": {
+            "text": "Discrimination",
+            "uri_part": "discrimination"
+        },
+        "tier_3": {
+            "text": "Discrimination at work",
+            "uri_part": "discriminationatwork"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "work/discrimination/discriminationatwork"
+    },
+    "uri": "work/discrimination/discriminationatwork"
+}

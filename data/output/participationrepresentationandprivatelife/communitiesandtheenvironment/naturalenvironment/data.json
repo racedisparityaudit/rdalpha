@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Natural environment page. Source to be decided.",
+    "level": "T3",
+    "name": "Natural environment",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Participation, representation & private life",
+            "uri_part": "participationrepresentationandprivatelife"
+        },
+        "tier_2": {
+            "text": "Communities and the environment",
+            "uri_part": "communitiesandtheenvironment"
+        },
+        "tier_3": {
+            "text": "Natural environment",
+            "uri_part": "naturalenvironment"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "participationrepresentationandprivatelife/communitiesandtheenvironment/naturalenvironment"
+    },
+    "uri": "participationrepresentationandprivatelife/communitiesandtheenvironment/naturalenvironment"
+}

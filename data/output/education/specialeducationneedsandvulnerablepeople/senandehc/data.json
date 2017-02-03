@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the SEN & EHC page. Source to be decided.",
+    "level": "T3",
+    "name": "SEN & EHC",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Education",
+            "uri_part": "education"
+        },
+        "tier_2": {
+            "text": "Special Education Needs & Vulnerable People",
+            "uri_part": "specialeducationneedsandvulnerablepeople"
+        },
+        "tier_3": {
+            "text": "SEN & EHC",
+            "uri_part": "senandehc"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "education/specialeducationneedsandvulnerablepeople/senandehc"
+    },
+    "uri": "education/specialeducationneedsandvulnerablepeople/senandehc"
+}

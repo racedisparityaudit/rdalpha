@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the NHS workforce page. Source to be decided.",
+    "level": "T2",
+    "name": "NHS workforce",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Health & Social Care",
+            "uri_part": "healthandsocialcare"
+        },
+        "tier_2": {
+            "text": "NHS workforce",
+            "uri_part": "nhsworkforce"
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "healthandsocialcare/nhsworkforce"
+    },
+    "uri": "healthandsocialcare/nhsworkforce"
+}

@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Well-being page. Source to be decided.",
+    "level": "T2",
+    "name": "Well-being",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Participation, representation & private life",
+            "uri_part": "participationrepresentationandprivatelife"
+        },
+        "tier_2": {
+            "text": "Well-being",
+            "uri_part": "well-being"
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "participationrepresentationandprivatelife/well-being"
+    },
+    "uri": "participationrepresentationandprivatelife/well-being"
+}

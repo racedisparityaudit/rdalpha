@@ -1,0 +1,51 @@
+{
+    "description": "Racial Disparity Audit Homepage",
+    "level": "T0",
+    "name": "Homepage",
+    "subpages": [
+        {
+            "name": "Education",
+            "uri": "education"
+        },
+        {
+            "name": "Work",
+            "uri": "work"
+        },
+        {
+            "name": "Housing & Living standards",
+            "uri": "housingandlivingstandards"
+        },
+        {
+            "name": "Health & Social Care",
+            "uri": "healthandsocialcare"
+        },
+        {
+            "name": "Security & Justice",
+            "uri": "securityandjustice"
+        },
+        {
+            "name": "Participation, representation & private life",
+            "uri": "participationrepresentationandprivatelife"
+        }
+    ],
+    "taxonomy": {
+        "tier_1": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_2": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": ""
+    },
+    "uri": "/"
+}

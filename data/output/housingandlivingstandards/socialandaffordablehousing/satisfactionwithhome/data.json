@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Satisfaction with home page. Source to be decided.",
+    "level": "T3",
+    "name": "Satisfaction with home",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Social & Affordable Housing",
+            "uri_part": "socialandaffordablehousing"
+        },
+        "tier_3": {
+            "text": "Satisfaction with home",
+            "uri_part": "satisfactionwithhome"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/socialandaffordablehousing/satisfactionwithhome"
+    },
+    "uri": "housingandlivingstandards/socialandaffordablehousing/satisfactionwithhome"
+}

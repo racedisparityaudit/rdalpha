@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Representation in the media page. Source to be decided.",
+    "level": "T3",
+    "name": "Representation in the media",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Participation, representation & private life",
+            "uri_part": "participationrepresentationandprivatelife"
+        },
+        "tier_2": {
+            "text": "Culture and the media",
+            "uri_part": "cultureandthemedia"
+        },
+        "tier_3": {
+            "text": "Representation in the media",
+            "uri_part": "representationinthemedia"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "participationrepresentationandprivatelife/cultureandthemedia/representationinthemedia"
+    },
+    "uri": "participationrepresentationandprivatelife/cultureandthemedia/representationinthemedia"
+}

@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Sexual Health page. Source to be decided.",
+    "level": "T3",
+    "name": "Sexual Health",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Health & Social Care",
+            "uri_part": "healthandsocialcare"
+        },
+        "tier_2": {
+            "text": "Preventing illness",
+            "uri_part": "preventingillness"
+        },
+        "tier_3": {
+            "text": "Sexual Health",
+            "uri_part": "sexualhealth"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "healthandsocialcare/preventingillness/sexualhealth"
+    },
+    "uri": "healthandsocialcare/preventingillness/sexualhealth"
+}

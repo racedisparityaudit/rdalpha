@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Minimum wage page. Source to be decided.",
+    "level": "T3",
+    "name": "Minimum wage",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Work",
+            "uri_part": "work"
+        },
+        "tier_2": {
+            "text": "Pay & conditions",
+            "uri_part": "payandconditions"
+        },
+        "tier_3": {
+            "text": "Minimum wage",
+            "uri_part": "minimumwage"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "work/payandconditions/minimumwage"
+    },
+    "uri": "work/payandconditions/minimumwage"
+}

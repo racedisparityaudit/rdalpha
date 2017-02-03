@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Agency fees page. Source to be decided.",
+    "level": "T3",
+    "name": "Agency fees",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Private renting",
+            "uri_part": "privaterenting"
+        },
+        "tier_3": {
+            "text": "Agency fees",
+            "uri_part": "agencyfees"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/privaterenting/agencyfees"
+    },
+    "uri": "housingandlivingstandards/privaterenting/agencyfees"
+}

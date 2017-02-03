@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Arrests page. Source to be decided.",
+    "level": "T3",
+    "name": "Arrests",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Security & Justice",
+            "uri_part": "securityandjustice"
+        },
+        "tier_2": {
+            "text": "Crimes",
+            "uri_part": "crimes"
+        },
+        "tier_3": {
+            "text": "Arrests",
+            "uri_part": "arrests"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "securityandjustice/crimes/arrests"
+    },
+    "uri": "securityandjustice/crimes/arrests"
+}

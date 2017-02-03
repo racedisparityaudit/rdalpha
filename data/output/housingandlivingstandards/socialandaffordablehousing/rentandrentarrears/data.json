@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Rent & rent arrears page. Source to be decided.",
+    "level": "T3",
+    "name": "Rent & rent arrears",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Social & Affordable Housing",
+            "uri_part": "socialandaffordablehousing"
+        },
+        "tier_3": {
+            "text": "Rent & rent arrears",
+            "uri_part": "rentandrentarrears"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/socialandaffordablehousing/rentandrentarrears"
+    },
+    "uri": "housingandlivingstandards/socialandaffordablehousing/rentandrentarrears"
+}

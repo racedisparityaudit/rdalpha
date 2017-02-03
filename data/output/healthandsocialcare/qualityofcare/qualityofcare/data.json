@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Quality of care page. Source to be decided.",
+    "level": "T3",
+    "name": "Quality of care",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Health & Social Care",
+            "uri_part": "healthandsocialcare"
+        },
+        "tier_2": {
+            "text": "Quality of care",
+            "uri_part": "qualityofcare"
+        },
+        "tier_3": {
+            "text": "Quality of care",
+            "uri_part": "qualityofcare"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "healthandsocialcare/qualityofcare/qualityofcare"
+    },
+    "uri": "healthandsocialcare/qualityofcare/qualityofcare"
+}

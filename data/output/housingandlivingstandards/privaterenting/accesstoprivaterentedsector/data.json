@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Access to private rented sector page. Source to be decided.",
+    "level": "T3",
+    "name": "Access to private rented sector",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Private renting",
+            "uri_part": "privaterenting"
+        },
+        "tier_3": {
+            "text": "Access to private rented sector",
+            "uri_part": "accesstoprivaterentedsector"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/privaterenting/accesstoprivaterentedsector"
+    },
+    "uri": "housingandlivingstandards/privaterenting/accesstoprivaterentedsector"
+}

@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Deaths in custody; prison page. Source to be decided.",
+    "level": "T3",
+    "name": "Deaths in custody; prison",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Security & Justice",
+            "uri_part": "securityandjustice"
+        },
+        "tier_2": {
+            "text": "Criminal Justice System",
+            "uri_part": "criminaljusticesystem"
+        },
+        "tier_3": {
+            "text": "Deaths in custody; prison",
+            "uri_part": "deathsincustody;prison"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "securityandjustice/criminaljusticesystem/deathsincustody;prison"
+    },
+    "uri": "securityandjustice/criminaljusticesystem/deathsincustody;prison"
+}

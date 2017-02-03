@@ -1,0 +1,47 @@
+{
+    "description": "This is a description of the Participation, representation & private life page. Source to be decided.",
+    "level": "T1",
+    "name": "Participation, representation & private life",
+    "subpages": [
+        {
+            "name": "Representation",
+            "uri": "participationrepresentationandprivatelife/representation"
+        },
+        {
+            "name": "Culture and the media",
+            "uri": "participationrepresentationandprivatelife/cultureandthemedia"
+        },
+        {
+            "name": "Communities and the environment",
+            "uri": "participationrepresentationandprivatelife/communitiesandtheenvironment"
+        },
+        {
+            "name": "COCivic action",
+            "uri": "participationrepresentationandprivatelife/cocivicaction"
+        },
+        {
+            "name": "Well-being",
+            "uri": "participationrepresentationandprivatelife/well-being"
+        }
+    ],
+    "taxonomy": {
+        "tier_1": {
+            "text": "Participation, representation & private life",
+            "uri_part": "participationrepresentationandprivatelife"
+        },
+        "tier_2": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "participationrepresentationandprivatelife"
+    },
+    "uri": "participationrepresentationandprivatelife"
+}

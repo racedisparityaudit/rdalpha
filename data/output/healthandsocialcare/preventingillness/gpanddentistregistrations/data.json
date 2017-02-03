@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the GP & Dentist registrations page. Source to be decided.",
+    "level": "T3",
+    "name": "GP & Dentist registrations",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Health & Social Care",
+            "uri_part": "healthandsocialcare"
+        },
+        "tier_2": {
+            "text": "Preventing illness",
+            "uri_part": "preventingillness"
+        },
+        "tier_3": {
+            "text": "GP & Dentist registrations",
+            "uri_part": "gpanddentistregistrations"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "healthandsocialcare/preventingillness/gpanddentistregistrations"
+    },
+    "uri": "healthandsocialcare/preventingillness/gpanddentistregistrations"
+}

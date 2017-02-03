@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Culture & heritage page. Source to be decided.",
+    "level": "T3",
+    "name": "Culture & heritage",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Participation, representation & private life",
+            "uri_part": "participationrepresentationandprivatelife"
+        },
+        "tier_2": {
+            "text": "Culture and the media",
+            "uri_part": "cultureandthemedia"
+        },
+        "tier_3": {
+            "text": "Culture & heritage",
+            "uri_part": "cultureandheritage"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "participationrepresentationandprivatelife/cultureandthemedia/cultureandheritage"
+    },
+    "uri": "participationrepresentationandprivatelife/cultureandthemedia/cultureandheritage"
+}

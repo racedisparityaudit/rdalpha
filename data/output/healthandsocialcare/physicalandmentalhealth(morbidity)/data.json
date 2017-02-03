@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Physical & Mental Health (morbidity) page. Source to be decided.",
+    "level": "T2",
+    "name": "Physical & Mental Health (morbidity)",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Health & Social Care",
+            "uri_part": "healthandsocialcare"
+        },
+        "tier_2": {
+            "text": "Physical & Mental Health (morbidity)",
+            "uri_part": "physicalandmentalhealth(morbidity)"
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "healthandsocialcare/physicalandmentalhealth(morbidity)"
+    },
+    "uri": "healthandsocialcare/physicalandmentalhealth(morbidity)"
+}

@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Low pay page. Source to be decided.",
+    "level": "T3",
+    "name": "Low pay",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Work",
+            "uri_part": "work"
+        },
+        "tier_2": {
+            "text": "Pay & conditions",
+            "uri_part": "payandconditions"
+        },
+        "tier_3": {
+            "text": "Low pay",
+            "uri_part": "lowpay"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "work/payandconditions/lowpay"
+    },
+    "uri": "work/payandconditions/lowpay"
+}

@@ -1,0 +1,55 @@
+{
+    "description": "This is a description of the Education page. Source to be decided.",
+    "level": "T1",
+    "name": "Education",
+    "subpages": [
+        {
+            "name": "Attainment",
+            "uri": "education/attainment"
+        },
+        {
+            "name": "Admissions, choice & quality",
+            "uri": "education/admissionschoiceandquality"
+        },
+        {
+            "name": "Higher Education & Adult Education",
+            "uri": "education/highereducationandadulteducation"
+        },
+        {
+            "name": "Destinations after education",
+            "uri": "education/destinationsaftereducation"
+        },
+        {
+            "name": "Exclusions & Pupil Absence",
+            "uri": "education/exclusionsandpupilabsence"
+        },
+        {
+            "name": "Special Education Needs & Vulnerable People",
+            "uri": "education/specialeducationneedsandvulnerablepeople"
+        },
+        {
+            "name": "Education workforce",
+            "uri": "education/educationworkforce"
+        }
+    ],
+    "taxonomy": {
+        "tier_1": {
+            "text": "Education",
+            "uri_part": "education"
+        },
+        "tier_2": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "education"
+    },
+    "uri": "education"
+}

@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Social housing waiting list page. Source to be decided.",
+    "level": "T3",
+    "name": "Social housing waiting list",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Social & Affordable Housing",
+            "uri_part": "socialandaffordablehousing"
+        },
+        "tier_3": {
+            "text": "Social housing waiting list",
+            "uri_part": "socialhousingwaitinglist"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/socialandaffordablehousing/socialhousingwaitinglist"
+    },
+    "uri": "housingandlivingstandards/socialandaffordablehousing/socialhousingwaitinglist"
+}

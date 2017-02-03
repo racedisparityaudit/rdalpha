@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Graduate outcomes page. Source to be decided.",
+    "level": "T3",
+    "name": "Graduate outcomes",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Work",
+            "uri_part": "work"
+        },
+        "tier_2": {
+            "text": "Employment",
+            "uri_part": "employment"
+        },
+        "tier_3": {
+            "text": "Graduate outcomes",
+            "uri_part": "graduateoutcomes"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "work/employment/graduateoutcomes"
+    },
+    "uri": "work/employment/graduateoutcomes"
+}

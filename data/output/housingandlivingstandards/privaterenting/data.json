@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Private renting page. Source to be decided.",
+    "level": "T2",
+    "name": "Private renting",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Private renting",
+            "uri_part": "privaterenting"
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/privaterenting"
+    },
+    "uri": "housingandlivingstandards/privaterenting"
+}

@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Life satisfaction page. Source to be decided.",
+    "level": "T3",
+    "name": "Life satisfaction",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Participation, representation & private life",
+            "uri_part": "participationrepresentationandprivatelife"
+        },
+        "tier_2": {
+            "text": "Communities and the environment",
+            "uri_part": "communitiesandtheenvironment"
+        },
+        "tier_3": {
+            "text": "Life satisfaction",
+            "uri_part": "lifesatisfaction"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "participationrepresentationandprivatelife/communitiesandtheenvironment/lifesatisfaction"
+    },
+    "uri": "participationrepresentationandprivatelife/communitiesandtheenvironment/lifesatisfaction"
+}

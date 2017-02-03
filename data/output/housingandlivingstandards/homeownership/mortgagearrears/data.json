@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Mortgage arrears page. Source to be decided.",
+    "level": "T3",
+    "name": "Mortgage arrears",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Home ownership",
+            "uri_part": "homeownership"
+        },
+        "tier_3": {
+            "text": "Mortgage arrears",
+            "uri_part": "mortgagearrears"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/homeownership/mortgagearrears"
+    },
+    "uri": "housingandlivingstandards/homeownership/mortgagearrears"
+}

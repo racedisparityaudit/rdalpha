@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Homelessness & Rough Sleeping page. Source to be decided.",
+    "level": "T2",
+    "name": "Homelessness & Rough Sleeping",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Housing & Living standards",
+            "uri_part": "housingandlivingstandards"
+        },
+        "tier_2": {
+            "text": "Homelessness & Rough Sleeping",
+            "uri_part": "homelessnessandroughsleeping"
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "housingandlivingstandards/homelessnessandroughsleeping"
+    },
+    "uri": "housingandlivingstandards/homelessnessandroughsleeping"
+}

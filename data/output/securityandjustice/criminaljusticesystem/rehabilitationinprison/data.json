@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Rehabilitation in prison page. Source to be decided.",
+    "level": "T3",
+    "name": "Rehabilitation in prison",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Security & Justice",
+            "uri_part": "securityandjustice"
+        },
+        "tier_2": {
+            "text": "Criminal Justice System",
+            "uri_part": "criminaljusticesystem"
+        },
+        "tier_3": {
+            "text": "Rehabilitation in prison",
+            "uri_part": "rehabilitationinprison"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "securityandjustice/criminaljusticesystem/rehabilitationinprison"
+    },
+    "uri": "securityandjustice/criminaljusticesystem/rehabilitationinprison"
+}

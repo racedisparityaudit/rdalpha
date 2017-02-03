@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Attainment page. Source to be decided.",
+    "level": "T2",
+    "name": "Attainment",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Education",
+            "uri_part": "education"
+        },
+        "tier_2": {
+            "text": "Attainment",
+            "uri_part": "attainment"
+        },
+        "tier_3": {
+            "text": "",
+            "uri_part": ""
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "education/attainment"
+    },
+    "uri": "education/attainment"
+}

@@ -1,0 +1,25 @@
+{
+    "description": "This is a description of the Neighbourhood page. Source to be decided.",
+    "level": "T3",
+    "name": "Neighbourhood",
+    "taxonomy": {
+        "tier_1": {
+            "text": "Participation, representation & private life",
+            "uri_part": "participationrepresentationandprivatelife"
+        },
+        "tier_2": {
+            "text": "Communities and the environment",
+            "uri_part": "communitiesandtheenvironment"
+        },
+        "tier_3": {
+            "text": "Neighbourhood",
+            "uri_part": "neighbourhood"
+        },
+        "tier_4": {
+            "text": "",
+            "uri_part": ""
+        },
+        "uri": "participationrepresentationandprivatelife/communitiesandtheenvironment/neighbourhood"
+    },
+    "uri": "participationrepresentationandprivatelife/communitiesandtheenvironment/neighbourhood"
+}
