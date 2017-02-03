@@ -17,7 +17,7 @@ source venv/bin/activate
 
 cd web
 # automatically compile scss to css
-sass --watch app/static/scss/:app/static/css
+sass --watch app/static/scss/:app/static/css &
 
 pip install -r requirements.txt
 
