@@ -1,60 +1,26 @@
-
-class TaxonomyPart(object):
-    """
-    A section of a uri
-    """
-    def __init__(self, text):
-        self.uri_part = self.convert_to_uri(text)
-        self.text = text
-
-    """
-    Converts a string to a safe uri (probably a better library function)
-    """
-    def convert_to_uri(self, string):
-        return string.replace('.', '') \
-            .replace(',', '') \
-            .replace('&', 'and') \
-            .replace(' ', '') \
-            .lower()
-
-
-class Taxonomy(object):
-    def __init__(self, tier_1="", tier_2="", tier_3="", tier_4=""):
-        self.tier_1 = TaxonomyPart(tier_1)
-        self.tier_2 = TaxonomyPart(tier_2)
-        self.tier_3 = TaxonomyPart(tier_3)
-        self.tier_4 = TaxonomyPart(tier_4)
-        self.calculate_uri()
-
-    def calculate_uri(self):
-        self.uri = self.tier_1.uri_part
-        self.uri = self.uri + '/' + self.tier_2.uri_part if self.tier_2.text != '' else self.uri
-        self.uri = self.uri + '/' + self.tier_3.uri_part if self.tier_3.text != '' else self.uri
-        self.uri = self.uri + '/' + self.tier_4.uri_part if self.tier_4.text != '' else self.uri
-
-
+from model.Uri import Uri
 
 
 class Page(object):
-    def __init__(self, uri = "", name = "", level = "", description = "", taxonomy = Taxonomy()):
+    def __init__(self, uri: Uri = Uri(), name: str = "", level: str = "", description: str = ""):
         self.uri = uri
         self.name = name
         self.level = level
         self.description = description
-        self.taxonomy = taxonomy
 
+    def is_child_of(self, page):
+        return page.uri.is_child_of(self.uri)
 
 class Homepage(Page):
     subpages = []
     def __init__(self, tier_1_pages):
-        super(Homepage, self).__init__(uri="/",
-                                          name="Homepage",
-                                          level="T0",
-                                          description="Racial Disparity Audit Homepage",
-                                          taxonomy=Taxonomy())
+        super(Homepage, self).__init__(uri=Uri(),
+                                       name="Homepage",
+                                       level="T0",
+                                       description="Racial Disparity Audit Homepage")
         self.subpages = []
         for node in tier_1_pages:
-            self.subpages.append( {'uri': node.uri, 'name': node.name} )
+            self.subpages.append( {'uri': node.uri.full, 'name': node.name} )
 
 
 
@@ -63,8 +29,7 @@ class TierOnePage(Page):
         super(TierOnePage, self).__init__(uri=uri,
                                           name=name,
                                           level="T1",
-                                          description=description,
-                                          taxonomy=taxonomy)
+                                          description=description)
         self.subpages = []
         for node in tier_2_pages:
             self.subpages.append( {'uri': node.uri, 'name': node.name} )

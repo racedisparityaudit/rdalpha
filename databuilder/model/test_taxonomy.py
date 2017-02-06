@@ -1,48 +1,48 @@
 import unittest
 from unittest import TestCase
-from model.Pages import Taxonomy, TaxonomyPart
+from model.Uri import Uri, UriPart
 
 
-class TestTaxonomy(TestCase):
+class TestUri(TestCase):
 
     def test_taxonomy_part_does_store_text(self):
         # Given
-        tp = TaxonomyPart('Tax Part')
+        tp = UriPart('Tax Part')
 
         # Then
         self.assertEqual(tp.text, 'Tax Part')
 
     def test_taxonomy_part_does_remove_spaces_for_uri(self):
         # Given
-        tp = TaxonomyPart('tax part')
+        tp = UriPart('tax part')
 
         # Then
         self.assertEqual(tp.uri_part, 'taxpart')
 
     def test_taxonomy_part_does_replace_commas_for_uri(self):
         # Given
-        tp = TaxonomyPart('tax.part')
+        tp = UriPart('tax.part')
 
         # Then
         self.assertEqual(tp.uri_part, 'taxpart')
 
     def test_taxonomy_part_does_send_to_lower_for_uri(self):
         # Given
-        tp = TaxonomyPart('Tax Part')
+        tp = UriPart('Tax Part')
 
         # Then
         self.assertEqual(tp.uri_part, 'taxpart')
 
     def test_taxonomy_part_does_replace_ampersand_with_word_for_uri(self):
         # Given
-        tp = TaxonomyPart('Apples & Pears')
+        tp = UriPart('Apples & Pears')
 
         # Then
         self.assertEqual(tp.uri_part, 'applesandpears')
 
     def test_taxonomy_does_initialise(self):
         # Given
-        t = Taxonomy(tier_1="alpha", tier_2="beta",
+        t = Uri(tier_1="alpha", tier_2="beta",
                      tier_3="gamma", tier_4="delta")
 
         # Then
@@ -54,13 +54,13 @@ class TestTaxonomy(TestCase):
 
     def test_taxonomy_does_create_full_uri(self):
         # Given
-        t1 = Taxonomy(tier_1="alpha", tier_2="beta",
+        t1 = Uri(tier_1="alpha", tier_2="beta",
                      tier_3="gamma", tier_4="delta")
-        t2 = Taxonomy(tier_1="alpha", tier_2="beta",
+        t2 = Uri(tier_1="alpha", tier_2="beta",
                      tier_3="gamma")
-        t3 = Taxonomy(tier_1="alpha", tier_2="beta")
-        t4 = Taxonomy(tier_1="alpha")
-        t5 = Taxonomy()
+        t3 = Uri(tier_1="alpha", tier_2="beta")
+        t4 = Uri(tier_1="alpha")
+        t5 = Uri()
 
         # Then
         self.assertEqual(t1.uri, "alpha/beta/gamma/delta")
@@ -71,7 +71,7 @@ class TestTaxonomy(TestCase):
 
     def test_taxonomy_does_make_taxonomy_parts_safe(self):
         # Given
-        t1 = Taxonomy(tier_1="Education", tier_2="Achievement.",
+        t1 = Uri(tier_1="Education", tier_2="Achievement.",
                      tier_3="KS4", tier_4="Progress 8 & A star to C")
 
         self.assertEqual(t1.uri,"education/achievement/ks4/progress8andastartoc")
