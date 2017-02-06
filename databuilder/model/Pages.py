@@ -9,7 +9,7 @@ class Page(object):
         self.description = description
 
     def is_child_of(self, page):
-        return page.uri.is_child_of(self.uri)
+        return self.uri.is_child_of(page.uri)
 
 class Homepage(Page):
     subpages = []
@@ -25,7 +25,7 @@ class Homepage(Page):
 
 
 class TierOnePage(Page):
-    def __init__(self, uri, name, description, taxonomy, tier_2_pages):
+    def __init__(self, uri, name, description, tier_2_pages):
         super(TierOnePage, self).__init__(uri=uri,
                                           name=name,
                                           level="T1",
@@ -36,13 +36,12 @@ class TierOnePage(Page):
 
 
 class TierTwoPage(Page):
-    subpages = []
-    def __init__(self, uri, name, description, taxonomy, tier_3_pages):
+    def __init__(self, uri, name, description, tier_3_pages):
         super(TierTwoPage, self).__init__(uri=uri,
                                           name=name,
                                           level="T2",
-                                          description=description,
-                                          taxonomy=taxonomy)
+                                          description=description)
+        self.subpages = []
         for node in tier_3_pages:
             self.subpages.append( {'uri': node.uri, 'name': node.name} )
 
@@ -50,24 +49,22 @@ class TierTwoPage(Page):
 class TierThreePage(Page):
     questions = []
 
-    def __init__(self, uri, name, description, taxonomy, data_landing_pages):
+    def __init__(self, uri, name, description, data_landing_pages):
         super(TierThreePage, self).__init__(uri=uri,
                                           name=name,
                                           level="T3",
-                                          description=description,
-                                          taxonomy=taxonomy)
+                                          description=description)
         for node in data_landing_pages:
             self.questions.append({'uri': node.uri, 'name': node.name})
 
 
 class DataLandingPage(Page):
     measures = []
-    def __init__(self, uri, name, description, taxonomy, measures):
+    def __init__(self, uri, name, description, measures):
         super(DataLandingPage, self).__init__(uri=uri,
                                             name=name,
                                             level="T4",
-                                            description=description,
-                                            taxonomy=taxonomy)
+                                            description=description)
         for node in measures:
             self.measures.append({'uri': node.uri, 'name': node.name})
 

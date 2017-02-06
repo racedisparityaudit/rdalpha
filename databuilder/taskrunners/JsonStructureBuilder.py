@@ -1,9 +1,9 @@
 import csv, os, jsonpickle, json
 from faker import Factory
 
-from model.Pages import Page, Taxonomy, Homepage, TierOnePage, TierTwoPage, TierThreePage
+from model.Pages import Page, Uri, Homepage, TierOnePage, TierTwoPage, TierThreePage
 
-class InputBuilder(object):
+class JsonStructureBuilder(object):
 
     output_directory = ""
     input_directory = ""
@@ -112,9 +112,9 @@ class InputBuilder(object):
         with open(self.input_directory + '/taxonomy.csv', 'r') as csvfile:
             csv_reader = csv.reader(csvfile)
             for row in csv_reader:
-                taxonomy=Taxonomy(tier_1=row[3],
-                                  tier_2=row[4],
-                                  tier_3=row[5])
+                taxonomy=Uri(tier_1=row[3],
+                             tier_2=row[4],
+                             tier_3=row[5])
                 nodes.append(Page(uri=taxonomy.uri,
                                   name=row[0],
                                   level=row[2],
