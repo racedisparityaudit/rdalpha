@@ -45,11 +45,17 @@ class CsvStructureBuilder(object):
             writer.writerows(self.csv_rows_for_tier_4(taxonomy))
             writer.writerows(self.csv_rows_for_measures(taxonomy))
 
+    """
+    
+    """
     def csv_row_for_home_page(self, taxonomy):
         page = taxonomy.homepage
-        row = ["Homepage", "", "/", "", page.description]
+        row = [page.name, "", page.uri.full, "", page.description]
         return row
 
+    """
+
+    """
     def csv_rows_for_tier_1(self, taxonomy):
         rows = []
         for page_uri in taxonomy.homepage.subpages:
