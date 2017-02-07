@@ -1,7 +1,7 @@
 import csv
 from model.Taxonomy import Taxonomy
 from model.Uri import Uri
-from model.Pages import Page, TierOnePage, TierTwoPage, TierThreePage, DataLandingPage, Homepage
+from model.Pages import Page, TierOnePage, TierTwoPage, TierThreePage, DataPage, Homepage
 
 input_file = ''
 
@@ -49,7 +49,7 @@ class TaxonomyImporter(object):
         return TierThreePage(uri=tier_3_page.uri,
                              name=tier_3_page.name,
                              description=tier_3_page.description,
-                             data_landing_pages=question_children)
+                             data_pages=question_children)
 
 
     """

@@ -35,6 +35,7 @@ class Uri(object):
         self.full = self.full + '/' + self.tier_2.uri_part if self.tier_2.text != '' else self.full
         self.full = self.full + '/' + self.tier_3.uri_part if self.tier_3.text != '' else self.full
         self.full = self.full + '/' + self.tier_4.uri_part if self.tier_4.text != '' else self.full
+        self.full = self.full + '/' + self.measure.uri_part if self.measure.text != '' else self.full
 
     def append_uri_part(self, append_to_uri, uri_part):
         if uri_part:

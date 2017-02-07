@@ -57,7 +57,7 @@ class JsonStructureBuilder(object):
         return TierThreePage(uri=tier_3_page.uri,
                              name=tier_3_page.name,
                              description=tier_3_page.description,
-                             data_landing_pages=question_children,
+                             data_pages=question_children,
                              taxonomy=tier_3_page.taxonomy)
 
 

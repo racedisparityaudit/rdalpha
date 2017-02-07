@@ -8,7 +8,9 @@ from taskrunners.CsvStructureBuilder import CsvStructureBuilder
 def build_input_taxonomy_from_csv():
     '''Build the input taxonomy from scratch using the csv spreadsheet.'''
     print('Building input taxonomy')
-    builder = CsvStructureBuilder("data/input/taxonomy.csv", "data/output/taxonomy.csv")
+    builder = CsvStructureBuilder("data/input/taxonomy.csv",
+                                  "data/input/questions.csv",
+                                  "data/output/taxonomy.csv")
     builder.build()
 
 

@@ -47,35 +47,36 @@ class TierTwoPage(Page):
 
 
 class TierThreePage(Page):
-    questions = []
+    datapages = []
 
-    def __init__(self, uri, name, description, data_landing_pages):
+    def __init__(self, uri, name, description, data_pages):
         super(TierThreePage, self).__init__(uri=uri,
                                           name=name,
                                           level="T3",
                                           description=description)
-        for node in data_landing_pages:
-            self.questions.append({'uri': node.uri, 'name': node.name})
+        for node in data_pages:
+            self.datapages.append({'uri': node.uri, 'name': node.name})
 
 
-class DataLandingPage(Page):
+class DataPage(Page):
     measures = []
-    def __init__(self, uri, name, description, measures):
-        super(DataLandingPage, self).__init__(uri=uri,
-                                            name=name,
-                                            level="T4",
-                                            description=description)
+    def __init__(self, uri, name, question, department="", measures = []):
+        super(DataPage, self).__init__(uri=uri,
+                                       name=name,
+                                       level="T4",
+                                       description=question)
+        self.department = department
         for node in measures:
             self.measures.append({'uri': node.uri, 'name': node.name})
 
 
 class Measure(Page):
-    def __init__(self, uri, name, description, taxonomy, slices = []):
+    def __init__(self, uri, name, description, department = "", slices = []):
         super(Measure, self).__init__(uri=uri,
-                                            name=name,
-                                            level="Measure",
-                                            description=description,
-                                            taxonomy=taxonomy)
+                                        name=name,
+                                        level="Measure",
+                                        description=description)
+        self.department = department
         self.slices = slices
 
 
