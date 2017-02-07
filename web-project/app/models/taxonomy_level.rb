@@ -12,5 +12,15 @@
 #
 
 class TaxonomyLevel < ApplicationRecord
-  has_many :taxonomy_level, foreign_key: :parent_id
+  has_many :taxonomy_levels, foreign_key: :parent_id
+  belongs_to :taxonomy_level, foreign_key: :parent_id
+
+
+  def parent_name
+    taxonomy_level.name
+  end
+
+  def self.homepage
+    TaxonomyLevel.where(parent_id:nil).first
+  end
 end

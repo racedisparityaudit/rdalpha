@@ -3,7 +3,7 @@ class TaxonomyImporter
   def import(path=nil)
     require 'csv'
     path ||= ENV["IMPORT_PATH"]
-    path = Rails.root.join("../data/taxonomy.csv").to_s
+    path = Rails.root.join("../data/output/taxonomy.csv").to_s
     puts(ENV["IMPORT_PATH"])
     fail ArgumentError.new("import csv does not exist") unless File.exist?(path.to_s)
     csv = CSV.read(path)
@@ -12,27 +12,23 @@ class TaxonomyImporter
   end
 
   def import_row(csv_row)
-    taxonomy_name = csv_row.third
-    taxonomy_level = csv_row.second
-    parent_name =
-      if taxonomy_level == "T0"
-        nil
-      elsif taxonomy_level == "T1"
-        "homepage"
-      elsif taxonomy_level == "T2"
-        csv_row.fourth
-      end
+    taxonomy_name = csv_row.first
 
+    parent_name = csv_row.second.try(:downcase)
+    uri         = csv_row.third
+    parent_uri  = csv_row.fourth
+    description = csv_row.fifth
+    taxonomy_level = csv_row[5]
+    source = csv_row[6]
 
-    if parent_name && parent_name != "homepage"
-      parent_id = TaxonomyLevel.find_by_name(parent_name.downcase).id
-    else
-      parent_id = nil
-    end
+    parent_id = TaxonomyLevel.find_by_uri(parent_uri).id if parent_uri
 
     TaxonomyLevel.create(name: taxonomy_name.downcase,
                          level: taxonomy_level,
-                         parent_id: parent_id)
+                         parent_id: parent_id,
+                         uri: uri,
+                         description: description,
+                         source: source)
   end
 
 end
