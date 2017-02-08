@@ -1,5 +1,17 @@
 
 <main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <% @taxonomy_level.breadcrumbs.reverse.each do |crumb| %>
+        <% if crumb != "homepage" %>
+          <li> <a href="/<%=crumb%>"><%=crumb.titleize%></a></li>
+        <% else %>
+          <li> <a href = "/"> Homepage </a> </li>
+        <% end %>
+      <% end %>
+    </ol>
+  </div>
   <div class="heading-xlarge">
      <h1> <%= @taxonomy_level.display_name %> </h1>
   </div>

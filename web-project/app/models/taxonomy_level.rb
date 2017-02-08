@@ -15,6 +15,12 @@ class TaxonomyLevel < ApplicationRecord
   has_many :taxonomy_levels, foreign_key: :parent_id
   belongs_to :taxonomy_level, foreign_key: :parent_id
 
+  def breadcrumbs(crumbs = [])
+    crumbs << name
+    return crumbs unless taxonomy_level
+
+    taxonomy_level.breadcrumbs(crumbs)
+  end
 
   def display_name
     name.titleize
