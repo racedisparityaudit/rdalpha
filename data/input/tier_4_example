@@ -1,6 +1,6 @@
 {
-  "name":"Ethnicity and Tenure",
-  "description":"Are people in the relevant group more or less likely to live in a council house, be private renters or own their own home?",
+  "name":"Ethnicity and Social Housing",
+  "description":"Are people in the relevant group more or less likely to have access to council housing?",
   "content":"The English Housing Survey is a continuous national survey commissioned by the Department for Communities and Local Government (DCLG). It collects information about people’s housing circumstances and the condition and energy efficiency of housing in England.",
   "uri": {
     "full":"/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16",
