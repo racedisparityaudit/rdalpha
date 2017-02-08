@@ -1,1 +1,15 @@
-education
+
+<main id="content" role="main">
+  <div class="heading-xlarge">
+     <h1> <%= @taxonomy_level.display_name %> </h1>
+  </div>
+
+  <nav>
+    <ul>
+      <% @topics.each do |t| %>
+        <li><a href = "<%= '/' + t.name %>"><%= t.display_name %></a></li>
+              <%= t.description %>
+      <% end %>
+    </ul>
+  </nav>
+</main>

@@ -16,6 +16,10 @@ class TaxonomyLevel < ApplicationRecord
   belongs_to :taxonomy_level, foreign_key: :parent_id
 
 
+  def display_name
+    name.titleize
+  end
+
   def parent_name
     taxonomy_level.name
   end

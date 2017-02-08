@@ -1,11 +1,43 @@
 
+<div class ="container">
+<main id="content" role="main">
 
-<div class="">
- <h1> This is the home Page </h1>
+<div class="grid-row">
+  <div class = "column-one-third">
+    <h2 class="heading-large"> Topics </h2>
+    <ul class="list list-bullet">
+      <% @topics.each do |t| %>
+        <li><a href = "<%= '/' + t.name %>"><%= t.display_name %></a>
+        <br> <%= t.description %></li>
+      <% end %>
+    </ul>
+  </div>
+
+
+  <div class ="column-two-thirds">
+  <div class="heading-xlarge">
+   <h1> Race Disparity Audit </h1>
+  </div>
+
+  <p> This is the racial disparity Audit. Its purpose is:</p>
+
+    <ul class="list list-bullet">
+       <li>audit to shine a light on how our public services treat people from different backgrounds</li>
+      <li>public will be able to check how their race affects how they are treated on key issues such as health, education and employment, broken down by geographic location, income and gender</li>
+      <li>the audit will show disadvantages suffered by white working class people as well as ethnic minorities</li>
+      <li>the findings from this audit will influence government policy to solve these problems</li>
+    </ul>
+
+  </div>
 </div>
 
-<nav>
-  <% @topics.each do |t| %>
-    <%= t.name %>
-  <% end %>
-</nav>
+<div class="grid-row">
+
+</div>
+</main>
+
+
+</div>
+
+
+
