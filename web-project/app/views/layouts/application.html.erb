@@ -6,6 +6,14 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
+<% content_for :homepage_url do %>
+/
+<% end %>
+
+<% content_for :global_header_text do %>
+  Race Disparity Audit
+<% end %>
 <body>
   <div class="phase-banner">
     <p>

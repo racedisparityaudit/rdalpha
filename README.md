@@ -1,6 +1,6 @@
 # rdalpha
 
-Repository for the Racial Disparity Unit alpha project
+Repository for the Race Disparity Unit alpha project
 
 ## Links
 

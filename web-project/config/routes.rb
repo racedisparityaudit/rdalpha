@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'homepage#index'
-
+  get 'question/:question' => 'taxonomy_level#question'
   get ':taxonomy_name' => 'taxonomy_level#show'
   get ':parent_name/:taxonomy_name' => 'taxonomy_level#show'
   get ':parent_name/:taxonomy_name' => 'taxonomy_level#show'
