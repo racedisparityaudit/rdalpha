@@ -2,11 +2,12 @@ from model.Uri import Uri
 
 
 class Page(object):
-    def __init__(self, uri: Uri = Uri(), name: str = "", level: str = "", description: str = ""):
+    def __init__(self, uri: Uri = Uri(), name: str = "", level: str = "", description: str = "", subtitle: str=""):
         self.uri = uri
         self.name = name
         self.level = level
         self.description = description
+        self.subtitle = subtitle
 
     def is_child_of(self, page):
         return self.uri.is_child_of(page.uri)
@@ -60,11 +61,12 @@ class TierThreePage(Page):
 
 class DataPage(Page):
     measures = []
-    def __init__(self, uri, name, question, department="", measures = []):
+    def __init__(self, uri, name, question, department="", measures = [], subtitle=""):
         super(DataPage, self).__init__(uri=uri,
                                        name=name,
                                        level="T4",
-                                       description=question)
+                                       description=question,
+                                       subtitle=subtitle)
         self.department = department
         for node in measures:
             self.measures.append({'uri': node.uri, 'name': node.name})

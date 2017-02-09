@@ -52,17 +52,17 @@ class DataPageImporter(object):
                           tier_2=row[1],
                           tier_3=row[2],
                           tier_4=row[3])
-                self.datapages.append(DataPage(uri=uri,name=row[3],
-                                      question=row[4],
-                                          department=row[5],
+                self.datapages.append(DataPage(uri=uri,name=row[4],
+                                      question=row[5],
+                                          department=row[6],
                                       measures=[]))
 
-                uri = Uri(tier_1=row[0],
-                          tier_2=row[1],
-                          tier_3=row[2],
-                          tier_4=row[3],
-                          measure=row[6])
-                self.measures.append(Measure(uri=uri,
-                                        name=row[6],
-                                        description=row[7],
-                                        department=row[5]))
+                # uri = Uri(tier_1=row[0],
+                #           tier_2=row[1],
+                #           tier_3=row[2],
+                #           tier_4=row[3],
+                #           measure=row[6])
+                # self.measures.append(Measure(uri=uri,
+                #                         name=row[6],
+                #                         description=row[7],
+                #                         department=row[5]))

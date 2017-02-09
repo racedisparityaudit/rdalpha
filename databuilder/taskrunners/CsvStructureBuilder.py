@@ -35,7 +35,7 @@ class CsvStructureBuilder(object):
         with open(filename, 'w') as f:
             writer = csv.writer(f)
 
-            headers = ["name", "parent name", "uri", "parent uri", "description", "level", "source"]
+            headers = ["name", "parent name", "uri", "parent uri", "description", "level", "source", "subtitle"]
             writer.writerow(headers)
 
             writer.writerow(self.csv_row_for_home_page(taxonomy))
@@ -43,7 +43,7 @@ class CsvStructureBuilder(object):
             writer.writerows(self.csv_rows_for_tier_2(taxonomy))
             writer.writerows(self.csv_rows_for_tier_3(taxonomy))
             writer.writerows(self.csv_rows_for_tier_4(taxonomy))
-            writer.writerows(self.csv_rows_for_measures(taxonomy))
+            # writer.writerows(self.csv_rows_for_measures(taxonomy))
 
     """
     
@@ -64,7 +64,7 @@ class CsvStructureBuilder(object):
 
             row = [page.name, taxonomy.homepage.name,
                    page.uri.full, taxonomy.homepage.uri.full,
-                   page.description, page.level]
+                   page.description, page.level, page.subtitle]
             rows.append(row)
         return rows
 
@@ -76,7 +76,7 @@ class CsvStructureBuilder(object):
                 page = next(p for p in taxonomy.tier_2 if p.uri.full == page_uri['uri'].full)
                 row = [page.name, parent.name,
                        page.uri.full, parent.uri.full,
-                       page.description, page.level]
+                       page.description, page.level, page.subtitle]
                 rows.append(row)
         return rows
 
@@ -88,7 +88,7 @@ class CsvStructureBuilder(object):
                 page = next(p for p in taxonomy.tier_3 if p.uri.full == page_uri['uri'].full)
                 row = [page.name, parent.name,
                        page.uri.full, parent.uri.full,
-                       page.description, page.level]
+                       page.description, page.level, page.subtitle]
                 rows.append(row)
         return rows
 
@@ -99,7 +99,7 @@ class CsvStructureBuilder(object):
                 page = next(p for p in taxonomy.tier_4 if p.uri.full == page_uri['uri'])
                 row = [page.name, parent.name,
                        page.uri.full, parent.uri.full,
-                       page.description, page.level, page.department]
+                       page.description, page.level, page.department, page.subtitle]
                 rows.append(row)
         return rows
 
