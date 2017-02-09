@@ -1,15 +1,31 @@
 
 <main id="content" role="main">
 
-  <h1 class="heading-large"> Ethnicity and Tenure </h1>
+  <div class="breadcrumbs">
+    <ol>
+      <% @taxonomy_level.breadcrumbs.reverse.each do |crumb| %>
+        <% if crumb != "homepage" %>
+          <li> <a href="/<%=crumb%>"><%=crumb.titleize%></a></li>
+        <% else %>
+          <li> <a href = "/"> Homepage </a> </li>
+        <% end %>
+      <% end %>
+    </ol>
+  </div>
 
-  <p class="lede"> Are people in the relevant group more or less likely to live in a council house, be private renters or own their own home?</p>
+  <h1 class="heading-large"> Ownership, rental and social housing</h1>
 
+  <p class="lede"> This data reflects the types of housing that people live in across England. Differences experienced by people of various race backgrounds should also take into account the age, income and regional factors as in some cases, these have a greater influence.</p>
+
+  <p> <a href="http://www.gov.uk">Download data in csv or xls format</a> for all of England or a local authority.</p>
+
+  <p>Read the <a href="#">further information and guidance </a>about the data in the tables.
+  </p>
 
   <div class="grid-row question-tabs">
     <ul>
-      <li id="ethnicity-selector"><a href="#ethnicity-section"> Ethnicity </a></li>
-      <li id="age-selector"><a href="#age-section"> Houesehold Age </a></li>
+      <li id="ethnicity-selector"><a href="#ethnicity-section"> All </a></li>
+      <li id="age-selector"><a href="#age-section"> Household Age </a></li>
       <li id="nationality-selector"><a href="#nationality-section"> Nationality </a></li>
       <li id="income-selector"><a href="#income-section"> Income </a></li>
       <li id="region-selector"><a href="#region-section"> Region </a></li>
