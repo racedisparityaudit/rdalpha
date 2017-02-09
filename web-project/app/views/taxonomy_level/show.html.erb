@@ -1,4 +1,6 @@
 
+
+
 <main id="content" role="main">
 
   <div class="breadcrumbs">
@@ -12,15 +14,18 @@
       <% end %>
     </ol>
   </div>
-  <div class="heading-xlarge">
-     <h1> <%= @taxonomy_level.display_name %> </h1>
+  <div>
+     <span class="heading-xlarge"><h1> <%= @taxonomy_level.display_name %> </h1></span>
+
+     <p>
+      <%= @taxonomy_level.description %>
+     </p>
   </div>
 
   <nav>
     <ul>
       <% @topics.each do |t| %>
         <li><a href = "<%= '/' + t.name %>"><%= t.display_name %></a></li>
-              <%= t.description %>
       <% end %>
     </ul>
   </nav>

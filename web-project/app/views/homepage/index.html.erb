@@ -2,33 +2,61 @@
 <div class ="container">
 <main id="content" role="main">
 
-<div class="grid-row">
-  <div class = "column-one-third">
-    <h2 class="heading-large"> Topics </h2>
-    <ul class="list list-bullet">
-      <% @topics.each do |t| %>
-        <li><a href = "<%= '/' + t.name %>"><%= t.display_name %></a>
-        <br> <%= t.description %></li>
-      <% end %>
-    </ul>
+  <div class="grid-row">
+
+    <div class="heading-xlarge">
+     <h1> Race Disparity Audit </h1>
+    </div>
+
+    <p class="lede"> 
+      Government departments measure how people from different races experience and access public services. 
+    </p>
+
+    <p>
+      This data will help to reflect the realities of people living in the UK, and feed into policy issues relating to race equality. 
+    </p>
+    
+    <p>
+      You can use this data to learn more about how government works, carry out research or build applications and services. Where possible, other influences such as location, age, socioeconomic status and gender are also provided.
+    </p>
   </div>
 
+  <div class="grid-row">
+    <h2 class= "heading-medium"> Browse  by topic </h2>
+    <div class = "column-one-third">
+      <ul class="list list-bullet">
+        
+          <li><a href = "/education">Education</a></li>
+          <p>Admissions, grades, opportunities, exclusions and student progress</p>
+          
+          <li><a href="/work">Work</a></li>
+          <p> Employment, working conditions, pay, workplace discrimination, business support, benefits</p>
+      </ul>
+    </div>
 
-  <div class ="column-two-thirds">
-  <div class="heading-xlarge">
-   <h1> Race Disparity Audit </h1>
+    <div class = "column-one-third">
+      <ul class="list list-bullet">
+        
+          <li><a href = "/education">Housing and Living Standards</a></li>
+          <p> Ownership, renting, social housing, homelessness, living conditions, poverty</p>
+          
+          
+          <li><a href="/work">Health and social care</a></li>
+          <p> Physical and mental health, preventing illness, quality of care, access to treatment</p>
+          
+      </ul>
+    </div>
+
+    <div class = "column-one-third">
+      <ul class="list list-bullet">
+        
+          <li><a href = "/education">Security and justice</a></li>
+          <p>Criminal justice system, crimes, police, customs, defence</p>
+          
+          <li><a href="/work">Participation, representation and private life</a></li>
+          <p> Culture, media, communities, environment, civic action, wellbeing  </p>
+
+      </ul>
+    </div>
   </div>
-
-  <p> This is the racial disparity Audit. Its purpose is:</p>
-
-    <ul class="list list-bullet">
-       <li>audit to shine a light on how our public services treat people from different backgrounds</li>
-      <li>public will be able to check how their race affects how they are treated on key issues such as health, education and employment, broken down by geographic location, income and gender</li>
-      <li>the audit will show disadvantages suffered by white working class people as well as ethnic minorities</li>
-      <li>the findings from this audit will influence government policy to solve these problems</li>
-    </ul>
-
-  </div>
-</div>
-
 </main>

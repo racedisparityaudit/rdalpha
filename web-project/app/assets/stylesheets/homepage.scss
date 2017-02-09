@@ -1,3 +1,27 @@
 // Place all the styles related to the homepage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.question-graph {
+  img { width: 80%; }
+}
+
+.graph-section {
+  display:none;
+}
+.question-tabs {
+  border-bottom: 1px solid #bfc1c3;
+  margin-bottom: 20px;
+
+  ul {
+    list-style: none;
+
+  }
+
+  li {
+    float: left;
+    padding: 0 8px 10px;
+    margin: 0 20px 0 0;
+  }
+
+}

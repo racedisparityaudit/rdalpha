@@ -26,6 +26,10 @@ class TaxonomyLevel < ApplicationRecord
     name.titleize
   end
 
+  def metric_level?
+    taxonomy_levels.empty?
+  end
+
   def parent_name
     taxonomy_level.name
   end
