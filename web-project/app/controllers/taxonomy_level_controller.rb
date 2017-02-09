@@ -6,6 +6,7 @@ class TaxonomyLevelController < ApplicationController
       @taxonomy_level.uri ==  "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16" ? render('question') : render('missing')
     else
       @topics  = TaxonomyLevel.find_by_name(params[:taxonomy_name]).taxonomy_levels
+                    .reject { |level| level.name == @taxonomy_level.name }
     end
   end
 
