@@ -22,3 +22,18 @@ Heroku App
 - rdalpha
 - europe
 
+## Deployment
+
+First create a new heroku app, we are deploying different sprints to separate
+apps in order to be able to show how it has evolved.
+
+Set the remote git branch to match your new app
+`heroku git:remote -a [your-heroku-app-name]`
+
+You should then be able to deploy with :
+
+`git push heroku master`
+
+
+
+
