@@ -3,7 +3,7 @@ Rails.application.configure do
 
   # use http basic auth when deploying, this is to stop members of the public
   # from discovering prototypes and thinking that they are real services.
-  config.middleware.insert_after(::Rack::Lock, "::Rack::Auth::Basic", "Staging") do |u, p|
+  config.middleware.use '::Rack::Auth::Basic' do |u, p|
     [u, p] == ['RDU1066', 'RDU1558']
   end
   # Code is not reloaded between requests.
