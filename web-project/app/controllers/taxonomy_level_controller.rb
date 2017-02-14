@@ -5,6 +5,7 @@ class TaxonomyLevelController < ApplicationController
     if @taxonomy_level.metric_level?
       @taxonomy_level.uri ==  "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16" ? render('question') : render('missing')
     else
+      # TODO: KASM fix logic so there are never any loops
       @topics  = TaxonomyLevel.find_by_name(params[:taxonomy_name]).taxonomy_levels
                     .reject { |level| level.name == @taxonomy_level.name }
     end

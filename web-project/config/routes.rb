@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  #TODO: KASM make roots
   root 'homepage#index'
   get 'question/:question' => 'taxonomy_level#question'
   get ':taxonomy_name' => 'taxonomy_level#show'
