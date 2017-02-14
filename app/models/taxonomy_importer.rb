@@ -3,7 +3,7 @@ class TaxonomyImporter
   def import(path=nil)
     require 'csv'
     path ||= ENV["IMPORT_PATH"]
-    path = Rails.root.join("../data/output/taxonomy.csv").to_s
+    path = Rails.root.join("./data/output/taxonomy.csv").to_s
     puts(ENV["IMPORT_PATH"])
     fail ArgumentError.new("import csv does not exist") unless File.exist?(path.to_s)
     csv = CSV.read(path)
