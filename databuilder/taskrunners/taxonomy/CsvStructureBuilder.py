@@ -1,7 +1,8 @@
 import csv
-from taskrunners.TaxonomyImporter import TaxonomyImporter
-from taskrunners.DataPageImporter import DataPageImporter
-from model.Taxonomy import Taxonomy
+
+from databuilder.model.Taxonomy import Taxonomy
+from databuilder.taskrunners.taxonomy.DataPageImporter import DataPageImporter
+
 
 class CsvStructureBuilder(object):
 

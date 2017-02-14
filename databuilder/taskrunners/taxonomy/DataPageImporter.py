@@ -1,7 +1,9 @@
 import csv
-from taskrunners.TaxonomyImporter import TaxonomyImporter
-from model.Uri import Uri
-from model.Pages import DataPage, Measure
+
+from databuilder.model.Pages import DataPage
+from databuilder.model.Uri import Uri
+from databuilder.taskrunners.taxonomy.TaxonomyImporter import TaxonomyImporter
+
 
 class DataPageImporter(object):
     measures = []
@@ -56,13 +58,3 @@ class DataPageImporter(object):
                                       question=row[5],
                                           department=row[6],
                                       measures=[]))
-
-                # uri = Uri(tier_1=row[0],
-                #           tier_2=row[1],
-                #           tier_3=row[2],
-                #           tier_4=row[3],
-                #           measure=row[6])
-                # self.measures.append(Measure(uri=uri,
-                #                         name=row[6],
-                #                         description=row[7],
-                #                         department=row[5]))
