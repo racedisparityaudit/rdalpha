@@ -15,11 +15,33 @@ class TaxonomyLevel < ApplicationRecord
   has_many :taxonomy_levels, foreign_key: :parent_id
   belongs_to :taxonomy_level, foreign_key: :parent_id
 
+  def self.metrics
+    all.all.select{ |t| t.metric_level?}
+  end
+
+  def self.homepage
+    TaxonomyLevel.where(parent_id:nil).first
+  end
+
+  def self.topic_level
+    TaxonomyLevel.where(parent_id: homepage.id)
+  end
+
   def breadcrumbs(crumbs = [])
     crumbs << name
     return crumbs unless taxonomy_level
 
     taxonomy_level.breadcrumbs(crumbs)
+  end
+
+  def top_level_parent
+    # TODO: will blow up if there is no taxonomy_level
+    return self if topic_level?
+    return taxonomy_level.top_level_parent
+  end
+
+  def topic_level?
+    parent_name == "homepage"
   end
 
   def display_name
@@ -34,7 +56,4 @@ class TaxonomyLevel < ApplicationRecord
     taxonomy_level.name
   end
 
-  def self.homepage
-    TaxonomyLevel.where(parent_id:nil).first
-  end
 end

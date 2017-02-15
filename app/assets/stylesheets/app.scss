@@ -48,3 +48,79 @@
 }
 
 
+.race-radios-container {
+  border-bottom: 1px solid $grey-2;
+
+  .column-one-half {
+    padding-bottom: 20px;
+  }
+}
+
+.factoid-question-header {
+  width: 60%;
+  float:left;
+}
+
+.factoid-result-header {
+  width: 20%;
+  float: left;
+}
+
+.factoid-question {
+  width: 60%;
+  float: left;
+}
+
+.factoid-result {
+  width: 20%;
+  float: left;
+}
+
+.list {
+  list-style: none;
+}
+
+.options-container {
+  max-height: 180px;
+}
+
+.govuk-option-select {
+  background-color: $grey-3;
+  margin-bottom: 30px;
+
+
+  button {
+    z-index:100;
+    position: relative;
+    border:none;
+    width:100%;
+    cursor:pointer;
+    text-align: left;
+    margin-bottom: -1px;
+    padding: 5px 8px;
+    background-color: $grey-3;
+  }
+
+  .option-select-label {
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: bold;
+    margin-right: 40px;
+    padding-top: 5px;
+  }
+
+  .options-container {
+    background-color: $white;
+    border: solid;
+    border-color: $grey-3;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    label {
+      cursor: pointer;
+      display: inline-block;
+      width:100%;
+      border-bottom: 1px solid $grey-3;
+    }
+  }
+}
