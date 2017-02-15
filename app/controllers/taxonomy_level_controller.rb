@@ -15,4 +15,8 @@ class TaxonomyLevelController < ApplicationController
 
   end
 
+  def factoids
+    @filter = params[:filter]
+    @factoids = TaxonomyLevel.metrics
+  end
 end

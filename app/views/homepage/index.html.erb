@@ -1,29 +1,78 @@
 
-<div class ="container">
 <main id="content" role="main">
+
   <div class = "grid-row">
     <div class= "column-whole">
-    <div class="heading-xlarge">
-     <h1> Race disparity in the public sector </h1>
-    </div>
+      <div class="heading-xlarge">
+       <h1> Race disparity in the public sector </h1>
+      </div>
 
-    <p>
-      Government departments measure how people from different races experience and access public services.
-    </p>
+      <p>
+        Government departments measure how people from different races experience and access public services.
+      </p>
 
-    <p>
-      This data will help to reflect the realities of people living in the UK, and feed into policy issues relating to race equality.
-    </p>
+      <p>
+        This data will help to reflect the realities of people living in the UK, and feed into policy issues relating to race equality.
+      </p>
 
-    <p>
-      You can use this data to learn more about how government works, carry out research or build applications and services. Where possible, other influences such as location, age, socioeconomic status and gender are also provided.
-    </p>
+      <p>
+        You can use this data to learn more about how government works, carry out research or build applications and services. Where possible, other influences such as location, age, socioeconomic status and gender are also provided.
+      </p>
     </div>
   </div>
 
 
-  <h2 class= "heading-medium"> Browse  by topic </h2>
   <div class="grid-row">
+    <div class="column-whole">
+      <h2 class= "heading-medium"> Select a Race </h2>
+    </div>
+  </div>
+
+  <div class="grid-row race-radios-container">
+    <div class="column-one-half">
+      <form class="form-group">
+
+        <fieldset>
+
+          <legend class="visually-hidden">Where do you live?</legend>
+
+          <label class="block-label selection-button-radio" for="radio-1">
+            <input id="radio-1" type="radio" name="radio-group" value="White">
+            White
+          </label>
+          <label class="block-label selection-button-radio" for="radio-2">
+            <input id="radio-2" type="radio" name="radio-group" value="Black">
+            Black
+          </label>
+
+          <label class="block-label selection-button-radio" for="radio-3">
+            <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
+            Asian
+          </label>
+
+          <label class="block-label selection-button-radio" for="radio-3">
+            <input id="radio-3" type="radio" name="radio-group" value="Other">
+            Other
+          </label>
+
+        </fieldset>
+      </form>
+    </div>
+    <div class="column-one-half">
+      <!-- TODO really hacky fix this its not a form its just a link -->
+      <a href="/factoids/black" class="button"> Browse</a>
+    </div>
+
+  </div>
+
+  <div class="grid-row">
+    <div class="column-whole">
+      <h2 class= "heading-medium"> Browse by Topic</h2>
+    </div>
+  </div>
+  <div class="grid-row">
+
+
     <div class = "column-third">
       <ul class="list list-bullet">
 
