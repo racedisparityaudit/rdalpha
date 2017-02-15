@@ -1,6 +1,6 @@
 # rdalpha databuilder
 
-Repository for the Racial Disparity Unit alpha project data backend
+Repository for the Racial Disparity Unit Alpha data backend
 
 ## Links
 
