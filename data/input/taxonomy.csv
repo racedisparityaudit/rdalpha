@@ -1,184 +1,209 @@
-Name,Description,Level,T1,T2,T3,Subtitle,Page Id
-Homepage,The Race Disparity Unit homepage,T0,,,,,1
-Education,"Admissions, grades, opportunities, exclusions and student progress",T1,Education,,,"Admissions, grades, opportunities, exclusions and student progress",2
-Attainment,This is a description of the Attainment page. Source to be decided.,T2,Education,Attainment,,,3
-Early years,This is a description of the Early years page. Source to be decided.,T3,Education,Attainment,Early years,,4
-National assessments,This is a description of the National assessments page. Source to be decided.,T3,Education,Attainment,National assessments,,5
-Progress,This is a description of the Progress page. Source to be decided.,T3,Education,Attainment,Progress,,6
-Positive outcomes,This is a description of the Positive outcomes page. Source to be decided.,T3,Education,Attainment,Positive outcomes,,7
-"Admissions, choice & quality","This is a description of the Admissions, choice & quality page. Source to be decided.",T2,Education,"Admissions, choice & quality",,,8
-School admissions,This is a description of the School admissions page. Source to be decided.,T3,Education,"Admissions, choice & quality",School admissions,,9
-School quality,This is a description of the School quality page. Source to be decided.,T3,Education,"Admissions, choice & quality",School quality,,10
-School choice,This is a description of the School choice page. Source to be decided.,T3,Education,"Admissions, choice & quality",School choice,,11
-Higher Education & Adult Education,This is a description of the Higher Education & Adult Education page. Source to be decided.,T2,Education,Higher Education & Adult Education,,,12
-NEETS,This is a description of the NEETS page. Source to be decided.,T3,Education,Higher Education & Adult Education,NEETS,,13
-Participation in Adult education,This is a description of the Participation in Adult education page. Source to be decided.,T3,Education,Higher Education & Adult Education,Participation in Adult education,,14
-Higher Education applications,This is a description of the Higher Education applications page. Source to be decided.,T3,Education,Higher Education & Adult Education,Higher Education applications,,15
-Entry to Higher Education,This is a description of the Entry to Higher Education page. Source to be decided.,T3,Education,Higher Education & Adult Education,Entry to Higher Education,,16
-Progress in higher education,This is a description of the Progress in higher education page. Source to be decided.,T3,Education,Higher Education & Adult Education,Progress in higher education,,17
-Higher education attainment,This is a description of the Higher education attainment page. Source to be decided.,T3,Education,Higher Education & Adult Education,Higher education attainment,,18
-Destinations after education,This is a description of the Destinations after education page. Source to be decided.,T2,Education,Destinations after education,,,19
-Destinations after GCSE; A-Level; Uni,This is a description of the Destinations after GCSE; A-Level; Uni page. Source to be decided.,T3,Education,Destinations after education,Destinations after GCSE; A-Level; Uni,,20
-Graduate employment outcomes,This is a description of the Graduate employment outcomes page. Source to be decided.,T3,Education,Destinations after education,Graduate employment outcomes,,21
-Exclusions & Pupil Absence,This is a description of the Exclusions & Pupil Absence page. Source to be decided.,T2,Education,Exclusions & Pupil Absence,,,22
-Permanent & Fixed exclusions,This is a description of the Permanent & Fixed exclusions page. Source to be decided.,T3,Education,Exclusions & Pupil Absence,Permanent & Fixed exclusions,,23
-Pupil absence,This is a description of the Pupil absence page. Source to be decided.,T3,Education,Exclusions & Pupil Absence,Pupil absence,,24
-Special Education Needs & Vulnerable People,This is a description of the Special Education Needs & Vulnerable People page. Source to be decided.,T2,Education,Special Education Needs & Vulnerable People,,,25
-SEN & EHC,This is a description of the SEN & EHC page. Source to be decided.,T3,Education,Special Education Needs & Vulnerable People,SEN & EHC,,26
-Education workforce,This is a description of the Education workforce page. Source to be decided.,T2,Education,Education workforce,,,27
-Workforce,This is a description of the Workforce page. Source to be decided.,T3,Education,Education workforce,Workforce,,28
-Work,"Employment, working conditions, pay, workplace discrimination, business support, benefits",T1,Work,,,"Employment, working conditions, pay, workplace discrimination, business support, benefits",29
-Employment,This is a description of the Employment page. Source to be decided.,T2,Work,Employment,,,30
-Participation in the labour market,This is a description of the Participation in the labour market page. Source to be decided.,T3,Work,Employment,Participation in the labour market,,31
-Graduate outcomes,This is a description of the Graduate outcomes page. Source to be decided.,T3,Work,Employment,Graduate outcomes,,32
-Reasons for inactivity,This is a description of the Reasons for inactivity page. Source to be decided.,T3,Work,Employment,Reasons for inactivity,,33
-Pay & conditions,This is a description of the Pay & conditions page. Source to be decided.,T2,Work,Pay & conditions,,,34
-Occupations,This is a description of the Occupations page. Source to be decided.,T3,Work,Pay & conditions,Occupations,,35
-Income,This is a description of the Income page. Source to be decided.,T3,Work,Pay & conditions,Income,,36
-Low pay,This is a description of the Low pay page. Source to be decided.,T3,Work,Pay & conditions,Low pay,,37
-Temporary employment,This is a description of the Temporary employment page. Source to be decided.,T3,Work,Pay & conditions,Temporary employment,,38
-Zero Hours contracts,This is a description of the Zero Hours contracts page. Source to be decided.,T3,Work,Pay & conditions,Zero Hours contracts,,39
-Minimum wage,This is a description of the Minimum wage page. Source to be decided.,T3,Work,Pay & conditions,Minimum wage,,40
-Benefits,This is a description of the Benefits page. Source to be decided.,T2,Work,Benefits,,,41
-Benefit claims,This is a description of the Benefit claims page. Source to be decided.,T3,Work,Benefits,Benefit claims,,42
-Child maintenance,This is a description of the Child maintenance page. Source to be decided.,T3,Work,Benefits,Child maintenance,,43
-Benefit fraud,This is a description of the Benefit fraud page. Source to be decided.,T3,Work,Benefits,Benefit fraud,,44
-Discrimination,This is a description of the Discrimination page. Source to be decided.,T2,Work,Discrimination,,,45
-Discrimination at work,This is a description of the Discrimination at work page. Source to be decided.,T3,Work,Discrimination,Discrimination at work,,46
-Employment tribunals,This is a description of the Employment tribunals page. Source to be decided.,T3,Work,Discrimination,Employment tribunals,,47
-Government support,This is a description of the Government support page. Source to be decided.,T2,Work,Government support,,,48
-Start-ups'; small business owners; entrepreneurs,This is a description of the Start-ups'; small business owners; entrepreneurs page. Source to be decided.,T3,Work,Government support,Start-ups'; small business owners; entrepreneurs,,49
-Start up loans,This is a description of the Start up loans page. Source to be decided.,T3,Work,Government support,Start up loans,,50
-Customer satisfaction with frontline services,This is a description of the Customer satisfaction with frontline services page. Source to be decided.,T3,Work,Government support,Customer satisfaction with frontline services,,51
-Representation,This is a description of the Representation page. Source to be decided.,T2,Work,Representation,,,52
-Diversity at work,This is a description of the Diversity at work page. Source to be decided.,T3,Work,Representation,Diversity at work,,53
-Housing & Living standards,"Compare how housing and living standards differ across people from different backgrounds, depending on their race, location and other factors.",T1,Housing & Living standards,,,"Ownership, renting, social housing, homelessness, living conditions, poverty",54
-Home ownership,This is a description of the Home ownership page. Source to be decided.,T2,Housing & Living standards,Home ownership,,,55
-Access to home ownership,This is a description of the Access to home ownership page. Source to be decided.,T3,Housing & Living standards,Home ownership,Access to home ownership,,56
-Access to mortgages,This is a description of the Access to mortgages page. Source to be decided.,T3,Housing & Living standards,Home ownership,Access to mortgages,,57
-Financial help from parents to buy home,This is a description of the Financial help from parents to buy home page. Source to be decided.,T3,Housing & Living standards,Home ownership,Financial help from parents to buy home,,58
-Mortgage arrears,This is a description of the Mortgage arrears page. Source to be decided.,T3,Housing & Living standards,Home ownership,Mortgage arrears,,59
-Repossessions,This is a description of the Repossessions page. Source to be decided.,T3,Housing & Living standards,Home ownership,Repossessions,,60
-Home ownership,This is a description of the Home ownership page. Source to be decided.,T3,Housing & Living standards,Home ownership,Home ownership,,61
-Housing Conditions & Quality,This is a description of the Housing Conditions & Quality page. Source to be decided.,T2,Housing & Living standards,Housing Conditions & Quality,,,62
-Non-decent; poor quality; damp; overcrowded;under occupied housing,This is a description of the Non-decent; poor quality; damp; overcrowded;under occupied housing page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Non-decent; poor quality; damp; overcrowded;under occupied housing,,63
-Home repairs,This is a description of the Home repairs page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Home repairs,,64
-Energy efficient homes,This is a description of the Energy efficient homes page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Energy efficient homes,,65
-Household energy costs,This is a description of the Household energy costs page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Household energy costs,,66
-Smoke alarms,This is a description of the Smoke alarms page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Smoke alarms,,67
-Fires at home,This is a description of the Fires at home page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Fires at home,,68
-Social & Affordable Housing,"Affordable housing is social rented, affordable rented and intermediate housing, provided to eligible households whose needs are not met by the market. Eligibility is determined with regard to local incomes and local house prices. ",T2,Housing & Living standards,Social & Affordable Housing,,,69
-Access to social housing,Local councils and housing associations provide affordable housing _ often to people on a low income or who need extra support. Each council and housing association has its own rules based on housing need. ,T3,Housing & Living standards,Social & Affordable Housing,Access to social housing,,70
-Length of tenure,This is a description of the Length of tenure page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Length of tenure,,71
-Social housing waiting list,This is a description of the Social housing waiting list page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Social housing waiting list,,72
-Succession rights,This is a description of the Succession rights page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Succession rights,,73
-Rent & rent arrears,This is a description of the Rent & rent arrears page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Rent & rent arrears,,74
-Right to buy; Right to acquire,This is a description of the Right to buy; Right to acquire page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Right to buy; Right to acquire,,75
-Social & Affordable Housing,"Affordable housing is social rented, affordable rented and intermediate housing, provided to eligible households whose needs are not met by the market. Eligibility is determined with regard to local incomes and local house prices. ",T3,Housing & Living standards,Social & Affordable Housing,Social & Affordable Housing,,76
-Satisfaction with home,This is a description of the Satisfaction with home page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Satisfaction with home,,77
-Evictions,This is a description of the Evictions page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Evictions,,78
-Housing Benefit,This is a description of the Housing Benefit page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Housing Benefit,,79
-Private renting,This is a description of the Private renting page. Source to be decided.,T2,Housing & Living standards,Private renting,,,80
-Access to private rented sector,This is a description of the Access to private rented sector page. Source to be decided.,T3,Housing & Living standards,Private renting,Access to private rented sector,,81
-Rent & rent arrears,This is a description of the Rent & rent arrears page. Source to be decided.,T3,Housing & Living standards,Private renting,Rent & rent arrears,,82
-Secure tenancies,This is a description of the Secure tenancies page. Source to be decided.,T3,Housing & Living standards,Private renting,Secure tenancies,,83
-Agency fees,This is a description of the Agency fees page. Source to be decided.,T3,Housing & Living standards,Private renting,Agency fees,,84
-Protected deposit schemes,This is a description of the Protected deposit schemes page. Source to be decided.,T3,Housing & Living standards,Private renting,Protected deposit schemes,,85
-Satisfaction with home,This is a description of the Satisfaction with home page. Source to be decided.,T3,Housing & Living standards,Private renting,Satisfaction with home,,86
-Evictions,This is a description of the Evictions page. Source to be decided.,T3,Housing & Living standards,Private renting,Evictions,,87
-Landlords,This is a description of the Landlords page. Source to be decided.,T3,Housing & Living standards,Private renting,Landlords,,88
-Homelessness & Rough Sleeping,This is a description of the Homelessness & Rough Sleeping page. Source to be decided.,T2,Housing & Living standards,Homelessness & Rough Sleeping,,,89
-Homelessness & Rough Sleeping,This is a description of the Homelessness & Rough Sleeping page. Source to be decided.,T3,Housing & Living standards,Homelessness & Rough Sleeping,Homelessness & Rough Sleeping,,90
-Poverty & Deprivation,This is a description of the Poverty & Deprivation page. Source to be decided.,T2,Housing & Living standards,Poverty & Deprivation,,,91
-Savings & Assets,This is a description of the Savings & Assets page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,Savings & Assets,,92
-State & Private pensions,This is a description of the State & Private pensions page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,State & Private pensions,,93
-Car ownership,This is a description of the Car ownership page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,Car ownership,,94
-Travel,This is a description of the Travel page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,Travel,,95
-Internet,This is a description of the Internet page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,Internet,,96
-Deprivation,This is a description of the Deprivation page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,Deprivation,,97
-Health & Social Care,"Physical and mental health, preventing illness, quality of care, access to treatment",T1,Health & Social Care,,,"Physical and mental health, preventing illness, quality of care, access to treatment",98
-Physical & Mental Health (morbidity),This is a description of the Physical & Mental Health (morbidity) page. Source to be decided.,T2,Health & Social Care,Physical & Mental Health (morbidity),,,99
-"Cancer, cardiovascular disease, mental health","This is a description of the Cancer, cardiovascular disease, mental health page. Source to be decided.",T3,Health & Social Care,Physical & Mental Health (morbidity),"Cancer, cardiovascular disease, mental health",,100
-Preventing illness,This is a description of the Preventing illness page. Source to be decided.,T2,Health & Social Care,Preventing illness,,,101
-Immunisations,This is a description of the Immunisations page. Source to be decided.,T3,Health & Social Care,Preventing illness,Immunisations,,102
-GP & Dentist registrations,This is a description of the GP & Dentist registrations page. Source to be decided.,T3,Health & Social Care,Preventing illness,GP & Dentist registrations,,103
-Exercise & Activity,This is a description of the Exercise & Activity page. Source to be decided.,T3,Health & Social Care,Preventing illness,Exercise & Activity,,104
-Obesity,This is a description of the Obesity page. Source to be decided.,T3,Health & Social Care,Preventing illness,Obesity,,105
-Smoking,This is a description of the Smoking page. Source to be decided.,T3,Health & Social Care,Preventing illness,Smoking,,106
-Alcohol & Drugs,This is a description of the Alcohol & Drugs page. Source to be decided.,T3,Health & Social Care,Preventing illness,Alcohol & Drugs,,107
-Sexual Health,This is a description of the Sexual Health page. Source to be decided.,T3,Health & Social Care,Preventing illness,Sexual Health,,108
-Health Eating,This is a description of the Health Eating page. Source to be decided.,T3,Health & Social Care,Preventing illness,Health Eating,,109
-Quality of care,This is a description of the Quality of care page. Source to be decided.,T2,Health & Social Care,Quality of care,,,110
-Quality of care,This is a description of the Quality of care page. Source to be decided.,T3,Health & Social Care,Quality of care,Quality of care,,111
-Access to treatment,This is a description of the Access to treatment page. Source to be decided.,T2,Health & Social Care,Access to treatment,,,112
-Access to treatment,This is a description of the Access to treatment page. Source to be decided.,T3,Health & Social Care,Access to treatment,Access to treatment,,113
-Patient experiences,This is a description of the Patient experiences page. Source to be decided.,T2,Health & Social Care,Patient experiences,,,114
-Amputations,This is a description of the Amputations page. Source to be decided.,T3,Health & Social Care,Patient experiences,Amputations,,115
-Patient outcomes,This is a description of the Patient outcomes page. Source to be decided.,T2,Health & Social Care,Patient outcomes,,,116
-Cause of death,This is a description of the Cause of death page. Source to be decided.,T3,Health & Social Care,Patient outcomes,Cause of death,,117
-Infant mortality,This is a description of the Infant mortality page. Source to be decided.,T3,Health & Social Care,Patient outcomes,Infant mortality,,118
-Child deaths,This is a description of the Child deaths page. Source to be decided.,T3,Health & Social Care,Patient outcomes,Child deaths,,119
-Life expectancy,This is a description of the Life expectancy page. Source to be decided.,T3,Health & Social Care,Patient outcomes,Life expectancy,,120
-NHS workforce,This is a description of the NHS workforce page. Source to be decided.,T2,Health & Social Care,NHS workforce,,,121
-Workforce,This is a description of the Workforce page. Source to be decided.,T3,Health & Social Care,NHS workforce,Workforce,,122
-Security & Justice,"Criminal justice system, crimes, police, customs, defence",T1,Security & Justice,,,"Criminal justice system, crimes, police, customs, defence",123
-Criminal Justice System,This is a description of the Criminal Justice System page. Source to be decided.,T2,Security & Justice,Criminal Justice System,,,124
-Convictions,This is a description of the Convictions page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Convictions,,125
-Legal aid,This is a description of the Legal aid page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Legal aid,,126
-Custody remands,This is a description of the Custody remands page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Custody remands,,127
-Release on Temporary Licence,This is a description of the Release on Temporary Licence page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Release on Temporary Licence,,128
-Releases,This is a description of the Releases page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Releases,,129
-Violence in prison,This is a description of the Violence in prison page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Violence in prison,,130
-Deaths in custody; prison,This is a description of the Deaths in custody; prison page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Deaths in custody; prison,,131
-Self-harm in custody; prison,This is a description of the Self-harm in custody; prison page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Self-harm in custody; prison,,132
-Rehabilitation in prison,This is a description of the Rehabilitation in prison page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Rehabilitation in prison,,133
-Reoffending,This is a description of the Reoffending page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Reoffending,,134
-Offences,This is a description of the Offences page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Offences,,135
-Assaults in custody,This is a description of the Assaults in custody page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Assaults in custody,,136
-Use of force or restraint incident,This is a description of the Use of force or restraint incident page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Use of force or restraint incident,,137
-Prison staff,This is a description of the Prison staff page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Prison staff,,138
-Justice staff,This is a description of the Justice staff page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Justice staff,,139
-Crimes,This is a description of the Crimes page. Source to be decided.,T2,Security & Justice,Crimes,,,140
-Victims of crime,This is a description of the Victims of crime page. Source to be decided.,T3,Security & Justice,Crimes,Victims of crime,,141
-Fear of crime,This is a description of the Fear of crime page. Source to be decided.,T3,Security & Justice,Crimes,Fear of crime,,142
-Homicide,This is a description of the Homicide page. Source to be decided.,T3,Security & Justice,Crimes,Homicide,,143
-Arrests,This is a description of the Arrests page. Source to be decided.,T3,Security & Justice,Crimes,Arrests,,144
-Hate crime,This is a description of the Hate crime page. Source to be decided.,T3,Security & Justice,Crimes,Hate crime,,145
-Police,This is a description of the Police page. Source to be decided.,T2,Security & Justice,Police,,,146
-Confidence in police,This is a description of the Confidence in police page. Source to be decided.,T3,Security & Justice,Police,Confidence in police,,147
-Stop & Search,This is a description of the Stop & Search page. Source to be decided.,T3,Security & Justice,Police,Stop & Search,,148
-Mental Health Act detentions,This is a description of the Mental Health Act detentions page. Source to be decided.,T3,Security & Justice,Police,Mental Health Act detentions,,149
-Tasers,This is a description of the Tasers page. Source to be decided.,T3,Security & Justice,Police,Tasers,,150
-Deaths in custody; prison,This is a description of the Deaths in custody; prison page. Source to be decided.,T3,Security & Justice,Police,Deaths in custody; prison,,151
-"Use of force, restraint","This is a description of the Use of force, restraint page. Source to be decided.",T3,Security & Justice,Police,"Use of force, restraint",,152
-Workforce,This is a description of the Workforce page. Source to be decided.,T3,Security & Justice,Police,Workforce,,153
-Customs,This is a description of the Customs page. Source to be decided.,T2,Security & Justice,Customs,,,154
-Passports,This is a description of the Passports page. Source to be decided.,T3,Security & Justice,Customs,Passports,,155
-Airport security,This is a description of the Airport security page. Source to be decided.,T3,Security & Justice,Customs,Airport security,,156
-Defence,This is a description of the Defence page. Source to be decided.,T2,Security & Justice,Defence,,,157
-Workforce,This is a description of the Workforce page. Source to be decided.,T3,Security & Justice,Defence,Workforce,,158
-"Participation, representation & private life","Culture, media, communities, environment, civic action, wellbeing",T1,"Participation, representation & private life",,,"Culture, media, communities, environment, civic action, wellbeing",159
-Representation,This is a description of the Representation page. Source to be decided.,T2,"Participation, representation & private life",Representation,,,160
-Civil service,This is a description of the Civil service page. Source to be decided.,T3,"Participation, representation & private life",Representation,Civil service,,161
-"MPs, peers","This is a description of the MPs, peers page. Source to be decided.",T3,"Participation, representation & private life",Representation,"MPs, peers",,162
-Culture and the media,This is a description of the Culture and the media page. Source to be decided.,T2,"Participation, representation & private life",Culture and the media,,,163
-Representation in the media,This is a description of the Representation in the media page. Source to be decided.,T3,"Participation, representation & private life",Culture and the media,Representation in the media,,164
-Culture & heritage,This is a description of the Culture & heritage page. Source to be decided.,T3,"Participation, representation & private life",Culture and the media,Culture & heritage,,165
-Communications,This is a description of the Communications page. Source to be decided.,T3,"Participation, representation & private life",Culture and the media,Communications,,166
-Communities and the environment,This is a description of the Communities and the environment page. Source to be decided.,T2,"Participation, representation & private life",Communities and the environment,,,167
-Natural environment,This is a description of the Natural environment page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Natural environment,,168
-Belonging,This is a description of the Belonging page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Belonging,,169
-Integration,This is a description of the Integration page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Integration,,170
-Influencing decisions,This is a description of the Influencing decisions page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Influencing decisions,,171
-Life satisfaction,This is a description of the Life satisfaction page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Life satisfaction,,172
-Neighbourhood,This is a description of the Neighbourhood page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Neighbourhood,,173
-Air quality,This is a description of the Air quality page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Air quality,,174
-Flood risk,This is a description of the Flood risk page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Flood risk,,175
-Waste sites,This is a description of the Waste sites page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Waste sites,,176
-COCivic action,This is a description of the COCivic action page. Source to be decided.,T2,"Participation, representation & private life",COCivic action,,,177
-Civic activism,This is a description of the Civic activism page. Source to be decided.,T3,"Participation, representation & private life",COCivic action,Civic activism,,178
-Volunteering,This is a description of the Volunteering page. Source to be decided.,T3,"Participation, representation & private life",COCivic action,Volunteering,,179
-Social Action,This is a description of the Social Action page. Source to be decided.,T3,"Participation, representation & private life",COCivic action,Social Action,,180
-Neighbourhood action,This is a description of the Neighbourhood action page. Source to be decided.,T3,"Participation, representation & private life",COCivic action,Neighbourhood action,,181
-Well-being,This is a description of the Well-being page. Source to be decided.,T2,"Participation, representation & private life",Well-being,,,182
-Life satisfaction,This is a description of the Life satisfaction page. Source to be decided.,T3,"Participation, representation & private life",Well-being,Life satisfaction,,183
+Name,Description,Level,T1,T2,T3,Subtitle
+Homepage,The Race Disparity Unit homepage,T0,,,,
+Education,"Admissions, grades, opportunities, exclusions and student progress",T1,Education,,,"Admissions, grades, opportunities, exclusions and student progress"
+Schools and colleges,This data has been provided by the Department for Education. Read theæfurther information and guidanceæabout how this data is reported and to help you analyse it.,T2,Education,Schools and colleges,,
+Early years outcomes,This data has been provided by the Department for Education. Read theæfurther information and guidanceæabout how this data is reported and to help you analyse it.,T3,Education,Schools and colleges,Early years outcomes,
+Admissions,This data has been provided by the Department for Education. Read theæfurther information and guidanceæabout how this data is reported and to help you analyse it.,T3,Education,Schools and colleges,Admissions,
+Results and student progress,This data has been provided by the Department for Education. Read theæfurther information and guidanceæabout how this data is reported and to help you analyse it.,T3,Education,Schools and colleges,Results and student progress,
+Absence and exclusions,This data has been provided by the Department for Education. Read theæfurther information and guidanceæabout how this data is reported and to help you analyse it.,T3,Education,Schools and colleges,Absence and exclusions,
+Special needs,This data has been provided by the Department for Education. Read theæfurther information and guidanceæabout how this data is reported and to help you analyse it.,T3,Education,Schools and colleges,Special needs,
+Higher education and adult education,"Information provided by HESA - Higher Education Statistics Agency - who collect, process and publish data about higher education (HE) in the UK.",T2,Education,Higher education and adult education,,
+Applications and admissions,"Information provided by HESA - Higher Education Statistics Agency - who collect, process and publish data about higher education (HE) in the UK.",T3,Education,Higher education and adult education,Applications and admissions,
+Results and student progress,"Information provided by HESA - Higher Education Statistics Agency - who collect, process and publish data about higher education (HE) in the UK.",T3,Education,Higher education and adult education,Results and student progress,
+Adults in education,"Information provided by HESA - Higher Education Statistics Agency - who collect, process and publish data about higher education (HE) in the UK.",T3,Education,Higher education and adult education,Adults in education,
+Destinations after education,"Find out what students do after their GCSEs, A-levels and degrees; where do students go after leaving school, college or university",T2,Education,Destinations after education,,
+After GCSEs,"Find out what students do after their GCSEs, A-levels and degrees; where do students go after leaving school, college or university",T3,Education,Destinations after education,After GCSEs,
+After A-levels,"Find out what students do after their GCSEs, A-levels and degrees; where do students go after leaving school, college or university",T3,Education,Destinations after education,After A-levels,
+After university,"Find out what students do after their GCSEs, A-levels and degrees; where do students go after leaving school, college or university",T3,Education,Destinations after education,After university,
+Employment rates after leaving education,"Find out what students do after their GCSEs, A-levels and degrees; where do students go after leaving school, college or university",T3,Education,Destinations after education,Employment rates after leaving education,
+"Young people not in education, employment or training","Find out what students do after their GCSEs, A-levels and degrees; where do students go after leaving school, college or university",T3,Education,Destinations after education,"Young people not in education, employment or training",
+Work,"Employment, working conditions, pay, workplace discrimination, business support, benefits",T1,Work,,,"Employment, working conditions, pay, workplace discrimination, business support, benefits"
+Employment,This is a description of the Employment page. Source to be decided.,T2,Work,Employment,,
+Participation in the labour market,This is a description of the Participation in the labour market page. Source to be decided.,T3,Work,Employment,Participation in the labour market,
+Graduate outcomes,This is a description of the Graduate outcomes page. Source to be decided.,T3,Work,Employment,Graduate outcomes,
+Reasons for inactivity,This is a description of the Reasons for inactivity page. Source to be decided.,T3,Work,Employment,Reasons for inactivity,
+Pay & conditions,This is a description of the Pay & conditions page. Source to be decided.,T2,Work,Pay & conditions,,
+Occupations,This is a description of the Occupations page. Source to be decided.,T3,Work,Pay & conditions,Occupations,
+Income,This is a description of the Income page. Source to be decided.,T3,Work,Pay & conditions,Income,
+Low pay,This is a description of the Low pay page. Source to be decided.,T3,Work,Pay & conditions,Low pay,
+Temporary employment,This is a description of the Temporary employment page. Source to be decided.,T3,Work,Pay & conditions,Temporary employment,
+Zero Hours contracts,This is a description of the Zero Hours contracts page. Source to be decided.,T3,Work,Pay & conditions,Zero Hours contracts,
+Minimum wage,This is a description of the Minimum wage page. Source to be decided.,T3,Work,Pay & conditions,Minimum wage,
+Benefits,This is a description of the Benefits page. Source to be decided.,T2,Work,Benefits,,
+Benefit claims,This is a description of the Benefit claims page. Source to be decided.,T3,Work,Benefits,Benefit claims,
+Child maintenance,This is a description of the Child maintenance page. Source to be decided.,T3,Work,Benefits,Child maintenance,
+Benefit fraud,This is a description of the Benefit fraud page. Source to be decided.,T3,Work,Benefits,Benefit fraud,
+Discrimination,This is a description of the Discrimination page. Source to be decided.,T2,Work,Discrimination,,
+Discrimination at work,This is a description of the Discrimination at work page. Source to be decided.,T3,Work,Discrimination,Discrimination at work,
+Employment tribunals,This is a description of the Employment tribunals page. Source to be decided.,T3,Work,Discrimination,Employment tribunals,
+Government support,This is a description of the Government support page. Source to be decided.,T2,Work,Government support,,
+Start-ups'; small business owners; entrepreneurs,This is a description of the Start-ups'; small business owners; entrepreneurs page. Source to be decided.,T3,Work,Government support,Start-ups'; small business owners; entrepreneurs,
+Start up loans,This is a description of the Start up loans page. Source to be decided.,T3,Work,Government support,Start up loans,
+Customer satisfaction with frontline services,This is a description of the Customer satisfaction with frontline services page. Source to be decided.,T3,Work,Government support,Customer satisfaction with frontline services,
+Representation,This is a description of the Representation page. Source to be decided.,T2,Work,Representation,,
+Diversity at work,This is a description of the Diversity at work page. Source to be decided.,T3,Work,Representation,Diversity at work,
+Housing & Living standards,"Compare how housing and living standards differ across people from different backgrounds, depending on their race, location and other factors.",T1,Housing & Living standards,,,"Ownership, renting, social housing, homelessness, living conditions, poverty"
+Home ownership,This is a description of the Home ownership page. Source to be decided.,T2,Housing & Living standards,Home ownership,,
+Access to home ownership,This is a description of the Access to home ownership page. Source to be decided.,T3,Housing & Living standards,Home ownership,Access to home ownership,
+Access to mortgages,This is a description of the Access to mortgages page. Source to be decided.,T3,Housing & Living standards,Home ownership,Access to mortgages,
+Financial help from parents to buy home,This is a description of the Financial help from parents to buy home page. Source to be decided.,T3,Housing & Living standards,Home ownership,Financial help from parents to buy home,
+Mortgage arrears,This is a description of the Mortgage arrears page. Source to be decided.,T3,Housing & Living standards,Home ownership,Mortgage arrears,
+Repossessions,This is a description of the Repossessions page. Source to be decided.,T3,Housing & Living standards,Home ownership,Repossessions,
+Home ownership,This is a description of the Home ownership page. Source to be decided.,T3,Housing & Living standards,Home ownership,Home ownership,
+Housing Conditions & Quality,This is a description of the Housing Conditions & Quality page. Source to be decided.,T2,Housing & Living standards,Housing Conditions & Quality,,
+Non-decent; poor quality; damp; overcrowded;under occupied housing,This is a description of the Non-decent; poor quality; damp; overcrowded;under occupied housing page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Non-decent; poor quality; damp; overcrowded;under occupied housing,
+Home repairs,This is a description of the Home repairs page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Home repairs,
+Energy efficient homes,This is a description of the Energy efficient homes page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Energy efficient homes,
+Household energy costs,This is a description of the Household energy costs page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Household energy costs,
+Smoke alarms,This is a description of the Smoke alarms page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Smoke alarms,
+Fires at home,This is a description of the Fires at home page. Source to be decided.,T3,Housing & Living standards,Housing Conditions & Quality,Fires at home,
+Social & Affordable Housing,"Affordable housing is social rented, affordable rented and intermediate housing, provided to eligible households whose needs are not met by the market. Eligibility is determined with regard to local incomes and local house prices. ",T2,Housing & Living standards,Social & Affordable Housing,,
+Access to social housing,Local councils and housing associations provide affordable housing _ often to people on a low income or who need extra support. Each council and housing association has its own rules based on housing need. ,T3,Housing & Living standards,Social & Affordable Housing,Access to social housing,
+Length of tenure,This is a description of the Length of tenure page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Length of tenure,
+Social housing waiting list,This is a description of the Social housing waiting list page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Social housing waiting list,
+Succession rights,This is a description of the Succession rights page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Succession rights,
+Rent & rent arrears,This is a description of the Rent & rent arrears page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Rent & rent arrears,
+Right to buy; Right to acquire,This is a description of the Right to buy; Right to acquire page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Right to buy; Right to acquire,
+Social & Affordable Housing,"Affordable housing is social rented, affordable rented and intermediate housing, provided to eligible households whose needs are not met by the market. Eligibility is determined with regard to local incomes and local house prices. ",T3,Housing & Living standards,Social & Affordable Housing,Social & Affordable Housing,
+Satisfaction with home,This is a description of the Satisfaction with home page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Satisfaction with home,
+Evictions,This is a description of the Evictions page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Evictions,
+Housing Benefit,This is a description of the Housing Benefit page. Source to be decided.,T3,Housing & Living standards,Social & Affordable Housing,Housing Benefit,
+Private renting,This is a description of the Private renting page. Source to be decided.,T2,Housing & Living standards,Private renting,,
+Access to private rented sector,This is a description of the Access to private rented sector page. Source to be decided.,T3,Housing & Living standards,Private renting,Access to private rented sector,
+Rent & rent arrears,This is a description of the Rent & rent arrears page. Source to be decided.,T3,Housing & Living standards,Private renting,Rent & rent arrears,
+Secure tenancies,This is a description of the Secure tenancies page. Source to be decided.,T3,Housing & Living standards,Private renting,Secure tenancies,
+Agency fees,This is a description of the Agency fees page. Source to be decided.,T3,Housing & Living standards,Private renting,Agency fees,
+Protected deposit schemes,This is a description of the Protected deposit schemes page. Source to be decided.,T3,Housing & Living standards,Private renting,Protected deposit schemes,
+Satisfaction with home,This is a description of the Satisfaction with home page. Source to be decided.,T3,Housing & Living standards,Private renting,Satisfaction with home,
+Evictions,This is a description of the Evictions page. Source to be decided.,T3,Housing & Living standards,Private renting,Evictions,
+Landlords,This is a description of the Landlords page. Source to be decided.,T3,Housing & Living standards,Private renting,Landlords,
+Homelessness & Rough Sleeping,This is a description of the Homelessness & Rough Sleeping page. Source to be decided.,T2,Housing & Living standards,Homelessness & Rough Sleeping,,
+Homelessness & Rough Sleeping,This is a description of the Homelessness & Rough Sleeping page. Source to be decided.,T3,Housing & Living standards,Homelessness & Rough Sleeping,Homelessness & Rough Sleeping,
+Poverty & Deprivation,This is a description of the Poverty & Deprivation page. Source to be decided.,T2,Housing & Living standards,Poverty & Deprivation,,
+Savings & Assets,This is a description of the Savings & Assets page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,Savings & Assets,
+State & Private pensions,This is a description of the State & Private pensions page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,State & Private pensions,
+Car ownership,This is a description of the Car ownership page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,Car ownership,
+Travel,This is a description of the Travel page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,Travel,
+Internet,This is a description of the Internet page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,Internet,
+Deprivation,This is a description of the Deprivation page. Source to be decided.,T3,Housing & Living standards,Poverty & Deprivation,Deprivation,
+Health & Social Care,"Physical and mental health, preventing illness, quality of care, access to treatment",T1,Health & Social Care,,,"Physical and mental health, preventing illness, quality of care, access to treatment"
+Physical and mental health,General listing - some of which pulled from Quality and Outcomes Framework (QOF) - 2013-14.,T2,Health & Social Care,Physical and mental health,,
+Flu,This is a description of the Flu page,T3,Health & Social Care,Physical and mental health,Flu,
+Norovirus and rotavirus,This is a description of the Norovirus and rotavirus page,T3,Health & Social Care,Physical and mental health,Norovirus and rotavirus,
+Cancer,This is a description of the Cancer page,T3,Health & Social Care,Physical and mental health,Cancer,
+Cardiovascular disease,This is a description of the Cardiovascular disease page,T3,Health & Social Care,Physical and mental health,Cardiovascular disease,
+Strokes,This is a description of the Strokes page,T3,Health & Social Care,Physical and mental health,Strokes,
+Respiratory conditions,This is a description of the Respiratory conditions page,T3,Health & Social Care,Physical and mental health,Respiratory conditions,
+Kidney disease,This is a description of the Kidney disease page,T3,Health & Social Care,Physical and mental health,Kidney disease,
+Diabetes,This is a description of the Diabetes page,T3,Health & Social Care,Physical and mental health,Diabetes,
+Hypothyroidism,This is a description of the Hypothyroidism page,T3,Health & Social Care,Physical and mental health,Hypothyroidism,
+Palliative care,This is a description of the Palliative care page,T3,Health & Social Care,Physical and mental health,Palliative care,
+Osteoporosis,This is a description of the Osteoporosis page,T3,Health & Social Care,Physical and mental health,Osteoporosis,
+Rheumatoid arthritis,This is a description of the Rheumatoid arthritis page,T3,Health & Social Care,Physical and mental health,Rheumatoid arthritis,
+Dementia,This is a description of the Dementia page,T3,Health & Social Care,Physical and mental health,Dementia,
+Depression,This is a description of the Depression page,T3,Health & Social Care,Physical and mental health,Depression,
+Epilepsy,This is a description of the Epilepsy page,T3,Health & Social Care,Physical and mental health,Epilepsy,
+Learning disabilities,This is a description of the Learning disabilities page,T3,Health & Social Care,Physical and mental health,Learning disabilities,
+Mental health,This is a description of the Mental health page,T3,Health & Social Care,Physical and mental health,Mental health,
+Preventing illness,Data relating to staying healthy and common health issues in the UK.,T2,Health & Social Care,Preventing illness,,
+Vaccinations,This is a description of the Vaccinations page,T3,Health & Social Care,Preventing illness,Vaccinations,
+Dentist check ups,This is a description of the Dentist check ups page,T3,Health & Social Care,Preventing illness,Dentist check ups,
+Activity and exercise,This is a description of the Activity and exercise page,T3,Health & Social Care,Preventing illness,Activity and exercise,
+Healthy eating,This is a description of the Healthy eating page,T3,Health & Social Care,Preventing illness,Healthy eating,
+Obesity,This is a description of the Obesity page,T3,Health & Social Care,Preventing illness,Obesity,
+Smoking,This is a description of the Smoking page,T3,Health & Social Care,Preventing illness,Smoking,
+Alcohol misuse,This is a description of the Alcohol misuse page,T3,Health & Social Care,Preventing illness,Alcohol misuse,
+Drug misuse,This is a description of the Drug misuse page,T3,Health & Social Care,Preventing illness,Drug misuse,
+Alcohol and drug related deaths,This is a description of the Alcohol and drug related deaths page,T3,Health & Social Care,Preventing illness,Alcohol and drug related deaths,
+Sexually transmitted infections (STIs),This is a description of the Sexually transmitted infections (STIs) page,T3,Health & Social Care,Preventing illness,Sexually transmitted infections (STIs),
+Contraception,This is a description of the Contraception page,T3,Health & Social Care,Preventing illness,Contraception,
+Quality of care,This is a description of the Quality of care page,T2,Health & Social Care,Quality of care,,
+Complaints received by health and social care trusts,This is a description of the Complaints received by health and social care trusts page,T3,Health & Social Care,Quality of care,Complaints received by health and social care trusts,
+Clinical and social care negligence,This is a description of the Clinical and social care negligence page,T3,Health & Social Care,Quality of care,Clinical and social care negligence,
+Emergency care waiting times,This is a description of the Emergency care waiting times page,T3,Health & Social Care,Quality of care,Emergency care waiting times,
+Ambulance quality indicators,This is a description of the Ambulance quality indicators page,T3,Health & Social Care,Quality of care,Ambulance quality indicators,
+GP patient survey care quality,This is a description of the GP patient survey care quality page,T3,Health & Social Care,Quality of care,GP patient survey care quality,
+Access to treatment,This is a description of the Access to treatment page,T2,Health & Social Care,Access to treatment,,
+Local doctors (GP),This is a description of the Local doctors (GP) page,T3,Health & Social Care,Access to treatment,Local doctors (GP),
+Hospital admissions,This is a description of the Hospital admissions page,T3,Health & Social Care,Access to treatment,Hospital admissions,
+Psychological therapies,This is a description of the Psychological therapies page,T3,Health & Social Care,Access to treatment,Psychological therapies,
+NHS health checks,This is a description of the NHS health checks page,T3,Health & Social Care,Access to treatment,NHS health checks,
+Dentist registrations,This is a description of the Dentist registrations page,T3,Health & Social Care,Access to treatment,Dentist registrations,
+Vaccinations,This is a description of the Vaccinations page,T3,Health & Social Care,Access to treatment,Vaccinations,
+Child immunisations,This is a description of the Child immunisations page,T3,Health & Social Care,Access to treatment,Child immunisations,
+Sexually transmitted infections (STIs) services,This is a description of the Sexually transmitted infections (STIs) services page,T3,Health & Social Care,Access to treatment,Sexually transmitted infections (STIs) services,
+Patient experiences,This is a description of the Patient experiences page,T2,Health & Social Care,Patient experiences,,
+GP surgeries overall,This is a description of the GP surgeries overall page,T3,Health & Social Care,Patient experiences,GP surgeries overall,
+Online services,This is a description of the Online services page,T3,Health & Social Care,Patient experiences,Online services,
+Making an appointment,This is a description of the Making an appointment page,T3,Health & Social Care,Patient experiences,Making an appointment,
+Planning care,This is a description of the Planning care page,T3,Health & Social Care,Patient experiences,Planning care,
+Opening times,This is a description of the Opening times page,T3,Health & Social Care,Patient experiences,Opening times,
+Mental health service availability,This is a description of the Mental health service availability page,T3,Health & Social Care,Patient experiences,Mental health service availability,
+Health and social care workers,This is a description of the Health and social care workers page,T3,Health & Social Care,Patient experiences,Health and social care workers,
+Patient outcomes,This is a description of the Patient outcomes page,T2,Health & Social Care,Patient outcomes,,
+Life expectancy,This is a description of the Life expectancy page,T3,Health & Social Care,Patient outcomes,Life expectancy,
+Cause of death,This is a description of the Cause of death page,T3,Health & Social Care,Patient outcomes,Cause of death,
+Infant deaths,This is a description of the Infant deaths page,T3,Health & Social Care,Patient outcomes,Infant deaths,
+Under 18 conceptions,This is a description of the Under 18 conceptions page,T3,Health & Social Care,Patient outcomes,Under 18 conceptions,
+Treatment results (e.g. operation impacts quality of life),This is a description of the Treatment results (e.g. operation impacts quality of life) page,T3,Health & Social Care,Patient outcomes,Treatment results (e.g. operation impacts quality of life),
+Security & Justice,"Criminal justice system, crimes, police, customs, defence",T1,Security & Justice,,,"Criminal justice system, crimes, police, customs, defence"
+Criminal Justice System,This is a description of the Criminal Justice System page. Source to be decided.,T2,Security & Justice,Criminal Justice System,,
+Convictions,This is a description of the Convictions page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Convictions,
+Legal aid,This is a description of the Legal aid page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Legal aid,
+Custody remands,This is a description of the Custody remands page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Custody remands,
+Release on Temporary Licence,This is a description of the Release on Temporary Licence page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Release on Temporary Licence,
+Releases,This is a description of the Releases page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Releases,
+Violence in prison,This is a description of the Violence in prison page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Violence in prison,
+Deaths in custody; prison,This is a description of the Deaths in custody; prison page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Deaths in custody; prison,
+Self-harm in custody; prison,This is a description of the Self-harm in custody; prison page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Self-harm in custody; prison,
+Rehabilitation in prison,This is a description of the Rehabilitation in prison page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Rehabilitation in prison,
+Reoffending,This is a description of the Reoffending page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Reoffending,
+Offences,This is a description of the Offences page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Offences,
+Assaults in custody,This is a description of the Assaults in custody page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Assaults in custody,
+Use of force or restraint incident,This is a description of the Use of force or restraint incident page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Use of force or restraint incident,
+Prison staff,This is a description of the Prison staff page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Prison staff,
+Justice staff,This is a description of the Justice staff page. Source to be decided.,T3,Security & Justice,Criminal Justice System,Justice staff,
+Crimes,This is a description of the Crimes page. Source to be decided.,T2,Security & Justice,Crimes,,
+Victims of crime,This is a description of the Victims of crime page. Source to be decided.,T3,Security & Justice,Crimes,Victims of crime,
+Fear of crime,This is a description of the Fear of crime page. Source to be decided.,T3,Security & Justice,Crimes,Fear of crime,
+Homicide,This is a description of the Homicide page. Source to be decided.,T3,Security & Justice,Crimes,Homicide,
+Arrests,This is a description of the Arrests page. Source to be decided.,T3,Security & Justice,Crimes,Arrests,
+Hate crime,This is a description of the Hate crime page. Source to be decided.,T3,Security & Justice,Crimes,Hate crime,
+Police,This is a description of the Police page. Source to be decided.,T2,Security & Justice,Police,,
+Confidence in police,This is a description of the Confidence in police page. Source to be decided.,T3,Security & Justice,Police,Confidence in police,
+Stop & Search,This is a description of the Stop & Search page. Source to be decided.,T3,Security & Justice,Police,Stop & Search,
+Mental Health Act detentions,This is a description of the Mental Health Act detentions page. Source to be decided.,T3,Security & Justice,Police,Mental Health Act detentions,
+Tasers,This is a description of the Tasers page. Source to be decided.,T3,Security & Justice,Police,Tasers,
+Deaths in custody; prison,This is a description of the Deaths in custody; prison page. Source to be decided.,T3,Security & Justice,Police,Deaths in custody; prison,
+"Use of force, restraint","This is a description of the Use of force, restraint page. Source to be decided.",T3,Security & Justice,Police,"Use of force, restraint",
+Workforce,This is a description of the Workforce page. Source to be decided.,T3,Security & Justice,Police,Workforce,
+Customs,This is a description of the Customs page. Source to be decided.,T2,Security & Justice,Customs,,
+Passports,This is a description of the Passports page. Source to be decided.,T3,Security & Justice,Customs,Passports,
+Airport security,This is a description of the Airport security page. Source to be decided.,T3,Security & Justice,Customs,Airport security,
+Defence,This is a description of the Defence page. Source to be decided.,T2,Security & Justice,Defence,,
+Workforce,This is a description of the Workforce page. Source to be decided.,T3,Security & Justice,Defence,Workforce,
+"Participation, representation & private life","Culture, media, communities, environment, civic action, wellbeing",T1,"Participation, representation & private life",,,"Culture, media, communities, environment, civic action, wellbeing"
+Representation,This is a description of the Representation page. Source to be decided.,T2,"Participation, representation & private life",Representation,,
+Civil service,This is a description of the Civil service page. Source to be decided.,T3,"Participation, representation & private life",Representation,Civil service,
+"MPs, peers","This is a description of the MPs, peers page. Source to be decided.",T3,"Participation, representation & private life",Representation,"MPs, peers",
+Culture and the media,This is a description of the Culture and the media page. Source to be decided.,T2,"Participation, representation & private life",Culture and the media,,
+Representation in the media,This is a description of the Representation in the media page. Source to be decided.,T3,"Participation, representation & private life",Culture and the media,Representation in the media,
+Culture & heritage,This is a description of the Culture & heritage page. Source to be decided.,T3,"Participation, representation & private life",Culture and the media,Culture & heritage,
+Communications,This is a description of the Communications page. Source to be decided.,T3,"Participation, representation & private life",Culture and the media,Communications,
+Communities and the environment,This is a description of the Communities and the environment page. Source to be decided.,T2,"Participation, representation & private life",Communities and the environment,,
+Natural environment,This is a description of the Natural environment page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Natural environment,
+Belonging,This is a description of the Belonging page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Belonging,
+Integration,This is a description of the Integration page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Integration,
+Influencing decisions,This is a description of the Influencing decisions page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Influencing decisions,
+Life satisfaction,This is a description of the Life satisfaction page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Life satisfaction,
+Neighbourhood,This is a description of the Neighbourhood page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Neighbourhood,
+Air quality,This is a description of the Air quality page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Air quality,
+Flood risk,This is a description of the Flood risk page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Flood risk,
+Waste sites,This is a description of the Waste sites page. Source to be decided.,T3,"Participation, representation & private life",Communities and the environment,Waste sites,
+COCivic action,This is a description of the COCivic action page. Source to be decided.,T2,"Participation, representation & private life",COCivic action,,
+Civic activism,This is a description of the Civic activism page. Source to be decided.,T3,"Participation, representation & private life",COCivic action,Civic activism,
+Volunteering,This is a description of the Volunteering page. Source to be decided.,T3,"Participation, representation & private life",COCivic action,Volunteering,
+Social Action,This is a description of the Social Action page. Source to be decided.,T3,"Participation, representation & private life",COCivic action,Social Action,
+Neighbourhood action,This is a description of the Neighbourhood action page. Source to be decided.,T3,"Participation, representation & private life",COCivic action,Neighbourhood action,
+Well-being,This is a description of the Well-being page. Source to be decided.,T2,"Participation, representation & private life",Well-being,,
+Life satisfaction,This is a description of the Life satisfaction page. Source to be decided.,T3,"Participation, representation & private life",Well-being,Life satisfaction,
