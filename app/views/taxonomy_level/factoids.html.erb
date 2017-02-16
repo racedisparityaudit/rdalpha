@@ -1,107 +1,109 @@
-<main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-whole">
-      <h1 class = heading-xlarge>
-        Showing disparity data for "<%= @filter.titleize%>"
-      </h1>
+<div class="grid-row">
+  <div class="column-whole">
+    <h1 class = heading-xlarge>
+      Race disparity in the public sector
+    </h1>
+    <div class=heading-medium>
+      You selected: <%= @filter.titleize%>
     </div>
   </div>
-  <div class = "grid-row">
-    <div class = "column-third">
+</div>
+<div class = "grid-row">
+  <div class = "column-third">
 
+    <div class="options-container" id="">
+      Select a sub group:
+      <ul class="list">
+
+
+          <li> <a href="black-caribbean">Black Caribbean </a></li>
+
+          <li><a href="black-african">Black African </a></li>
+
+          <li> <a href="other"> Black Other</a></li>
+
+      </ul>
+
+
+      <br>
+    </div>
+    <div>
+      Select group:
+      <ul class="list">
+        <li> <a href="white"> White </a></li>
+        <li> <a href="black"> Black </a></li>
+        <li> <a href="asian"> Asian </a></li>
+        <li> <a href="mixed"> Mixed</a></li>
+        <li> <a href="other"> Other </a></li>
+      </ul>
+    </div>
+
+    <div class="govuk-option-select js-collapsible">
+      <span class="js-container-head" type="button" aria-expanded="false" aria-controls="">
+        <div class="option-select-label">Topic</div>
+        <div class="js-selected-counter"></div>
+      </span>
       <div class="options-container" id="">
-        Select a sub group:
-        <ul class="list">
+        <div class="js-auto-height-inner">
 
-
-            <li> <a href="black-caribbean">Black Caribbean </a></li>
-
-            <li><a href="black-african">Black African </a></li>
-
-            <li> <a href="other"> Black Other</a></li>
-
-        </ul>
-
-
-        <br>
-      </div>
-      <div>
-        Select another group:
-        <ul class="list">
-          <li> <a href="white"> White </a></li>
-          <li> <a href="black"> Black </a></li>
-          <li> <a href="asian"> Asian </a></li>
-          <li> <a href="mixed"> Mixed</a></li>
-          <li> <a href="other"> Other </a></li>
-        </ul>
-      </div>
-
-      <div class="govuk-option-select js-collapsible">
-        <span class="js-container-head" type="button" aria-expanded="false" aria-controls="">
-          <div class="option-select-label">Topic</div>
-          <div class="js-selected-counter"></div>
-        </span>
-        <div class="options-container" id="">
-          <div class="js-auto-height-inner">
-
-            <% TaxonomyLevel.topic_level.each do |t| %>
-              <label for="<%= t.name %>">
-                <input name="<%= t.name %>" value="true" id="<%= t.name %>" type="checkbox" aria-controls="">
-                <%= t.name.titleize %>
-              </label>
-            <% end %>
-          </div>
+          <% TaxonomyLevel.topic_level.each do |t| %>
+            <label for="<%= t.name %>">
+              <input name="<%= t.name %>" value="true" id="<%= t.name %>" type="checkbox" aria-controls="">
+              <%= t.name.titleize %>
+            </label>
+          <% end %>
         </div>
       </div>
-
-      <button class="button" id="#filter-button"> Filter </button>
-      <br>
-      <br>
-
-
     </div>
 
-    <div class="column-two-thirds">
-      <div class= "factoid-list">
-        <ul class = "list">
-          <% @factoids.each do |f| %>
-            <div class="row-container <%= f.top_level_parent.name %> ">
-              <div class="grid-row">
-                <div class="column-whole">
-                  <div class="factoid-question">
-                    <a href="/<%= f.name %>"><li> <h3 class="heading-medium"><%= f.description %></h3></li></a>
-                  </div>
+    <button class="button" id="#filter-button"> Filter </button>
+    <br>
+    <br>
 
-                  <div class="factoid-result factoid-header">
-                    Result for "<%= @filter.titleize%>"
-                  </div>
 
-                  <div class="factoid-result factoid-header">
-                    National Average
-                  </div>
+  </div>
+
+  <div class="column-two-thirds">
+
+    <div class= "factoid-list">
+      <ul class = "list">
+        <% @factoids.each do |f| %>
+          <div class="row-container <%= f.top_level_parent.name %> ">
+            <div class="grid-row">
+              <div class="column-whole">
+                <div class="factoid-question">
+                  <a href="/<%= f.name %>"><li> <h3 class="heading-medium"><%= f.description %></h3></li></a>
+                </div>
+
+                <div class="factoid-result factoid-header">
+                  <%= @filter.titleize %>
+                </div>
+
+                <div class="factoid-result factoid-header">
+                  National Average
                 </div>
               </div>
-
-              <div class="grid-row">
-                <div class="column-whole">
-                  <div class="row-description" >
-                     <%= f.subtitle %>
-                  </div>
-
-                  <div class="factoid-result">
-                     <%= f.group_average(@filter) %>
-                  </div>
-
-                  <div class="factoid-result">
-                     <%= f.national_average %>
-                  </div>
-                </div>
-              </div>
-
             </div>
-          <% end %>
-        </ul>
-      </div>
+
+            <div class="grid-row">
+              <div class="column-whole">
+                <div class="row-description" >
+                   <%= f.subtitle %>
+                </div>
+
+                <div class="factoid-result">
+                   <%= f.group_average(@filter) %>
+                </div>
+
+                <div class="factoid-result">
+                   <%= f.national_average %>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        <% end %>
+      </ul>
     </div>
   </div>
-</main>
+</div>

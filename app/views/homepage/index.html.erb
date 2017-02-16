@@ -1,117 +1,114 @@
-
-<main id="content" role="main">
-
-  <div class = "grid-row">
-    <div class= "column-whole">
-      <div class="heading-xlarge">
-       <h1> Race disparity in the public sector </h1>
-      </div>
-
-      <p>
-        Government departments measure how people from different races experience and access public services.
-      </p>
-
-      <p>
-        This data will help to reflect the realities of people living in the UK, and feed into policy issues relating to race equality.
-      </p>
-
-      <p>
-        You can use this data to learn more about how government works, carry out research or build applications and services. Where possible, other influences such as location, age, socioeconomic status and gender are also provided.
-      </p>
+<div class = "grid-row">
+  <div class= "column-whole">
+    <div class="heading-xlarge">
+     <h1> Race disparity in the public sector </h1>
     </div>
+
+    <p>
+      Government departments measure how people from different races experience and access public services.
+    </p>
+
+    <p>
+      This data will help to reflect the realities of people living in the UK, and feed into policy issues relating to race equality.
+    </p>
+
+    <p>
+      You can use this data to learn more about how government works, carry out research or build applications and services. Where possible, other influences such as location, age, socioeconomic status and gender are also provided.
+    </p>
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-whole">
+    <h2 class= "heading-medium"> Select a Race </h2>
+  </div>
+</div>
+
+<div class="grid-row race-radios-container">
+  <div class="column-whole">
+    <form class="form-group">
+
+      <fieldset>
+
+        <legend class="visually-hidden">Where do you live?</legend>
+
+        <label class="block-label selection-button-radio" for="radio-1">
+          <input id="radio-1" type="radio" name="radio-group" value="White">
+          White
+        </label>
+        <label class="block-label selection-button-radio" for="radio-2">
+          <input id="radio-2" type="radio" name="radio-group" value="Black">
+          Black
+        </label>
+
+        <label class="block-label selection-button-radio" for="radio-3">
+          <input id="radio-4" type="radio" name="radio-group" value="Asian">
+          Asian
+        </label>
+
+        <label class="block-label selection-button-radio" for="radio-3">
+          <input id="radio-5" type="radio" name="radio-group" value="Mixed">
+          Mixed
+        </label>
+
+        <label class="block-label selection-button-radio" for="radio-3">
+          <input id="radio-6" type="radio" name="radio-group" value="Other">
+          Other
+        </label>
+
+      </fieldset>
+    </form>
+  </div>
+  <div class="column-whole">
+    <!-- TODO really hacky fix this its not a form its just a link -->
+    <a href="/factoids/black" class="button"> Browse </a>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-whole">
+    <h2 class= "heading-medium"> Browse by Topic</h2>
+  </div>
+</div>
+<div class="grid-row">
+
+
+  <div class = "column-third">
+    <ul class="list list-bullet">
+
+        <li><a href = "/education">Education</a></li>
+        <p>Admissions, grades, opportunities, exclusions and student progress</p>
+
+        <li><a href="/work">Work</a></li>
+        <p> Employment, working conditions, pay, workplace discrimination, business support, benefits</p>
+    </ul>
   </div>
 
+  <div class = "column-third">
+    <ul class="list list-bullet">
 
-  <div class="grid-row">
-    <div class="column-whole">
-      <h2 class= "heading-medium"> Select a Race </h2>
-    </div>
+        <li><a href = "/housing%20%26%20living%20standards">Housing and Living Standards</a></li>
+        <p> Ownership, renting, social housing, homelessness, living conditions, poverty</p>
+
+
+        <li><a href="/health%20%26%20social%20care">Health and social care</a></li>
+        <p> Physical and mental health, preventing illness, quality of care, access to treatment</p>
+
+    </ul>
   </div>
 
-  <div class="grid-row race-radios-container">
-    <div class="column-one-half">
-      <form class="form-group">
+  <div class = "column-third">
+    <ul class="list list-bullet">
 
-        <fieldset>
+        <li><a href = "/security%20%26%20justice">Security and justice</a></li>
+        <p>Criminal justice system, crimes, police, customs, defence</p>
 
-          <legend class="visually-hidden">Where do you live?</legend>
+        <li><a href="/<%= URI::escape("participation, representation & private life")%>">Participation, representation and private life</a></li>
+        <p> Culture, media, communities, environment, civic action, wellbeing  </p>
 
-          <label class="block-label selection-button-radio" for="radio-1">
-            <input id="radio-1" type="radio" name="radio-group" value="White">
-            White
-          </label>
-          <label class="block-label selection-button-radio" for="radio-2">
-            <input id="radio-2" type="radio" name="radio-group" value="Black">
-            Black
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-3">
-            <input id="radio-4" type="radio" name="radio-group" value="Asian">
-            Asian
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-3">
-            <input id="radio-5" type="radio" name="radio-group" value="Mixed">
-            Mixed
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-3">
-            <input id="radio-6" type="radio" name="radio-group" value="Other">
-            Other
-          </label>
-
-        </fieldset>
-      </form>
-    </div>
-    <div class="column-one-half">
-      <!-- TODO really hacky fix this its not a form its just a link -->
-      <a href="/factoids/black" class="button"> Browse</a>
-    </div>
-
+    </ul>
   </div>
+</div>
 
-  <div class="grid-row">
-    <div class="column-whole">
-      <h2 class= "heading-medium"> Browse by Topic</h2>
-    </div>
-  </div>
-  <div class="grid-row">
-
-
-    <div class = "column-third">
-      <ul class="list list-bullet">
-
-          <li><a href = "/education">Education</a></li>
-          <p>Admissions, grades, opportunities, exclusions and student progress</p>
-
-          <li><a href="/work">Work</a></li>
-          <p> Employment, working conditions, pay, workplace discrimination, business support, benefits</p>
-      </ul>
-    </div>
-
-    <div class = "column-third">
-      <ul class="list list-bullet">
-
-          <li><a href = "/housing%20%26%20living%20standards">Housing and Living Standards</a></li>
-          <p> Ownership, renting, social housing, homelessness, living conditions, poverty</p>
-
-
-          <li><a href="/health%20%26%20social%20care">Health and social care</a></li>
-          <p> Physical and mental health, preventing illness, quality of care, access to treatment</p>
-
-      </ul>
-    </div>
-
-    <div class = "column-third">
-      <ul class="list list-bullet">
-
-          <li><a href = "/security%20%26%20justice">Security and justice</a></li>
-          <p>Criminal justice system, crimes, police, customs, defence</p>
-
-          <li><a href="/<%= URI::escape("participation, representation & private life")%>">Participation, representation and private life</a></li>
-          <p> Culture, media, communities, environment, civic action, wellbeing  </p>
-
-      </ul>
-    </div>
-  </div>
-</main>

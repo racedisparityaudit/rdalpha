@@ -67,9 +67,16 @@
     <%= yield :after_header %>
 
     <div id="global-header-bar"></div>
+    <main id="content" role="main">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">ALPHA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
 
-    <%= content_for?(:content) ? yield(:content) : yield %>
-
+      <%= content_for?(:content) ? yield(:content) : yield %>
+    </main>
     <footer class="group js-footer" id="footer" role="contentinfo">
 
       <div class="footer-wrapper">
