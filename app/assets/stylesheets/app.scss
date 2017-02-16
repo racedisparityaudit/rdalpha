@@ -78,13 +78,14 @@
 }
 
 .factoid-question {
-  width: 60%;
+  width: 100%;
   float: left;
 }
 
 .factoid-result {
   width: 20%;
   float: left;
+  text-align:right;
 }
 
 .list {
@@ -93,8 +94,9 @@
 
 .row-container {
   .row-description {
-    width:100%;
+    width:60%;
     text-align:left;
+    float:left;
   }
 
 }

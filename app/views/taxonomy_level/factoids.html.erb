@@ -65,22 +65,29 @@
           <% @factoids.each do |f| %>
             <div class="row-container <%= f.top_level_parent.name %> ">
               <div class="grid-row">
-              <div class="factoid-question">
-               <a href="/<%= f.name %>"><li> <%= f.description %>
-               </li></a>
-               </div>
-               <div class="factoid-result">
-                  <%= f.black_average %>
-               </div>
-               <div class="factoid-result">
-                  <%= f.national_average %>
-               </div>
-               </div>
-               <div class="grid-row">
-               <div class="row-description" %>
-                  <%= f.subtitle %>
-               </div>
-               </div>
+                <div class="column-whole">
+                  <div class="factoid-question">
+                    <a href="/<%= f.name %>"><li> <h3 class="heading-medium"><%= f.description %></h3></li></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid-row">
+                <div class="column-whole">
+                  <div class="row-description" >
+                     <%= f.subtitle %>
+                  </div>
+
+                  <div class="factoid-result">
+                     <%= f.black_average %>
+                  </div>
+
+                  <div class="factoid-result">
+                     <%= f.national_average %>
+                  </div>
+                </div>
+              </div>
+
             </div>
           <% end %>
         </ul>

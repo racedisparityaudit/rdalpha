@@ -55,7 +55,7 @@ class TaxonomyLevel < ApplicationRecord
   end
 
   def subtitle
-    self[:subtitle] || "some description text"
+    self[:subtitle] || "Description unavailable."
   end
 
   def national_average
