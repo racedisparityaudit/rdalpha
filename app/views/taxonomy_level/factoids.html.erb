@@ -18,8 +18,21 @@
 
             <li><a href="black-african">Black African </a></li>
 
-            <li> <a href="other">Other</a></li>
+            <li> <a href="other"> Black Other</a></li>
 
+        </ul>
+
+
+        <br>
+      </div>
+      <div>
+        Select another group:
+        <ul class="list">
+          <li> <a href="white"> White </a></li>
+          <li> <a href="black"> Black </a></li>
+          <li> <a href="asian"> Asian </a></li>
+          <li> <a href="mixed"> Mixed</a></li>
+          <li> <a href="other"> Other </a></li>
         </ul>
       </div>
 
@@ -60,7 +73,7 @@
                   </div>
 
                   <div class="factoid-result factoid-header">
-                    Result for group
+                    Result for "<%= @filter.titleize%>"
                   </div>
 
                   <div class="factoid-result factoid-header">
@@ -76,7 +89,7 @@
                   </div>
 
                   <div class="factoid-result">
-                     <%= f.black_average %>
+                     <%= f.group_average(@filter) %>
                   </div>
 
                   <div class="factoid-result">

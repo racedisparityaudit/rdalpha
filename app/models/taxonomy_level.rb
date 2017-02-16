@@ -68,6 +68,12 @@ class TaxonomyLevel < ApplicationRecord
     display_encode(black)
   end
 
+  def group_average(group)
+    sym = group.downcase.to_sym
+    return "-" unless respond_to?(sym) && send(sym)
+    display_encode(send(sym))
+  end
+
   def display_name
     name.titleize
   end
