@@ -1,9 +1,20 @@
 class TaxonomyLevelController < ApplicationController
+  FILLED_OUT_URIS = [
+     "/education/schoolsandcolleges/resultsandstudentprogress/attainment8",
+     "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16"
+  ]
 
   def show
     @taxonomy_level = TaxonomyLevel.find_by_name(params[:taxonomy_name])
     if @taxonomy_level.metric_level?
-      @taxonomy_level.uri ==  "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16" ? render('question') : render('missing')
+      case @taxonomy_level.uri
+      when "/education/schoolsandcolleges/resultsandstudentprogress/attainment8"
+        render("attainment8")
+      when "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16"
+        render('question')
+      else
+        render('missing')
+      end
     else
       # TODO: KASM fix logic so there are never any loops
       @topics  = TaxonomyLevel.find_by_name(params[:taxonomy_name]).taxonomy_levels

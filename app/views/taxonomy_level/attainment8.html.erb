@@ -1,0 +1,84 @@
+<div class="breadcrumbs">
+  <ol>
+    <% @taxonomy_level.breadcrumbs.reverse.each do |crumb| %>
+      <% if crumb != "homepage" %>
+        <li> <a href="/<%=crumb%>"><%=crumb.titleize%></a></li>
+      <% else %>
+        <li> <a href = "/"> Homepage </a> </li>
+      <% end %>
+    <% end %>
+  </ol>
+</div>
+
+<h1 class="heading-large"> How do students perform in their 8 best GCSEs?</h1>
+
+<p class="lede">
+  Attainment 8 measures a student's average grade across eight subjects. This new measure is designed to prioritise the importance of English and Mathematics and encourage schools to offer a broad, well-balanced curriculum.
+</p>
+
+<p class="lede">
+  Attainment 8 values are calculated from a combination of student GCSE scores where A* = 8, A = 7, B = 6, C = 5, and so on.
+</p>
+
+<p class="lede">
+This data is published by the Department for Education.</p>
+
+<p> <a href="http://www.gov.uk">Download data in csv or xls format</a> for all of England or a local authority.</p>
+
+<p>Read the <a href="#">further information and guidance </a>about the data in the tables.
+</p>
+
+<div class="grid-row question-tabs">
+  <ul>
+    <li id="ethnicity-selector"><a href="#ethnicity-section"> All </a></li>
+    <li id="age-selector"><a href="#age-section"> Household Age </a></li>
+    <li id="nationality-selector"><a href="#nationality-section"> Nationality </a></li>
+    <li id="income-selector"><a href="#income-section"> Income </a></li>
+    <li id="region-selector"><a href="#region-section"> Region </a></li>
+  </ul>
+</div>
+
+<div class="grid-row graph-section" id="ethnicity-section">
+  <div class="column-one-half question-graph">
+    <img src="/assets/images/ChartByRace.png" alt="">
+  </div>
+  <div class="column-one-half question-graph">
+    <img src="/assets/images/TableByRace.png" alt="">
+  </div>
+</div>
+
+<div class="grid-row graph-section" id="age-section">
+  <div class="column-one-half question-graph">
+    <img src="/assets/images/ChartByHouseholdAge.png" alt="">
+  </div>
+  <div class="column-one-half question-graph">
+    <img src="/assets/images/TableByHouseholdAge.png" alt="">
+  </div>
+</div>
+
+<div class="grid-row graph-section" id="income-section">
+  <div class="column-one-half question-graph">
+    <img src="/assets/images/ChartByIncome.png" alt="">
+  </div>
+  <div class="column-one-half question-graph">
+    <img src="/assets/images/TableByIncome.png" alt="">
+  </div>
+</div>
+
+<div class="grid-row graph-section" id="nationality-section">
+  <div class="column-one-half question-graph">
+    <img src="/assets/images/ChartByNationality.png" alt="">
+  </div>
+  <div class="column-one-half question-graph">
+    <img src="/assets/images/TableByNationality.png" alt="">
+  </div>
+</div>
+
+<div class="grid-row graph-section" id="region-section">
+  <div class="column-one-half question-graph">
+    <img src="/assets/images/ChartByRegion.png" alt="">
+  </div>
+  <div class="column-one-half question-graph">
+    <img src="/assets/images/TableByRegion.png" alt="">
+  </div>
+</div>
