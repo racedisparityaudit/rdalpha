@@ -24,3 +24,10 @@ function init(){
 
 $(document).ready(init)
 $(document).on('turbolinks:load', init)
+
+function test(){
+  console.log("test")
+}
+
+$(document).ready(test)
+$(document).on('turbolinks:load', test)

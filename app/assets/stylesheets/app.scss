@@ -56,29 +56,19 @@
   }
 }
 
-.factoid-list-header {
-  border: solid 1px $grey-2;
-  margin-bottom: 20px;
-}
 
 .factoid-list {
   .row-container {
-    padding-top: 5px;
+    margin-bottom: 5px;
     border-bottom: solid 1px $grey-2;
   }
 }
-.factoid-question-header {
-  width: 60%;
-  float:left;
-}
-
-.factoid-result-header {
-  width: 20%;
-  float: left;
+.factoid-header {
+  margin-top: 1.875em;
 }
 
 .factoid-question {
-  width: 100%;
+  width: 60%;
   float: left;
 }
 

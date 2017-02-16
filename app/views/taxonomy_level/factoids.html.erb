@@ -49,17 +49,6 @@
     </div>
 
     <div class="column-two-thirds">
-
-      <div class="factoid-list-header">
-        <div class="factoid-question-header"> 200 results found </div>
-        <div class="factoid-result-header">
-            Result for group
-         </div>
-         <div class="factoid-result-header">
-            National average
-         </div>
-      </div>
-
       <div class= "factoid-list">
         <ul class = "list">
           <% @factoids.each do |f| %>
@@ -68,6 +57,14 @@
                 <div class="column-whole">
                   <div class="factoid-question">
                     <a href="/<%= f.name %>"><li> <h3 class="heading-medium"><%= f.description %></h3></li></a>
+                  </div>
+
+                  <div class="factoid-result factoid-header">
+                    Result for group
+                  </div>
+
+                  <div class="factoid-result factoid-header">
+                    National Average
                   </div>
                 </div>
               </div>
