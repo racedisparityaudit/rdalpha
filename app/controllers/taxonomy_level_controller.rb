@@ -19,4 +19,15 @@ class TaxonomyLevelController < ApplicationController
     @filter = params[:filter]
     @factoids = TaxonomyLevel.metrics
   end
+
+  private
+
+  class Factoid
+    attr_reader :question
+
+    def initialize(taxonomy_level)
+      throw RuntimeError unless taxonomy_level.metric_level?
+      @question = taxonomy_level.description
+    end
+  end
 end

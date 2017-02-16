@@ -8,11 +8,26 @@
   </div>
   <div class = "grid-row">
     <div class = "column-third">
+
+      <div class="options-container" id="">
+        Select a sub group:
+        <ul class="list">
+
+
+            <li> <a href="black-caribbean">Black Caribbean </a></li>
+
+            <li><a href="black-african">Black African </a></li>
+
+            <li> <a href="other">Other</a></li>
+
+        </ul>
+      </div>
+
       <div class="govuk-option-select js-collapsible">
-        <button class="js-container-head" type="button" aria-expanded="false" aria-controls="">
+        <span class="js-container-head" type="button" aria-expanded="false" aria-controls="">
           <div class="option-select-label">Topic</div>
           <div class="js-selected-counter"></div>
-        </button>
+        </span>
         <div class="options-container" id="">
           <div class="js-auto-height-inner">
 
@@ -29,31 +44,14 @@
       <button class="button" id="#filter-button"> Filter </button>
       <br>
       <br>
-      <div class="govuk-option-select js-collapsible">
-        <button class="js-container-head" type="button" aria-expanded="false" aria-controls="">
-          <div class="option-select-label">Black</div>
-          <div class="js-selected-counter"></div>
-        </button>
 
-        <div class="options-container" id="">
-          <div class="js-auto-height-inner">
-
-                All
-
-                Black Caribbean
-
-                Black African
-
-          </div>
-        </div>
-      </div>
 
     </div>
 
     <div class="column-two-thirds">
 
       <div class="factoid-list-header">
-        <div class="factoid-question-header"> Metric </div>
+        <div class="factoid-question-header"> 200 results found </div>
         <div class="factoid-result-header">
             Result for group
          </div>
@@ -65,16 +63,25 @@
       <div class= "factoid-list">
         <ul class = "list">
           <% @factoids.each do |f| %>
-          <div class="factoid-question <%= f.top_level_parent.name %>">
-           <a href="/<%= f.name %>"><li> <%= f.description %>
-           </li></a>
-           </div>
-           <div class="factoid-result">
-              52%
-           </div>
-           <div class="factoid-result">
-              51%
-           </div>
+            <div class="row-container <%= f.top_level_parent.name %> ">
+              <div class="grid-row">
+              <div class="factoid-question">
+               <a href="/<%= f.name %>"><li> <%= f.description %>
+               </li></a>
+               </div>
+               <div class="factoid-result">
+                  <%= f.black_average %>
+               </div>
+               <div class="factoid-result">
+                  <%= f.national_average %>
+               </div>
+               </div>
+               <div class="grid-row">
+               <div class="row-description" %>
+                  <%= f.subtitle %>
+               </div>
+               </div>
+            </div>
           <% end %>
         </ul>
       </div>

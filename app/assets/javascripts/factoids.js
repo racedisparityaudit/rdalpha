@@ -1,15 +1,20 @@
 function init(){
 
-  $("#filter-button").on("click",applyFilters)
 
-  console.log($(".button"))
+  console.log($("button"))
   function applyFilters(e){
-    var selectedTopics = $("input",".options-container").filter(function(e){ return e.checked})
-    console.log(selectedTopics)
-    console.log("called")
+    e.preventDefault()
+    var selectedTopics = $("input",".options-container").filter(function(i,e){ return e.checked})
+    $('.row-container').hide()
+      selectedTopics.each(function(i,topic){
+        console.log(topic)
+      var klass = "." + topic.name.split(" ")[0]
+      $(klass).show()
+    })
 
   }
 
+  $("button").on("click",applyFilters)
   //TODO remove hack - should just work with frontend toolkit
   $(".selection-button-radio").click(function(e){
     $(".selection-button-radio").removeClass("selected")

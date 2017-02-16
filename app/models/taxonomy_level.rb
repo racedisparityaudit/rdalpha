@@ -9,6 +9,16 @@
 #  parent_id   :integer
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  description :string
+#  uri         :string
+#  source      :string
+#  display     :string
+#  white       :string
+#  mixed       :string
+#  asian       :string
+#  black       :string
+#  chinese     :string
+#  national    :string
 #
 
 class TaxonomyLevel < ApplicationRecord
@@ -16,11 +26,11 @@ class TaxonomyLevel < ApplicationRecord
   belongs_to :taxonomy_level, foreign_key: :parent_id
 
   def self.metrics
-    all.all.select{ |t| t.metric_level?}
+    all.select{ |t| t.metric_level?}
   end
 
   def self.homepage
-    TaxonomyLevel.where(parent_id:nil).first
+    TaxonomyLevel.where(parent_id: nil).first
   end
 
   def self.topic_level
@@ -44,6 +54,20 @@ class TaxonomyLevel < ApplicationRecord
     parent_name == "homepage"
   end
 
+  def subtitle
+    self[:subtitle] || "some description text"
+  end
+
+  def national_average
+    return "-" unless national
+    display_encode(national)
+  end
+
+  def black_average
+    return "-" unless black
+    display_encode(black)
+  end
+
   def display_name
     name.titleize
   end
@@ -54,6 +78,18 @@ class TaxonomyLevel < ApplicationRecord
 
   def parent_name
     taxonomy_level.name
+  end
+
+  private
+
+  def display_encode(number_string)
+    # TODO: awful it gets confused because of use of keyword
+    if self[:display] == "percent"
+      # binding.pry
+      (number_string.to_d * 100).round(1).to_s + " %"
+    else
+      number_string.to_d.round(2).to_s
+    end
   end
 
 end

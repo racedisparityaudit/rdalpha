@@ -56,6 +56,17 @@
   }
 }
 
+.factoid-list-header {
+  border: solid 1px $grey-2;
+  margin-bottom: 20px;
+}
+
+.factoid-list {
+  .row-container {
+    padding-top: 5px;
+    border-bottom: solid 1px $grey-2;
+  }
+}
 .factoid-question-header {
   width: 60%;
   float:left;
@@ -80,6 +91,13 @@
   list-style: none;
 }
 
+.row-container {
+  .row-description {
+    width:100%;
+    text-align:left;
+  }
+
+}
 .options-container {
   max-height: 180px;
 }
