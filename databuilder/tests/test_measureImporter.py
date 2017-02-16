@@ -1,6 +1,6 @@
 import unittest
 from unittest import TestCase
-from databuilder.taskrunners.data.SimpleMeasureImporter import SimpleMeasureImporter, XYMeasureListImporter
+from databuilder.taskrunners.data.DataImporter import SimpleMeasureImporter, XYMeasureListImporter
 
 class TestMeasureImporter(TestCase):
 

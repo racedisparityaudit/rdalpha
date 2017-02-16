@@ -83,7 +83,6 @@ class TaxonomyImporter(object):
         nodes = []
         with open(self.input_file, 'r') as csvfile:
             csv_reader = csv.reader(csvfile)
-
             for row in csv_reader:
                 uri = Uri(tier_1=row[3],
                           tier_2=row[4],
