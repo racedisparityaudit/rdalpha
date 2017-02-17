@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170216092803) do
+ActiveRecord::Schema.define(version: 20170217164419) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "measure_averages", force: :cascade do |t|
+    t.string   "uri"
+    t.string   "value"
+    t.string   "subgroup_name"
+    t.string   "group_name"
+    t.string   "national_value"
+    t.integer  "taxonomy_level_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
 
   create_table "taxonomy_levels", force: :cascade do |t|
     t.string   "level"
@@ -27,12 +38,6 @@ ActiveRecord::Schema.define(version: 20170216092803) do
     t.string   "source"
     t.string   "display"
     t.string   "subtitle"
-    t.string   "white"
-    t.string   "mixed"
-    t.string   "asian"
-    t.string   "black"
-    t.string   "chinese"
-    t.string   "national"
   end
 
 end

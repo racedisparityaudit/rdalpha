@@ -7,12 +7,32 @@ class TaxonomyImporter
     puts(ENV["IMPORT_PATH"])
     fail ArgumentError.new("import csv does not exist") unless File.exist?(path.to_s)
 
-    csv = CSV.read(path, encoding: "ISO8859-1:utf-8")
-    csv.shift
+    taxonomy_csv = CSV.read(path, encoding: "ISO8859-1:utf-8")
+    taxonomy_csv.shift
 
     TaxonomyLevel.delete_all
 
-    csv.each{ |r| import_row r}
+    taxonomy_csv.each{ |r| import_row r}
+
+    measure_path =  Rails.root.join("./data/output/measure_averages.csv").to_s
+    measure_csv = CSV.read(measure_path, encoding: "ISO8859-1:utf-8")
+    measure_csv.shift
+
+    measure_csv.each{ |r| import_measure_average r }
+  end
+
+  def import_measure_average(csv_row)
+    taxonomy_id  = TaxonomyLevel.find_by_uri(csv_row[0]).id
+    values = {
+       uri:csv_row[0],
+       subgroup_name:csv_row[1],
+       group_name:csv_row[2],
+       value:csv_row[3],
+       national_value:csv_row[4],
+       taxonomy_level_id: taxonomy_id
+
+    }
+    MeasureAverage.create(values)
   end
 
   def import_row(csv_row)
@@ -27,12 +47,7 @@ class TaxonomyImporter
     source = csv_row[6]
     subtitle = csv_row[7]
     _display = csv_row[8]
-    white = csv_row[9]
-    mixed = csv_row[10]
-    asian = csv_row[11]
-    black = csv_row[12]
-    chinese = csv_row[13]
-    national = csv_row[14]
+
 
     parent_id = TaxonomyLevel.find_by_uri(parent_uri).id if parent_uri
 
@@ -43,12 +58,7 @@ class TaxonomyImporter
                          description: description,
                          source: source,
                          display: _display,
-                         subtitle: subtitle,
-                         white: white,
-                         asian: asian,
-                         black: black,
-                         chinese: chinese,
-                         national: national
+                         subtitle: subtitle
                          )
   end
 

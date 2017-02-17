@@ -1,0 +1,2 @@
+class MeasureAverage < ApplicationRecord
+end
