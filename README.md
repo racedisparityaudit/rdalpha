@@ -34,13 +34,27 @@ Set the remote git branch to match your new app
 You should then be able to deploy with :
 
 `git push heroku master`
+or
+`git push heroku [your branch]:master`
 
-
-After a deployment you'll need to run the migrations, this will seed the database
+After a deployment you'll need to run the migrations
 with the relevant taxonomy data in taxonomy.csv which is created by the python app
 and create all of the relevant tables.
 
 `heroku run rails db:migrate`
+
+Next open a rails console
+`heroku run rails c`
+
+Import the database
+`TaxonomyImporter.new.import`
+
+Updating the data
+If you want to update the data after deploy then you can run some commands
+to delete the current taxonomy and reimport taxonomy.csv
+
+`heroku run rails c`
+`TaxonomyImporter.new.import`
 
 There is http basic auth, the credentials for this live in production.rb.
 

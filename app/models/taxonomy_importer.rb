@@ -9,6 +9,9 @@ class TaxonomyImporter
 
     csv = CSV.read(path, encoding: "ISO8859-1:utf-8")
     csv.shift
+
+    TaxonomyLevel.delete_all
+
     csv.each{ |r| import_row r}
   end
 
