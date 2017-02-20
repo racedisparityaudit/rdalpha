@@ -28,6 +28,19 @@ def convert_xy_file_to_cube():
     exporter = DataCSVExporter()
     exporter.export_to_table("data/output/datasets/key_stage_2_table.csv", serieses)
 
+@task()
+def build_t4_page():
+    '''Build a t4 page by combining a file and a series from .'''
+    print('Importing data sheet')
+    importer = XYMeasureListImporter()
+    serieses = importer.import_spreadsheet("data/input/datasets/key_stage_2_2016.csv",
+                                ['REGION_NAME', 'LA_NAME'],
+                                ['Ethnicity'])
+
+    print('Exporting to data/output/ks2')
+    exporter = DataCSVExporter()
+    exporter.export_to_table("data/output/datasets/key_stage_2_table.csv", serieses)
+
 __DEFAULT__=build_input_taxonomy_from_csv
 
 if __name__ == "__main__":
