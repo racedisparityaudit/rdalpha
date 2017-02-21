@@ -18,16 +18,20 @@ Originally published: <%= @presenter.date %>
 <br>
 <br>
 
-<% @presenter.blurb_paragraphs.each do |paragraph| %>
-  <p class="lede">
-    <%= paragraph %>
-  </p>
-<% end %>
 
-<p> <a href="http://www.gov.uk">Download data in csv or xls format</a> for all of England or a local authority.</p>
-
-<p>Read the <a href="#">further information and guidance </a>about the data in the tables.
+<p class="lede">
+ Attainment 8 measures the students’ average grades across eight GCSE or equivalent subjects, which must include English and Mathematics.
 </p>
+
+<p class="lede">
+ Results are calculated from a combination of student grades where A* = 8, A = 7, B = 6, C = 5, and so on. English and Mathematics are double-weighted to prioritise their importance in the national curriculum. Find out more about
+
+  <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/583857/Progress_8_school_performance_measure_Jan_17.pdf">how Attainment 8 is measured.</a>
+</p>
+
+
+
+
 
 <div class="grid-row question-tabs">
   <ul>
@@ -39,7 +43,6 @@ Originally published: <%= @presenter.date %>
 </div>
 
 <div class="grid-row graph-section" id="ethnicity-section">
-  <h3 class="heading-medium"> Student GCSE achievement </h3>
   <div class="column-whole question-graph">
   <div id="container" style="max-width: 800px; height: 600px; margin: 0 auto"></div>
 </div>
@@ -49,7 +52,6 @@ Originally published: <%= @presenter.date %>
 </div>
 
 <div class="graph-section" id="gender-section">
-  <h3 class="heading-medium"> Student GCSE achievement by race grouped by gender </h3>
   <div class="grid-row" >
     <div class="column-whole question-graph">
       <div id="gender-container" style="max-width: 800px; height: 500px; margin: 0 auto"></div>
@@ -58,16 +60,17 @@ Originally published: <%= @presenter.date %>
 </div>
 
 <div class="grid-row graph-section" id="region-section">
-  <h3 class="heading-medium"> Student GCSE achievement by UK region grouped by race  </h3>
   <div class="column-whole question-graph">
       <div id="heatmap-container" style="max-width: 800px; height: 500px; margin: 0 auto"></div>
   </div>
 </div>
 
+<p> <a href="http://www.gov.uk">Download data in csv or xls format</a> for all of England or a local authority.</p>
+
+<p>Read the <a href="#">further information and guidance </a>about the data in the tables.
+</p>
+
 <div class="grid-row">
-  <h3 class="heading-medium">
-    Context
-  </h3>
   <div class="column-whole">
   </div>
 
