@@ -271,11 +271,15 @@ this.point.value +
 }
 
     function drawCharts(){
+        if(!$("#attainment").length) {
+            return
+        }
         console.log("drawing charts");
         drawOverallChartWithSubgroups();
         drawGenderChart();
         drawHeatMap();
     }
+
 
 $(document).ready(drawCharts)
 $(document).on('turbolinks:load', drawCharts)
