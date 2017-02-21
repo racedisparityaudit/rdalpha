@@ -1,8 +1,5 @@
 (function(){
-    function drawCharts(){
-        drawOverallChart();
-        drawGenderChart();
-    }
+
   function drawOverallChart(){
     Highcharts.chart('container', {
         chart: {
@@ -122,6 +119,12 @@
         }]
     });
 }
+
+    function drawCharts(){
+        console.log("drawing charts");
+        drawOverallChart();
+        drawGenderChart();
+    }
 
 $(document).ready(drawCharts)
 }())
