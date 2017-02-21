@@ -16,4 +16,16 @@ class Attainment8
     @json["analysis"]
   end
 
+  def source_title
+    @json["source"]["title"]
+  end
+
+  def source_link
+
+  end
+
+  def date
+    @json["date"]
+  end
+
 end
