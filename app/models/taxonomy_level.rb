@@ -13,17 +13,13 @@
 #  uri         :string
 #  source      :string
 #  display     :string
-#  white       :string
-#  mixed       :string
-#  asian       :string
-#  black       :string
-#  chinese     :string
-#  national    :string
+#  subtitle    :string
 #
 
 class TaxonomyLevel < ApplicationRecord
   has_many :taxonomy_levels, foreign_key: :parent_id
   belongs_to :taxonomy_level, foreign_key: :parent_id
+  has_many :measure_averages
 
   def self.metrics
     all.select{ |t| t.metric_level?}
@@ -59,19 +55,20 @@ class TaxonomyLevel < ApplicationRecord
   end
 
   def national_average
+
     return "-" unless national
     display_encode(national)
   end
 
-  def black_average
-    return "-" unless black
-    display_encode(black)
+  def national
+    return nil unless measure_averages.any?
+    measure_averages.first.display_national
   end
 
   def group_average(group)
-    sym = group.downcase.to_sym
-    return "-" unless respond_to?(sym) && send(sym)
-    display_encode(send(sym))
+
+    return "-" unless number =  measure_average_for(group).try(:display_value)
+    display_encode(number)
   end
 
   def display_name
@@ -88,7 +85,12 @@ class TaxonomyLevel < ApplicationRecord
 
   private
 
+  def measure_average_for(group)
+    measure_averages.select{ |a| a.subgroup_name.downcase == group.downcase }.first
+  end
+
   def display_encode(number_string)
+
     # TODO: awful it gets confused because of use of keyword
     if self[:display] == "percent"
       # binding.pry
