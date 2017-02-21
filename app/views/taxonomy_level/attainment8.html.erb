@@ -12,11 +12,18 @@
 
 <h1 class="heading-large"> How do students perform in their 8 best GCSEs?</h1>
 
-Source: <%= @presenter.source_title %>
-<br>
-Originally published: <%= @presenter.date %>
-<br>
-<br>
+<div class="grid-row">
+  <div class="column-whole">
+    <div class="govuk-metadata">
+      <dl>
+        <dt> From:</dt> <dd><a href="<%= @presenter.source_link %>">
+        <%= @presenter.source_title %></a></dd>
+        <dt>First Published: </dt> <dd><%= @presenter.date %></dd>
+        <dt>Last Updated: </dt> <dd><%= @presenter.date %></dd>
+      </dl>
+    </div>
+  </div>
+</div>
 
 
 <p class="lede">

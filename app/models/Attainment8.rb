@@ -21,7 +21,7 @@ class Attainment8
   end
 
   def source_link
-
+    @json["source"]["link"]
   end
 
   def date
