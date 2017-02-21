@@ -120,10 +120,75 @@
     });
 }
 
+function drawHeatMap() {
+
+Highcharts.chart('heatmap-container', {
+
+    chart: {
+        type: 'heatmap',
+        marginTop: 40,
+        marginBottom: 80,
+        plotBorderWidth: 1
+    },
+
+
+    title: {
+        text: 'GCSE Average Grade by Race and Region'
+    },
+
+    xAxis: {
+        categories: ['White', 'Black', 'Asian', 'Mixed', 'Other', 'All']
+    },
+
+    yAxis: {
+        categories: ['North East', 'North West', 'Yorkshire and the Humber', 'East Midlands', 'West Midlands', 'East', 'London', 'Inner London', 'Outer London', 'South East', 'South West', 'England'],
+        title: null
+    },
+
+    colorAxis: {
+        stops: [
+            [0, '#f26c43'],
+            [0.4, '#ffffff'],
+            [1.8, '#5ca0ff']
+        ],
+        min: 4
+    },
+
+    legend: {
+        align: 'right',
+        layout: 'vertical',
+        margin: 0,
+        verticalAlign: 'top',
+        y: 25,
+        symbolHeight: 280
+    },
+
+    tooltip: {
+        formatter: function () {
+            return '<b>' + this.series.xAxis.categories[this.point.x] + '</b> in <b>' + this.series.yAxis.categories[this.point.y] + '</b><br\>' +
+this.point.value +
+'</b> average <br>';
+        }
+    },
+
+    series: [{
+        name: 'Sales per employee',
+        borderWidth: 1,
+        data: [[0, 0, 4.86], [1, 0, 5.23], [2, 0, 5.31], [3, 0, 5.1], [4, 0, 6.12], [5, 0, 4.87], [0, 1, 4.92], [1, 1, 4.95], [2, 1, 5.12], [3, 1, 4.86], [4, 1, 6.19], [5, 1, 4.94], [0, 2, 4.92], [1, 2, 4.81], [2, 2, 4.77], [3, 2, 4.67], [4, 2, 6.31], [5, 2, 4.89], [0, 3, 4.86], [1, 3, 4.84], [2, 3, 5.21], [3, 3, 4.75], [4, 3, 6.12], [5, 3, 4.89], [0, 4, 4.9], [1, 4, 4.85], [2, 4, 5.08], [3, 4, 4.75], [4, 4, 6.13], [5, 4, 4.92], [0, 5, 5], [1, 5, 5.08], [2, 5, 5.37], [3, 5, 5.19], [4, 5, 6.23], [5, 5, 5.04], [0, 6, 5.17], [1, 6, 5.2], [2, 6, 5.58], [3, 6, 4.92], [4, 6, 6.44], [5, 6, 5.19], [0, 7, 5.21], [1, 7, 5.1], [2, 7, 5.35], [3, 7, 4.87], [4, 7, 6.34], [5, 7, 5.13], [0, 8, 5.16], [1, 8, 5.26], [2, 8, 5.7], [3, 8, 4.96], [4, 8, 6.48], [5, 8, 5.23], [0, 9, 5.07], [1, 9, 5.21], [2, 9, 5.56], [3, 9, 4.96], [4, 9, 6.41], [5, 9, 5.1], [0, 10, 5.02], [1, 10, 5.13], [2, 10, 5.42], [3, 10, 4.46], [4, 10, 6.24], [5, 10, 5.03], [0, 11, 4.98], [1, 11, 5.06], [2, 11, 5.29], [3, 11, 4.89], [4, 11, 6.3], [5, 11, 5.01]],
+        dataLabels: {
+            enabled: true,
+            color: '#000000'
+        }
+    }]
+
+});
+}
+
     function drawCharts(){
         console.log("drawing charts");
         drawOverallChart();
         drawGenderChart();
+        drawHeatMap();
     }
 
 $(document).ready(drawCharts)
