@@ -4,6 +4,10 @@ class Attainment8
     @json = JSON.parse(File.read(Rails.root.join("./data/input/tier_4_attainment8.json")))
   end
 
+  def title
+    @json["title"]
+  end
+
   def blurb_paragraphs
     @json["description"]
   end

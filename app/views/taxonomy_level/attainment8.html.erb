@@ -10,7 +10,7 @@
   </ol>
 </div>
 
-<h1 class="heading-large"> How do students perform in their 8 best GCSEs?</h1>
+<h1 class="heading-large"> <%=@presenter.title %></h1>
 
 <div class="grid-row">
   <div class="column-whole">
@@ -72,35 +72,33 @@
   </div>
 </div>
 
-<p> <a href="http://www.gov.uk">Download data in csv or xls format</a> for all of England or a local authority.</p>
-
-<p>Read the <a href="#">further information and guidance </a>about the data in the tables.
-</p>
 
 <div class="grid-row">
   <div class="column-whole">
   </div>
-
-  <% @presenter.context_paragraphs.each do |paragraph| %>
     <p>
-      <%= paragraph %>
+      The GCSE and equivalent results continue to vary between different ethnic groups. Within each of these broader ethnic groupings, the minor ethnic groups show further variability.
     </p>
-  <% end %>
+
+    <ul class="list-bullet">
+      <li>Chinese pupils are the highest achieving group.</li>
+      <li> Pupils from a black background are the lowest performing group although black pupils are progressing above the national average.</li>
+      <li>Pupils from an Asian background are performing above the national average.</li>
+      <li>Pupils from a mixed background are also performing above the national level.</li>
+      <li>Within the minor ethnic groupings, Indian pupils are performing well above the national average </li>
+      <li>Gypsy/Roma pupils are the lowest performers.</li>
+    </ul>
+
+  <br>
+  <br>
+  <br>
+  <p> <a href="http://www.gov.uk">Download data in csv or xls format</a> for all of England or a local authority.</p>
+
+  <p>Read the <a href="#">further information and guidance </a>about the data in the tables.
+  </p>
 </div>
 
-<div class="grid-row">
-  <h3 class="heading-medium">
-    Analysis
-  </h3>
-  <div class="column-whole">
-  </div>
 
-  <% @presenter.analysis_paragraphs.each do |paragraph| %>
-    <p>
-      <%= paragraph %>
-    </p>
-  <% end %>
-</div>
 
 <!-- Makes it run attainment js, extremely hacky fix this TODO: KASM -->
 <div id="attainment"></div>
