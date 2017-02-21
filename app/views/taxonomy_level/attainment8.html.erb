@@ -12,6 +12,12 @@
 
 <h1 class="heading-large"> How do students perform in their 8 best GCSEs?</h1>
 
+Source: <%= @presenter.source_title %>
+<br>
+Originally published: <%= @presenter.date %>
+<br>
+<br>
+
 <% @presenter.blurb_paragraphs.each do |paragraph| %>
   <p class="lede">
     <%= paragraph %>
