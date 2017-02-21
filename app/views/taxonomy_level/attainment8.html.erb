@@ -12,16 +12,11 @@
 
 <h1 class="heading-large"> How do students perform in their 8 best GCSEs?</h1>
 
-<p class="lede">
-  Attainment 8 measures a student's average grade across eight subjects. This new measure is designed to prioritise the importance of English and Mathematics and encourage schools to offer a broad, well-balanced curriculum.
-</p>
-
-<p class="lede">
-  Attainment 8 values are calculated from a combination of student GCSE scores where A* = 8, A = 7, B = 6, C = 5, and so on.
-</p>
-
-<p class="lede">
-This data is published by the Department for Education.</p>
+<% @presenter.blurb_paragraphs.each do |paragraph| %>
+  <p class="lede">
+    <%= paragraph %>
+  </p>
+<% end %>
 
 <p> <a href="http://www.gov.uk">Download data in csv or xls format</a> for all of England or a local authority.</p>
 
@@ -64,6 +59,34 @@ This data is published by the Department for Education.</p>
   <div class="column-one-half question-graph">
     <img src="/assets/images/attainment8/Table_3b_GCSE_Average_Ethnicity_then_Region.png" alt="">
   </div>
+</div>
+
+<div class="grid-row">
+  <h3 class="heading-medium">
+    Context
+  </h3>
+  <div class="column-whole">
+  </div>
+
+  <% @presenter.context_paragraphs.each do |paragraph| %>
+    <p>
+      <%= paragraph %>
+    </p>
+  <% end %>
+</div>
+
+<div class="grid-row">
+  <h3 class="heading-medium">
+    Analysis
+  </h3>
+  <div class="column-whole">
+  </div>
+
+  <% @presenter.analysis_paragraphs.each do |paragraph| %>
+    <p>
+      <%= paragraph %>
+    </p>
+  <% end %>
 </div>
 
 

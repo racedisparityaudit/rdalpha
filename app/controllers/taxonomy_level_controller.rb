@@ -9,6 +9,7 @@ class TaxonomyLevelController < ApplicationController
     if @taxonomy_level.metric_level?
       case @taxonomy_level.uri
       when "/education/schoolsandcolleges/resultsandstudentprogress/attainment8"
+        @presenter = Attainment8.new
         render("attainment8")
       when "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16"
         render('question')
