@@ -20,7 +20,7 @@
         yAxis: {
             min: 0,
             title: {
-                text: 'Mean GCSE grade',
+                text: 'Average GCSE grade',
                 align: 'high'
             },
             labels: {
@@ -88,7 +88,7 @@ function drawOverallChartWithSubgroups(){
         yAxis: {
             min: 0,
             title: {
-                text: 'Mean GCSE grade',
+                text: 'Average GCSE grade',
                 align: 'high'
             },
             labels: {
@@ -168,7 +168,7 @@ function drawOverallChartWithSubgroups(){
         yAxis: {
             min: 0,
             title: {
-                text: 'Mean GCSE grade',
+                text: 'Average GCSE grade',
                 align: 'high'
             },
             labels: {
@@ -223,7 +223,7 @@ Highcharts.chart('heatmap-container', {
     },
 
     xAxis: {
-        categories: ['White', 'Black', 'Asian', 'Mixed', 'Other', 'All']
+        categories: ['White', 'Black', 'Asian', 'Mixed', 'Chinese', 'All']
     },
 
     yAxis: {
