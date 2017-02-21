@@ -192,7 +192,7 @@ this.point.value +
     }
 
 $(document).ready(drawCharts)
-$(document).on('turbolinks:load', init)
+$(document).on('turbolinks:load', drawCharts)
 }())
 
 
