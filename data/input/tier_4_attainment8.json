@@ -1,5 +1,5 @@
 {
-  "title":"How do students perform in their 8 best GCSEs?",
+  "title":"Average GCSE and EBacc results (Attainment 8)",
   "source":{
     "title":"Department for Education",
     "link":"dfe.gov.uk"
@@ -39,9 +39,7 @@
   },
 
   "context":[
-    "This is data context provided by departments. We are going to get this through the data team.",
-    "Prime Minister Theresa May is today launching an unprecedented audit of public services to reveal racial disparities and help end the burning injustices many people experience across Britain.",
-    "The Prime Minister has ordered Whitehall departments to identify and publish information showing how outcomes differ for people of different backgrounds, in a range of areas including health, education and employment."
+    "The GCSE and equivalent results continue to vary between different ethnic groups. Within each of these broader ethnic groupings, the minor ethnic groups show further variability. Chinese pupils are the highest achieving group. Pupils from a black background are the lowest performing group although black pupils are progressing above the national average. Pupils from an Asian background are performing above the national average. Pupils from a mixed background are also performing above the national level. Within the minor ethnic groupings, Indian pupils are performing well above the national average and Gypsy/Roma pupils are the lowest performers."
   ],
 
   "analysis":[
