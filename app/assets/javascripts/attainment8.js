@@ -6,10 +6,7 @@
             type: 'bar'
         },
         title: {
-            text: 'Attainment 8 Scores by Ethnicity'
-        },
-        subtitle: {
-            text: 'Source: Department for Education'
+            text: 'Attainment 8 Scores by Race'
         },
         xAxis: {
             categories: ['Black', 'White', 'Mixed', 'Asian', 'Other'],
@@ -70,10 +67,7 @@ function drawOverallChartWithSubgroups(){
             type: 'bar'
         },
         title: {
-            text: 'Attainment 8 Scores by Ethnicity'
-        },
-        subtitle: {
-            text: 'Source: Department for Education'
+            text: 'Attainment 8 Scores by Race'
         },
         xAxis: {
             categories: ['White', 'White British', 'Irish', 'Traveller of Irish heritage', 'Gypsy/Roma', 'Any other white background',
@@ -154,10 +148,7 @@ function drawOverallChartWithSubgroups(){
             type: 'bar'
         },
         title: {
-            text: 'Attainment 8 Scores by Ethnicity and Gender'
-        },
-        subtitle: {
-            text: 'Source: Department for Education'
+            text: 'Attainment 8 Scores by Race and Gender'
         },
         xAxis: {
             categories: ['Black', 'White', 'Mixed', 'Asian', 'Other', 'All'],
@@ -239,6 +230,9 @@ Highcharts.chart('heatmap-container', {
         ],
         min: 4
     },
+    credits: {
+        enabled: false
+    },
 
     legend: {
         align: 'right',
@@ -285,4 +279,80 @@ $(document).ready(drawCharts)
 $(document).on('turbolinks:load', drawCharts)
 }())
 
+function drawFreeSchoolMealChartWithSubgroups(){
+    Highcharts.chart('container', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Attainment 8 Scores by Race and Free School Meal Status'
+        },
+        xAxis: {
+            categories: ['White', 'White British', 'Irish', 'Traveller of Irish heritage', 'Gypsy/Roma', 'Any other white background',
+                        'Mixed', 'White and Black Caribbean', 'White and Black African', 'White and Asian', "Any other mixed background",
+                        'Asian', 'Indian', 'Pakistani', 'Bangladeshi', 'Any other Asian background',
+                        'Black', 'Black Caribbean', 'Black African', 'Any other black background',
+                        'Chinese', 'Any other ethnic group'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Average GCSE grade',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' average'
+        },
+        credits: {
+            enabled: false
+        },
+        legend: {
+            reversed: true
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true,
+                    inside: false,
+                    color: '#000000',
+                    formatter: function() {
+                        console.log(this);
+                        if (this.y > 0) {
+                            return this.y;
+                        } else {
+                            return '';
+                        }
+                    }
+                }
+            },
+            series: {
+                stacking: 'normal'
+            }
+        },
+        series: [{
+            name: 'Minor Categories',
+            data: [0, 4.97, 5.45, 2.93, 2.04, 4.95,
+                    0, 4.63, 5.02, 5.45, 5.18,
+                    0, 5.7, 4.85, 5.21, 5.5,
+                    0, 4.54, 5.03, 4.70,
+                    0, 5.01, 4.4],
+            pointWidth: 16
+        },{
+            name: 'Major Categories',
+            data: [4.97, 0, 0, 0, 0, 0,
+                    5.05, 0, 0, 0, 0,
+                    5.25, 0, 0, 0, 0,
+                    4.87, 0, 0, 0,
+                    6.24, 0, 0],
+            pointWidth: 16
+        }]
+    });
+}
 
