@@ -13,8 +13,10 @@
   <%= csrf_meta_tags %>
 </head>
 
-<% content_for :after_header do %>
-
+<% content_for :inside_header do %>
+  <div class="header-proposition" >
+    <a href="/" id="proposition-name" >Race Disparity Audit</a>
+  </div>
 <% end %>
 
 <body>
