@@ -23,8 +23,10 @@ class TaxonomyLevelController < ApplicationController
     end
   end
 
-  def question
+  def metadata
+  end
 
+  def question
   end
 
   def factoids

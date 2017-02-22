@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   #TODO: KASM make roots
   root 'homepage#index'
+
+  get 'attainment8/metadata' => 'taxonomy_level#metadata'
   get 'factoids/:filter' => 'taxonomy_level#factoids'
   get 'question/:question' => 'taxonomy_level#question'
   get ':taxonomy_name' => 'taxonomy_level#show'
