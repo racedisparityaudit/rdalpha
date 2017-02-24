@@ -16,12 +16,8 @@
 
     }
 
-    $("button").on("click",applyFilters)
-    //TODO remove hack - should just work with frontend toolkit
-    $(".selection-button-radio").click(function(e){
-      $(".selection-button-radio").removeClass("selected")
-      $(e.currentTarget).addClass("selected")
-    })
+    $("button").on("click", applyFilters)
+
   }
 
   $(document).ready(initFactoids)
