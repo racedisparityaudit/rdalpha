@@ -23,14 +23,18 @@ class HomepageController < ApplicationController
   private
 
   def race_redirect
+    #TODO: change race radios to race-radio-group for consistency
     redirect_to "/factoids/" + "#{params['radio-group']}"
   end
 
   def topic_redirect
-    redirect_to "/factoids/" + "#{params['radio-group']}"
+    # TODO: could use taxonomy level URI's (stored on model) to handle navigation
+    # using name doesn't really work because they have to be encoded for urls
+    redirect_to "/topics/" + "#{params['topic-radio-group']}"
   end
 
   def location_redirect
+
   end
 
 end

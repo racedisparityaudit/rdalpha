@@ -31,11 +31,14 @@ class TaxonomyLevelController < ApplicationController
 
   def factoids
     @filter = params[:filter]
+    binding.pry
     @factoids = TaxonomyLevel.metrics
   end
 
   def topics
-    @filter = params[:filter]
+    @topic = TaxonomyLevel.find(params[:filter])
+    @filter = nil
+    @factoids = topic.metrics
   end
 
   private

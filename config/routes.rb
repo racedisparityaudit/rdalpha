@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   post 'navigation_form' => 'homepage#navigation_form'
   get 'attainment8/metadata' => 'taxonomy_level#metadata'
   get 'factoids/:filter' => 'taxonomy_level#factoids'
+  post 'topics/:filter' => 'taxonomy_level#topics'
   get 'topics/:filter' => 'taxonomy_level#topics'
 
   get 'question/:question' => 'taxonomy_level#question'
