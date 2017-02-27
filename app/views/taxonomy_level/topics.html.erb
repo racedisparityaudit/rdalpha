@@ -4,7 +4,7 @@
       Race disparity in the public sector
     </h1>
     <div class=heading-medium>
-      You selected: <%= @topic.titleize%>
+      You selected: <%= @topic.display_name%>
     </div>
   </div>
 </div>
@@ -26,34 +26,10 @@
       Select another Topic:
       <ul class="list">
         <% TaxonomyLevel.topics.each do |t| %>
-
+          <li> <a href="<%= t.id %>"> <%=t.display_name %> </a></li>
         <% end %>
       </ul>
     </div>
-
-    <div class="govuk-option-select js-collapsible">
-      <span class="js-container-head" type="button" aria-expanded="false" aria-controls="">
-        <div class="option-select-label">Topic</div>
-        <div class="js-selected-counter"></div>
-      </span>
-      <div class="options-container" id="">
-        <div class="js-auto-height-inner">
-
-          <% TaxonomyLevel.topic_level.each do |t| %>
-            <label for="<%= t.name %>">
-              <input name="<%= t.name %>" value="true" id="<%= t.name %>" type="checkbox" aria-controls="">
-              <%= t.name.titleize %>
-            </label>
-          <% end %>
-        </div>
-      </div>
-    </div>
-
-    <button class="button" id="#filter-button"> Filter </button>
-    <br>
-    <br>
-
-
   </div>
 
   <div class="column-two-thirds">
@@ -69,7 +45,8 @@
                 </div>
 
                 <div class="factoid-result factoid-header">
-                  <%= @filter.titleize %>
+                <!-- TODO we need a presenter to manage the classes based on whether there is a filter or not -->
+                  <%#= @filter.titleize %>
                 </div>
 
                 <div class="factoid-result factoid-header">

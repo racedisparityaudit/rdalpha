@@ -29,8 +29,14 @@ class TaxonomyLevel < ApplicationRecord
     TaxonomyLevel.where(parent_id: nil).first
   end
 
-  def self.topic_level
+  def self.topics
     TaxonomyLevel.where(parent_id: homepage.id)
+  end
+
+  def self.topic_level
+    # deprecated use topics instead
+    # TODO: remove references to this
+    self.topics
   end
 
   def breadcrumbs(crumbs = [])
@@ -75,7 +81,7 @@ class TaxonomyLevel < ApplicationRecord
 
   def group_average(group)
 
-    return "-" unless number =  measure_average_for(group).try(:display_value)
+    return "-" unless group && number =  measure_average_for(group).try(:display_value)
     display_encode(number)
   end
 
