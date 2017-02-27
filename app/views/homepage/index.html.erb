@@ -24,15 +24,15 @@
 
     <div id="homepage-navigation-tabs">
       <h3 class="heading-medium">
-        <span id="#<%= HomepageController::TOPIC %>-selector">
+        <span id="<%= HomepageController::TOPIC %>-selector">
           Topic
         </span>
         |
-        <span id="#<%= HomepageController::RACE %>-selector">
+        <span id="<%= HomepageController::RACE %>-selector">
            Race
         </span>
         |
-        <span id="#<%=HomepageController::LOCATION %>-selector">
+        <span id="<%=HomepageController::LOCATION %>-selector">
           Location
         </span>
       </h3>
@@ -40,7 +40,7 @@
   </div>
 </div>
 
-<div class="grid-row race-radios-container">
+<div class="grid-row radios-container" id="race-radios">
   <div class="column-whole">
     <%= form_tag(class: "form-group", action:"navigation_form", method: "POST") do %>
       <fieldset>
@@ -80,15 +80,15 @@
   </div>
 </div>
 
-<div class="grid-row topic-radios-container">
+<div class="grid-row radios-container" id="topic-radios">
   <div class="column-whole">
     <%= form_tag(class: "form-group", action:"navigation_form", method: "POST") do %>
       <fieldset>
         <input type="hidden" name="filter_type" value="<%=HomepageController::TOPIC%>">
 
         <% TaxonomyLevel.homepage.taxonomy_levels.each_with_index do |topic, index| %>
-          <label class="block-label selection-button-radio" for="radio-<%= index %>">
-            <input id="radio-<%= index %>" type="radio" name="radio-group" value="<%= topic.id %>">
+          <label class="block-label selection-button-radio" for="topic-radio-<%= index %>">
+            <input id="topic-radio-<%= index %>" type="radio" name="topic-radio-group" value="<%= topic.id %>">
             <%= topic.display_name %>
           </label>
         <% end %>
@@ -102,7 +102,11 @@
   </div>
 </div>
 
-<div class="grid-row location-radios-container">
-
+<div class="grid-row radios-container" id="location-radios">
+  <div class= "column-whole">
+    <h3 class="heading-medium">
+      Navigation not available
+    </h3>
+  </div>
 </div>
 

@@ -3,16 +3,16 @@
   function init(){
     new GOVUK.SelectionButtons();
 
-    $(".topic-tabs li").on("click", function(e) {
-        e.preventDefault()
-        $(".graph-section").hide()
-        var section_id = "#" + this.id.split("-")[0] + "-section"
-        $(section_id).toggle()
-        console.log(section_id)}
+    $(".radios-container").hide()
+    $("#homepage-navigation-tabs span").on("click", function(e) {
+          e.preventDefault()
+          $(".radios-container").hide()
+          var section_id =  "#" + this.id.split("-")[0] + "-radios"
+          $(section_id).toggle()
+        }
       )
-      $("#ethnicity-selector").trigger("click")
 
-    }
+    $("#topic-selector").trigger("click")
   }
 
   $(document).ready(init)
