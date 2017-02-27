@@ -1,4 +1,6 @@
 import csv
+import pandas as pd
+
 from databuilder.model.Data import DataPoint, DataSeries
 from typing import List
 
@@ -80,3 +82,11 @@ class XYMeasureListImporter(object):
         categories = [row[ind] for ind in y_category_indices] + [x_category_row[col] for x_category_row in x_category_values]
         return DataPoint(value, categories)
 
+class ExcelDataMeasuresImporter(object):
+
+    def import_excel(self, file):
+        pd.read_excel
+        data = pd.read_excel(io=file, sheetname="Data")
+        measures = pd.read_excel(io=file, sheetname="Measures")
+
+        pd.groupby(measures,)

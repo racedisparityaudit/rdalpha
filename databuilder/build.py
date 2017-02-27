@@ -29,6 +29,7 @@ def convert_xy_file_to_cube():
     exporter.export_to_table("data/output/datasets/key_stage_2_table.csv", serieses)
 
 @task()
+
 def build_t4_page():
     '''Build a t4 page by combining a file and a series from .'''
     print('Importing data sheet')
@@ -40,6 +41,10 @@ def build_t4_page():
     print('Exporting to data/output/ks2')
     exporter = DataCSVExporter()
     exporter.export_to_table("data/output/datasets/key_stage_2_table.csv", serieses)
+
+def convert_data_plus_measures_excel_to_cube():
+    print('Importing excel')
+    importer = ExcelDataMeasuresImporter()
 
 __DEFAULT__=build_input_taxonomy_from_csv
 
