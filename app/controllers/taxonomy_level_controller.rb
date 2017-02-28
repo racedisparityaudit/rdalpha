@@ -40,6 +40,12 @@ class TaxonomyLevelController < ApplicationController
     @factoids = @topic.metrics
   end
 
+  def topics_filtered
+    @topic = TaxonomyLevel.find(params[:filter])
+    @factoids = @topic.metrics
+    @filter = "black"
+  end
+
   private
 
   class Factoid

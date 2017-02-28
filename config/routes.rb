@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'factoids/:filter' => 'taxonomy_level#factoids'
   post 'topics/:filter' => 'taxonomy_level#topics'
   get 'topics/:filter' => 'taxonomy_level#topics'
+  get 'topics/:filter/:race' => 'taxonomy_level#topics_filtered'
 
   get 'question/:question' => 'taxonomy_level#question'
   get ':taxonomy_name' => 'taxonomy_level#show'
