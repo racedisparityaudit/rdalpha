@@ -15,4 +15,8 @@
 #
 
 class Measure < ApplicationRecord
+  belongs_to :topic
+  has_many :measure_averages
+
+
 end

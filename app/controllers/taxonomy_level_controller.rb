@@ -17,7 +17,6 @@ class TaxonomyLevelController < ApplicationController
         render('missing')
       end
     else
-      # TODO: KASM fix logic so there are never any loops
       @topics  = TaxonomyLevel.find_by_name(params[:taxonomy_name]).taxonomy_levels
                     .reject { |level| level.name == @taxonomy_level.name }
     end

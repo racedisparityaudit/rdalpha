@@ -1,3 +1,4 @@
+
 # == Schema Information
 #
 # Table name: taxonomy_levels
@@ -19,5 +20,17 @@
 require 'rails_helper'
 
 RSpec.describe TaxonomyLevel, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  it "should give all of the bottom level children for a topic" do
+  end
+
+  it "should have a homepage" do
+  end
+
+  it "should have the homepages direct children as topics" do
+  end
+
+  it "should find the topic for a t4 page" do
+  end
+
 end
