@@ -12,4 +12,18 @@
 #
 
 class Topic < ApplicationRecord
+  belongs_to :topic
+  has_many :topics
+
+  def self.topic_level
+    Topic.where(topic_id: nil)
+  end
+
+  def topic_level
+    parent_name == "homepage"
+  end
+
+  def parent_name
+
+  end
 end

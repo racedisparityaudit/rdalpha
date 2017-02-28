@@ -34,6 +34,18 @@
 
   <div class="column-two-thirds">
 
+    <div class="govuk-box-highlight">
+      <h3 class="heading-small">
+      <!-- TODO: KASM after refactor topics should have one "primary measure" which will be a metric we can pull this stuff from -->
+        Pupils achieving 5 or more A* - C grades for GCSEs
+      </h3>
+
+      <div class="column-whole">
+          <h3 class="heading-large">%56.6</h3>
+      </div>
+      <p> National Average </p>
+    </div>
+
     <div class= "factoid-list">
       <ul class = "list">
         <% @factoids.each do |f| %>
@@ -44,10 +56,6 @@
                   <a href="/<%= f.name %>"><li> <h3 class="heading-medium"><%= f.description %></h3></li></a>
                 </div>
 
-                <div class="factoid-result factoid-header">
-                <!-- TODO we need a presenter to manage the classes based on whether there is a filter or not -->
-                  <%#= @filter.titleize %>
-                </div>
 
                 <div class="factoid-result factoid-header">
                   National Average
@@ -59,10 +67,6 @@
               <div class="column-whole">
                 <div class="row-description" >
                    <%= f.subtitle %>
-                </div>
-
-                <div class="factoid-result">
-                   <%= f.group_average(@filter) %>
                 </div>
 
                 <div class="factoid-result">

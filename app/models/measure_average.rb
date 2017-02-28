@@ -14,7 +14,7 @@
 #
 
 class MeasureAverage < ApplicationRecord
-  belongs_to :taxonomy_level
+  belongs_to :measure
 
   def display_value
     value.to_d.round(1).to_s + " %"
