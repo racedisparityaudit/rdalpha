@@ -39,11 +39,19 @@ class TaxonomyLevel < ApplicationRecord
     self.topics
   end
 
+  def anchor
+    name.split(" ").join("")
+  end
+
   def breadcrumbs(crumbs = [])
     crumbs << name
     return crumbs unless taxonomy_level
 
     taxonomy_level.breadcrumbs(crumbs)
+  end
+
+  def measures
+    metric_level? ? self : taxonomy_levels.map(&:measures).flatten
   end
 
   def metrics
