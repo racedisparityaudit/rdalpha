@@ -23,19 +23,19 @@
     <p> You can browse all of the available data, or you can search for something more specific, using the keyword search or filters. </p>
 
     <div id="homepage-navigation-tabs">
-      <h3 class="heading-medium">
-        <span id="<%= HomepageController::TOPIC %>-selector">
-          Topic
-        </span>
-        |
-        <span id="<%= HomepageController::RACE %>-selector">
-           Race
-        </span>
-        |
-        <span id="<%=HomepageController::LOCATION %>-selector">
-          Location
-        </span>
-      </h3>
+      <ul class = "tabs-nav">
+        <li id="<%= HomepageController::TOPIC %>-selector" class="selected">
+          <a href="#">Topic</a>
+        </li>
+
+        <li id="<%= HomepageController::RACE %>-selector">
+           <a href="#"> Race </a>
+        </li>
+
+        <li id="<%=HomepageController::LOCATION %>-selector">
+          <a href="#">Location</a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
