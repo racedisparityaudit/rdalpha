@@ -22,7 +22,7 @@
   <div class="column-whole">
     <p> You can browse all of the available data, or you can search for something more specific, using the keyword search or filters. </p>
 
-    <div id="homepage-navigation-tabs">
+    <div id="navigation-tabs">
       <ul class = "tabs-nav">
         <li id="<%= HomepageController::TOPIC %>-selector" class="selected">
           <a href="#">Topic</a>
@@ -40,7 +40,7 @@
   </div>
 </div>
 
-<div class="grid-row radios-container" id="race-radios">
+<div class="grid-row radios-container" id="race-section">
   <div class="column-whole">
     <%= form_tag(class: "form-group", action:"navigation_form", method: "POST") do %>
       <fieldset>
@@ -80,7 +80,7 @@
   </div>
 </div>
 
-<div class="grid-row radios-container" id="topic-radios">
+<div class="grid-row radios-container" id="topic-section">
   <div class="column-whole">
     <%= form_tag(class: "form-group", action:"navigation_form", method: "POST") do %>
       <fieldset>
@@ -102,7 +102,7 @@
   </div>
 </div>
 
-<div class="grid-row radios-container" id="location-radios">
+<div class="grid-row radios-container" id="location-section">
   <div class= "column-whole">
 
     <p>Explore by area</p>
