@@ -4,8 +4,11 @@
     new GOVUK.SelectionButtons();
 
     $(".radios-container").hide()
-    $("#homepage-navigation-tabs span").on("click", function(e) {
+    $("#homepage-navigation-tabs li").on("click", function(e) {
           e.preventDefault()
+          $("#homepage-navigation-tabs li").removeClass("selected")
+          $(e.currentTarget).addClass("selected")
+
           $(".radios-container").hide()
           var section_id =  "#" + this.id.split("-")[0] + "-radios"
           $(section_id).toggle()
