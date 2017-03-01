@@ -110,7 +110,7 @@ function drawOverallChartWithSubgroups(){
             }
         },
         series: [{
-            name: 'Minor Categories',
+            name: 'Detailed',
             data: [0, 4.97, 5.45, 2.93, 2.04, 4.95,
                     0, 4.63, 5.02, 5.45, 5.18,
                     0, 5.7, 4.85, 5.21, 5.5,
@@ -118,7 +118,7 @@ function drawOverallChartWithSubgroups(){
                     0, 5.01, 4.4],
             pointWidth: 16
         },{
-            name: 'Major Categories',
+            name: 'Top level',
             data: [4.97, 0, 0, 0, 0, 0,
                     5.05, 0, 0, 0, 0,
                     5.25, 0, 0, 0, 0,
@@ -209,17 +209,19 @@ Highcharts.chart('heatmap-container', {
     },
 
     yAxis: {
-        categories: ['North East', 'North West', 'Yorkshire and the Humber', 'East Midlands', 'West Midlands', 'East', 'London', 'Inner London', 'Outer London', 'South East', 'South West', 'England'],
-        title: null
+        categories: ['North East', 'North West', 'Yorkshire and the Humber', 'East Midlands', 'West Midlands', 'East', 'London', 'Inner London', 'Outer London', 'South East', 'South West', 'NATIONAL (England)'],
+        title: null,
+        reversed: true
     },
 
     colorAxis: {
         stops: [
             [0, '#f26c43'],
-            [0.4, '#ffffff'],
+            [0.3, '#ffffff'],
             [1.8, '#5ca0ff']
         ],
-        min: 4
+        min: 4.5,
+        reversed: false
     },
     credits: {
         enabled: false
@@ -266,10 +268,10 @@ this.point.value +
                 text: 'GCSE Average Grade by Race and Free School Meal Status'
             },
             xAxis: [{
-                categories: ['White', 'White British', 'Irish', 'Traveller of Irish heritage', 'Gypsy/Roma', 'Any other white background',
-                            'Mixed', 'White and Black Caribbean', 'White and Black African', 'White and Asian', "Any other mixed background",
-                            'Asian', 'Indian', 'Pakistani', 'Bangladeshi', 'Any other Asian background',
-                            'Black', 'Black Caribbean', 'Black African', 'Any other black background',
+                categories: ['WHITE (All)', 'White British', 'Irish', 'Traveller of Irish heritage', 'Gypsy/Roma', 'Any other white background',
+                            'MIXED (All)', 'White and Black Caribbean', 'White and Black African', 'White and Asian', "Any other mixed background",
+                            'ASIAN (All)', 'Indian', 'Pakistani', 'Bangladeshi', 'Any other Asian background',
+                            'BLACK (All)', 'Black Caribbean', 'Black African', 'Any other black background',
                             'Chinese', 'Any other ethnic group'],
                 reversed: true,
                 labels: {
