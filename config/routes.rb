@@ -17,5 +17,4 @@ Rails.application.routes.draw do
   get ':taxonomy_name' => 'taxonomy_level#show'
   get ':parent_name/:taxonomy_name' => 'taxonomy_level#show'
 
-  get ':parent_name/:taxonomy_name/:question' => 'taxonomy_level#question'
 end

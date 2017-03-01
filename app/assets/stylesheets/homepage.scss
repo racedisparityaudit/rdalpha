@@ -7,6 +7,11 @@
   img { width: 80%; }
 }
 
+img {
+  width: 100%;
+}
+
+
 #homepage-navigation-tabs {
   padding-bottom: 60px;
   .tabs-nav {
@@ -21,7 +26,7 @@
       padding: 0;
       margin: 0;
       float: left;
-      width: 33%;
+      width: 16%;
       border-bottom: 1px solid $grey-2;
       padding-top: 5px;
 
