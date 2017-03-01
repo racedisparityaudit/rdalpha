@@ -17,7 +17,7 @@
       </h3>
       <ul class="list">
         <% @topic.taxonomy_levels.each do |level| %>
-          <li> <a href="#"> <%= level.display_name %> </a> </li>
+          <li> <a href="#<%=level.anchor%>"> <%= level.display_name %> </a> </li>
         <% end %>
       </ul>
     </div>
@@ -37,7 +37,7 @@
 
     <div>
       <h3 class="heading-medium">
-        Select another Topic
+        View a different Topic
       </h3>
       <ul class="list">
         <% TaxonomyLevel.topics.each do |t| %>
@@ -56,42 +56,43 @@
       </h3>
 
       <div class="column-whole">
-          <h3 class="heading-large">%56.6</h3>
+        <h3 class="heading-large">%56.6</h3>
       </div>
       <p> National Average </p>
     </div>
 
-    <div class= "factoid-list">
-      <ul class = "list">
-        <% @factoids.measures.each do |f| %>
-          <div class="row-container <%= f.top_level_parent.name %> ">
-            <div class="grid-row">
-              <div class="column-whole">
-                <div class="factoid-question">
-                  <a href="/<%= f.name %>"><li> <h3 class="heading-medium"><%= f.description %></h3></li></a>
-                </div>
+    <h3 class="heading-medium">
+      <%= @topic.measures.count %> measures available for <%= @topic.display_name %>
+    </h3>
 
-                <div class="factoid-result factoid-header">
-                  National Average
-                </div>
-              </div>
+    <div class= "factoid-list">
+      <% @topic.taxonomy_levels.each do |sub_topic| %>
+        <div class="row-container grid-row" >
+          <div class="column-whole">
+            <div class="factoid-question" >
+              <h3 class="heading-medium" id="<%= sub_topic.anchor %>">
+                <%= sub_topic.display_name %>
+              </h3>
             </div>
 
-            <div class="grid-row">
-              <div class="column-whole">
-                <div class="row-description" >
-                   <%= f.subtitle %>
+            <div class="factoid-result factoid-header">
+              National Average
+            </div>
+
+            <% sub_topic.measures.each do |f| %>
+              <ul class = "list">
+                <div class="row-description">
+                  <a href="/<%= f.name %>"><li> <%= f.description %></li></a>
                 </div>
 
                 <div class="factoid-result">
                    <%= f.national_average %>
                 </div>
-              </div>
-            </div>
-
+              </ul>
+            <% end %>
           </div>
-        <% end %>
-      </ul>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
