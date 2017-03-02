@@ -61,10 +61,10 @@ function drawOverallChartWithSubgroups(){
             text: 'Attainment 8 Scores by Race'
         },
         xAxis: {
-            categories: ['White', 'White British', 'Irish', 'Traveller of Irish heritage', 'Gypsy/Roma', 'Any other white background',
-                        'Mixed', 'White and Black Caribbean', 'White and Black African', 'White and Asian', "Any other mixed background",
-                        'Asian', 'Indian', 'Pakistani', 'Bangladeshi', 'Any other Asian background',
-                        'Black', 'Black Caribbean', 'Black African', 'Any other black background',
+            categories: ['WHITE (All)', 'White British', 'Irish', 'Traveller of Irish heritage', 'Gypsy/Roma', 'Any other white background',
+                        'MIXED (All)', 'White and Black Caribbean', 'White and Black African', 'White and Asian', "Any other mixed background",
+                        'ASIAN (All)', 'Indian', 'Pakistani', 'Bangladeshi', 'Any other Asian background',
+                        'BLACK (All)', 'Black Caribbean', 'Black African', 'Any other black background',
                         'Chinese', 'Any other ethnic group', 'Unclassified'],
             title: {
                 text: null
