@@ -88,13 +88,12 @@ class TaxonomyLevel < ApplicationRecord
   end
 
   def group_average(group)
-
     return "-" unless group && number =  measure_average_for(group).try(:display_value)
     display_encode(number)
   end
 
   def display_name
-    name.titleize
+    name.downcase.tap{ |n| n[0] = n.first.upcase }.gsub("&","and")
   end
 
   def metric_level?
