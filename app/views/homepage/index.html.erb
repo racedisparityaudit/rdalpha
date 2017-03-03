@@ -1,26 +1,29 @@
 <div class = "grid-row">
   <div class= "column-whole">
-    <div class="heading-xlarge">
-     <h1> Race disparity in the public sector </h1>
-    </div>
+   <h1 class="heading-xlarge"> Race disparity in the public sector </h1>
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
 
     <p>
-      Government departments measure how people from different races experience and access public services.
+      Government departments measure how people from different races access public services.
     </p>
 
     <p>
-      This data will help to reflect the realities of people living in the UK, and feed into policy issues relating to race equality.
+      This data will help to reflect the realities of people living in the UK, and feed into policy issues relating to race disparity.
     </p>
 
     <p>
       Over time, more information will be collected and reported here.
     </p>
-  </div>
-</div>
 
-<div class="grid-row">
-  <div class="column-whole">
-    <p> You can browse all of the available data, or you can search for something more specific, using the keyword search or filters. </p>
+    <h3 class="heading-medium">
+      Browse the available data
+    </h3>
+
+    <p > You can browse all the available data or find something more specific using the options and filters below. </p>
 
     <div id="navigation-tabs">
       <ul class = "tabs-nav">
@@ -41,172 +44,176 @@
 </div>
 
 <div class="grid-row radios-container" id="race-section">
-  <div class="column-whole">
+  <div class="column-two-thirds">
     <%= form_tag(class: "form-group", action:"navigation_form", method: "POST") do %>
       <fieldset>
         <input type="hidden" name="filter_type" value="<%= HomepageController::RACE%>">
+        <p>Select one of the options below.</p>
 
         <label class="block-label selection-button-radio" for="radio-1">
           <input id="radio-1" type="radio" name="radio-group" value="White">
-          White All
+          <span class="heading-small">White All</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-2">
-          <input id="radio-2" type="radio" name="radio-group" value="EnglishWelshScottishNorthernIrishOrWhiteBritish">
+          <span class="heading-small"><input id="radio-2" type="radio" name="radio-group" value="EnglishWelshScottishNorthernIrishOrWhiteBritish">
           English / Welsh / Scottish / Northern Irish / White British
+          </span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-3">
           <input id="radio-3" type="radio" name="radio-group" value="Irish">
-          Irish
+          <span class="heading-small">Irish</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-4">
           <input id="radio-4" type="radio" name="radio-group" value="GypsyOrIrishTraveller">
-          Gypsy or Irish Traveller
+          <span class="heading-small">Gypsy or Irish Traveller</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-5">
           <input id="radio-5" type="radio" name="radio-group" value="Mixed">
-          Mixed All
+          <span class="heading-small">Mixed All</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-6">
           <input id="radio-6" type="radio" name="radio-group" value="WhiteAndCaribbean">
-          White and Black Caribbean
+          <span class="heading-small">White and Black Caribbean</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-7">
           <input id="radio-7" type="radio" name="radio-group" value="WhiteAndAfrican">
-          White and Black African
+          <span class="heading-small">White and Black African</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-8">
           <input id="radio-8" type="radio" name="radio-group" value="WhiteAndAsian">
-          White and Asian
+          <span class="heading-small">White and Asian</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-9">
           <input id="radio-9" type="radio" name="radio-group" value="MixedOther">
-          Any other Mixed / Multiple ethnic background
+          <span class="heading-small">Any other Mixed / Multiple ethnic background</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-10">
           <input id="radio-10" type="radio" name="radio-group" value="Asian">
-          Asian All
+          <span class="heading-small">Asian All</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-11">
           <input id="radio-11" type="radio" name="radio-group" value="Indian">
-          Indian
+          <span class="heading-small">Indian</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-12">
           <input id="radio-12" type="radio" name="radio-group" value="Pakistani">
-          Pakistani
+          <span class="heading-small">Pakistani</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-13">
           <input id="radio-13" type="radio" name="radio-group" value="Bangladeshi">
-          Bangladeshi
+          <span class="heading-small">Bangladeshi</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-14">
           <input id="radio-14" type="radio" name="radio-group" value="Chinese">
-          Chinese
+          <span class="heading-small">Chinese</span>
         </label>
 
 
         <label class="block-label selection-button-radio" for="radio-15">
           <input id="radio-15" type="radio" name="radio-group" value="AsianOther">
-          Any other Asian background
+          <span class="heading-small">Any other Asian background</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-16">
           <input id="radio-16" type="radio" name="radio-group" value="Black">
-          Black All
+          <span class="heading-small">Black All</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-17">
           <input id="radio-17" type="radio" name="radio-group" value="African">
-          African
+          <span class="heading-small">African</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-18">
           <input id="radio-18" type="radio" name="radio-group" value="Caribbean">
-          Caribbean
+          <span class="heading-small">Caribbean</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-19">
           <input id="radio-19" type="radio" name="radio-group" value="BlackOther">
-          Any other Black / African / Caribbean background
+          <span class="heading-small">Any other Black / African / Caribbean background</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-20">
           <input id="radio-20" type="radio" name="radio-group" value="Arab">
-          Arab
+          <span class="heading-small">Arab</span>
         </label>
 
         <label class="block-label selection-button-radio" for="radio-21">
           <input id="radio-21" type="radio" name="radio-group" value="Other">
-          Other
+          <span class="heading-small">Other</span>
         </label>
       </fieldset>
       <br>
       <br>
       <div>
-        <input class="button" type="submit" value="Browse">
+        <input class="button button-get-started" type="submit" value="Browse">
       </div>
     <% end %>
   </div>
 </div>
 
 <div class="grid-row radios-container" id="topic-section">
-  <div class="column-whole">
+  <div class="column-two-thirds">
     <%= form_tag(class: "form-group", action:"navigation_form", method: "POST") do %>
       <fieldset>
         <input type="hidden" name="filter_type" value="<%=HomepageController::TOPIC%>">
+        <p>Select one of the options below.</p>
+
+        <label class="block-label selection-button-radio" for="topic-radio-all">
+          <input id="topic-radio-all" type="radio" name="topic-radio-group" value="all">
+          <span class="heading-small">All</span>
+          <p> See the full list of data available </p>
+        </label>
 
         <% TaxonomyLevel.homepage.taxonomy_levels.each_with_index do |topic, index| %>
           <label class="block-label selection-button-radio" for="topic-radio-<%= index %>">
             <input id="topic-radio-<%= index %>" type="radio" name="topic-radio-group" value="<%= topic.id %>">
-            <%= topic.display_name %>
+            <span class="heading-small"><%= topic.display_name %></span>
+            <p> <%= topic.description %> </p>
           </label>
         <% end %>
       </fieldset>
       <br>
       <br>
       <div>
-        <input class="button" type="submit" value="Browse">
+        <input class="button button-get-started" type="submit" value="Browse">
       </div>
     <% end %>
   </div>
 </div>
 
 <div class="grid-row radios-container" id="location-section">
-  <div class= "column-whole">
-
-    <p>Explore by area</p>
+  <div class= "column-two-thirds">
 
     <p>
-    Information is collected differently, depending on the organisation and the reason for measuring it. Some of the information we publish on race equality is only available at a national level, and some is available at a more detailed level (e.g. for a local authority, postcode, or for a specific school or prison).
+    Information is collected differently, depending on the organisation and the reason for measuring it. Some of the information we publish on race disparity is only available at a national level, and some is available at a more detailed level (e.g. for a local authority, postcode, or for a specific school or prison).
     </p>
 
     <p>
-    You can find information and data on race equality for a specific area - where the data is available at that level. If it isn't available, you may need to broaden your search to a larger regional area.
+    You can find information and data on race disparity for a specific area - where the data is available at that level. If it isn't available, you may need to broaden your search to a larger regional area.
     </p>
 
     <div class= "location-search">
-      <label for="search-main">Search by location:
+      <label for="search-main"><h4 class="heading-small">Explore by area:</h4>
 
         <input type="search" id="search-main">
       </label>
       <button type="submit" class="button"> Search </button>
     </div>
-    <p>
-    See what data is available at the various levels below:
-    </p>
-    <img src="/assets/images/regions.png">
   </div>
 </div>
 
