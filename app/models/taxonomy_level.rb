@@ -43,11 +43,16 @@ class TaxonomyLevel < ApplicationRecord
     name.split(" ").join("")
   end
 
-  def breadcrumbs(crumbs = [])
-    crumbs << name
-    return crumbs unless taxonomy_level
+  def breadcrumbs
+    [TaxonomyLevel.homepage , top_level_parent]
+  end
 
-    taxonomy_level.breadcrumbs(crumbs)
+  def link
+    if uri == TaxonomyLevel.homepage.uri
+      "/"
+    else
+      "/topics/#{top_level_parent.id}"
+    end
   end
 
   def measures

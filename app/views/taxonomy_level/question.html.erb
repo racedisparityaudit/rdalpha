@@ -1,11 +1,7 @@
 <div class="breadcrumbs">
   <ol>
-    <% @taxonomy_level.breadcrumbs.reverse.each do |crumb| %>
-      <% if crumb != "homepage" %>
-        <li> <a href="/<%=crumb%>"><%=crumb.titleize%></a></li>
-      <% else %>
-        <li> <a href = "/"> Homepage </a> </li>
-      <% end %>
+    <% @taxonomy_level.breadcrumbs.each do |crumb| %>
+      <li> <a href="<%=crumb.link%>"><%=crumb.display_name%></a></li>
     <% end %>
   </ol>
 </div>
