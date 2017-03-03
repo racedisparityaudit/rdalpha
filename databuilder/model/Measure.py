@@ -19,3 +19,10 @@ class Measure(object):
         self.dimensions = dimensions
         self.values = pd.DataFrame(columns=self.dimensions.columns())
 
+class MeasureSet(object):
+    measures = []
+
+    def get_measure(self, measure_name) -> Measure:
+        return None
+
+
