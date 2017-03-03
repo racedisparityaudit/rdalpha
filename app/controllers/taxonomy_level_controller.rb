@@ -6,19 +6,14 @@ class TaxonomyLevelController < ApplicationController
 
   def show
     @taxonomy_level = TaxonomyLevel.find_by_name(params[:taxonomy_name])
-    if @taxonomy_level.metric_level?
-      case @taxonomy_level.uri
-      when "/education/schoolsandcolleges/resultsandstudentprogress/attainment8"
-        @presenter = Attainment8.new
-        render("attainment8")
-      when "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16"
-        render('question')
-      else
-        render('missing')
-      end
+    case @taxonomy_level.uri
+    when "/education/schoolsandcolleges/resultsandstudentprogress/attainment8"
+      @presenter = Attainment8.new
+      render("attainment8")
+    when "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16"
+      render('question')
     else
-      @topics  = TaxonomyLevel.find_by_name(params[:taxonomy_name]).taxonomy_levels
-                    .reject { |level| level.name == @taxonomy_level.name }
+      render('missing')
     end
   end
 
