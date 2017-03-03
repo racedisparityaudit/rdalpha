@@ -1,11 +1,8 @@
 <div class="grid-row">
   <div class="column-whole">
     <h1 class = heading-xlarge>
-      Race disparity in the public sector
+      <%= @topic.display_name %>
     </h1>
-    <div class=heading-medium>
-      You selected: <%= @topic.display_name %>
-    </div>
   </div>
 </div>
 
@@ -48,18 +45,6 @@
   </div>
 
   <div class="column-two-thirds">
-
-    <div class="govuk-box-highlight">
-      <h3 class="heading-small">
-      <!-- TODO: KASM after refactor topics should have one "primary measure" which will be a metric we can pull this stuff from -->
-        Pupils achieving 5 or more A* - C grades for GCSEs
-      </h3>
-
-      <div class="column-whole">
-        <h3 class="heading-large">56.6%</h3>
-      </div>
-      <p> National Average </p>
-    </div>
 
     <h3 class="heading-medium">
       <%= @topic.measures.count %> measures available for <%= @topic.display_name %>
