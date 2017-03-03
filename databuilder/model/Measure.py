@@ -14,7 +14,8 @@ class DimensionList(object):
 
 class Measure(object):
 
-    def __init__(self, dimensions: DimensionList):
+    def __init__(self, name:str, dimensions: DimensionList):
+        self.name = name
         self.dimensions = dimensions
         self.values = pd.DataFrame(columns=self.dimensions.columns())
 
