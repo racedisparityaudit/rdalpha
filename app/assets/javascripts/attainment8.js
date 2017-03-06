@@ -6,7 +6,7 @@
             type: 'bar'
         },
         title: {
-            text: 'Average GCSE scores by race'
+            text: 'Attainment 8 Scores by Race'
         },
         xAxis: {
             categories: ['Black', 'White', 'Mixed', 'Asian', 'Other'],
@@ -58,13 +58,13 @@ function drawOverallChartWithSubgroups(){
             type: 'bar'
         },
         title: {
-            text: 'Average GCSE scores by race'
+            text: 'Attainment 8 Scores by Race'
         },
         xAxis: {
-            categories: ['WHITE (All)', 'White British', 'Irish', 'Traveller of Irish heritage', 'Gypsy/Roma', 'Any other white background',
-                        'MIXED (All)', 'White and Black Caribbean', 'White and Black African', 'White and Asian', "Any other mixed background",
-                        'ASIAN (All)', 'Indian', 'Pakistani', 'Bangladeshi', 'Any other Asian background',
-                        'BLACK (All)', 'Black Caribbean', 'Black African', 'Any other black background',
+            categories: ['White', 'White British', 'Irish', 'Traveller of Irish heritage', 'Gypsy/Roma', 'Any other white background',
+                        'Mixed', 'White and Black Caribbean', 'White and Black African', 'White and Asian', "Any other mixed background",
+                        'Asian', 'Indian', 'Pakistani', 'Bangladeshi', 'Any other Asian background',
+                        'Black', 'Black Caribbean', 'Black African', 'Any other black background',
                         'Chinese', 'Any other ethnic group', 'Unclassified'],
             title: {
                 text: null
@@ -139,7 +139,7 @@ function drawOverallChartWithSubgroups(){
             type: 'bar'
         },
         title: {
-            text: 'Average GCSE scores by race and gender'
+            text: 'Attainment 8 Scores by Race and Gender'
         },
         xAxis: {
             categories: ['Black', 'White', 'Mixed', 'Asian', 'Other', 'All'],
@@ -201,7 +201,7 @@ Highcharts.chart('heatmap-container', {
 
 
     title: {
-        text: 'Average GCSE scores by race and region'
+        text: 'GCSE Average Grade by Race and Region'
     },
 
     xAxis: {
@@ -265,7 +265,7 @@ this.point.value +
                 type: 'bar'
             },
             title: {
-                text: 'Average GCSE scores by race and free school meal status (higher or lower income)'
+                text: 'GCSE Average Grade by Race and Free School Meal Status'
             },
             xAxis: [{
                 categories: ['WHITE (All)', 'White British', 'Irish', 'Traveller of Irish heritage', 'Gypsy/Roma', 'Any other white background',
@@ -274,9 +274,6 @@ this.point.value +
                             'BLACK (All)', 'Black Caribbean', 'Black African', 'Any other black background',
                             'Chinese', 'Any other ethnic group'],
                 reversed: true,
-                labels: {
-                    step: 1
-                }
             }],
             yAxis: {
                 title: {
@@ -290,9 +287,6 @@ this.point.value +
             },
 
             plotOptions: {
-                series: {
-                    stacking: 'normal'
-                },
                 bar: {
                     dataLabels: {
                     enabled: true,
@@ -319,19 +313,17 @@ this.point.value +
 
             series: [{
                 name: 'Eligible for Free School Meals',
-                data: [-3.65, -3.63, -3.96, -2.57, - 2.05, -4.30,
-                -4.12, -3.85, -4.37,-4.32,-4.23,
-                -4.65, - 4.93, -4.39, -4.95, - 4.83,
-                -4.41, -4.01, -4.60, -4.24, - 5.90, -4.61],
-                pointWidth: 16
+                data: [3.65, 3.63, 3.96, 2.57, 2.05, 4.30,
+                4.12, 3.85, 4.37, 4.32, 4.23,
+                4.65, 4.93, 4.39, 4.95, 4.83,
+                4.41, 4.01, 4.60, 4.24, 5.90, 4.61]
             }, {
                 name: 'Not Eligible',
                 data: [5.14, 5.15, 5.65, 3.46, 2.04, 5.02,
                 5.26, 4.86, 5.18, 5.64, 5.37,
                 5.37, 5.76, 4.98, 5.32, 5.59,
                 5.01, 4.70, 5.17, 4.83,
-                6.26, 5.16],
-                pointWidth: 16
+                6.26, 5.16]
             }]
         });
     }
