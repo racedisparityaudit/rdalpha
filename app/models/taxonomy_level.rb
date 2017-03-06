@@ -33,12 +33,6 @@ class TaxonomyLevel < ApplicationRecord
     TaxonomyLevel.where(parent_id: homepage.id)
   end
 
-  def self.topic_level
-    # deprecated use topics instead
-    # TODO: remove references to this
-    self.topics
-  end
-
   def anchor
     name.split(" ").join("")
   end
@@ -116,10 +110,8 @@ class TaxonomyLevel < ApplicationRecord
   end
 
   def display_encode(number_string)
-
     # TODO: awful it gets confused because of use of keyword
     if self[:display] == "percent"
-      # binding.pry
       (number_string.to_d * 100).round(1).to_s + " %"
     else
       number_string.to_d.round(2).to_s
