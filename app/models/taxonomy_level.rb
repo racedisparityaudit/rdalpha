@@ -54,14 +54,6 @@ class TaxonomyLevel < ApplicationRecord
     metric_level? ? self : taxonomy_levels.map(&:measures).flatten
   end
 
-  def metrics
-    # TODO: massively inefficient way of doing this... could just
-    # store the topic on the metric - These should really be split into
-    # two tables.
-
-    TaxonomyLevel.select { |t| t.taxonomy_level && t.top_level_parent.id == id }
-  end
-
   def top_level_parent
     # TODO: will blow up if there is no taxonomy_level
     return self if topic_level?
