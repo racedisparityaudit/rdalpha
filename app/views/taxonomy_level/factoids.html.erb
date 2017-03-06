@@ -46,7 +46,7 @@
       <div class="options-container" id="">
         <div class="js-auto-height-inner">
 
-          <% TaxonomyLevel.topic_level.each do |t| %>
+          <% TaxonomyLevel.topics.each do |t| %>
             <label for="<%= t.name %>">
               <input name="<%= t.name %>" value="true" id="<%= t.name %>" type="checkbox" aria-controls="">
               <%= t.name.titleize %>
