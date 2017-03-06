@@ -38,7 +38,7 @@
       </h3>
       <ul class="list">
         <% TaxonomyLevel.topics.each do |t| %>
-          <li> <a href="<%= t.id %>"> <%=t.display_name %> </a></li>
+          <li> <a href="<%= t.id %>"> <%= t.display_name %> </a></li>
         <% end %>
       </ul>
     </div>

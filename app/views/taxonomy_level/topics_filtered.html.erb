@@ -8,7 +8,7 @@
 
 <div class = "grid-row">
   <div class = "column-third">
-<div>
+    <div>
       <h3 class="heading-medium">
         Contents
       </h3>
@@ -23,12 +23,13 @@
       <h3 class="heading-medium">
         Compare to the national average
       </h3>
+
       <ul class="list">
-        <li> <a href="<%= @topic.id %>/white"> White </a></li>
-        <li> <a href="<%= @topic.id %>/black"> Black </a></li>
-        <li> <a href="<%= @topic.id %>/asian"> Asian </a></li>
-        <li> <a href="<%= @topic.id %>/mixed"> Mixed</a></li>
-        <li> <a href="<%= @topic.id %>/other"> Other </a></li>
+        <li> <a href="white"> White </a></li>
+        <li> <a href="black"> Black </a></li>
+        <li> <a href="asian"> Asian </a></li>
+        <li> <a href="mixed"> Mixed</a></li>
+        <li> <a href="other"> Other </a></li>
       </ul>
     </div>
 
@@ -38,7 +39,7 @@
       </h3>
       <ul class="list">
         <% TaxonomyLevel.topics.each do |t| %>
-          <li> <a href="<%= t.id %>"> <%=t.display_name %> </a></li>
+          <li> <a href="/topics/<%= t.id %>"> <%=t.display_name %> </a></li>
         <% end %>
       </ul>
     </div>
@@ -61,7 +62,7 @@
             </div>
 
             <div class="factoid-result factoid-header">
-              Black
+              <%= @filter.titleize %> Average
             </div>
 
             <div class="factoid-result factoid-header">

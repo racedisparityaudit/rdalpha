@@ -2,8 +2,6 @@
 
   function initFactoids(){
 
-
-    console.log($("button"))
     function applyFilters(e){
       e.preventDefault()
       var selectedTopics = $("input",".options-container").filter(function(i,e){ return e.checked})
