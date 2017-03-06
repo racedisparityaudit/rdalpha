@@ -6,7 +6,7 @@
             type: 'bar'
         },
         title: {
-            text: 'Attainment 8 Scores by Race'
+            text: 'Average GCSE scores by race'
         },
         xAxis: {
             categories: ['Black', 'White', 'Mixed', 'Asian', 'Other'],
@@ -58,7 +58,7 @@ function drawOverallChartWithSubgroups(){
             type: 'bar'
         },
         title: {
-            text: 'Attainment 8 Scores by Race'
+            text: 'Average GCSE scores by race'
         },
         xAxis: {
             categories: ['WHITE (All)', 'White British', 'Irish', 'Traveller of Irish heritage', 'Gypsy/Roma', 'Any other white background',
@@ -139,7 +139,7 @@ function drawOverallChartWithSubgroups(){
             type: 'bar'
         },
         title: {
-            text: 'Attainment 8 Scores by Race and Gender'
+            text: 'Average GCSE scores by race and gender'
         },
         xAxis: {
             categories: ['Black', 'White', 'Mixed', 'Asian', 'Other', 'All'],
@@ -201,7 +201,7 @@ Highcharts.chart('heatmap-container', {
 
 
     title: {
-        text: 'GCSE Average Grade by Race and Region'
+        text: 'Average GCSE scores by race and region'
     },
 
     xAxis: {
@@ -265,7 +265,7 @@ this.point.value +
                 type: 'bar'
             },
             title: {
-                text: 'GCSE Average Grade by Race and Free School Meal Status'
+                text: 'Average GCSE scores by race and free school meal status (higher or lower income)'
             },
             xAxis: [{
                 categories: ['WHITE (All)', 'White British', 'Irish', 'Traveller of Irish heritage', 'Gypsy/Roma', 'Any other white background',
