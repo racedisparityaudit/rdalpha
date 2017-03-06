@@ -24,21 +24,26 @@ class TaxonomyLevelController < ApplicationController
   end
 
   def factoids
-    @filter = params[:filter]
-
-    @factoids = TaxonomyLevel.metrics
+    race = params[:race]
+    redirect_to "/topics/#{TaxonomyLevel.homepage.id}/#{race}"
   end
 
   def topics
-    @topic = TaxonomyLevel.find(params[:filter])
+
+    @topic =
+      if params[:filter] == "all"
+        TaxonomyLevel.homepage
+      else
+        TaxonomyLevel.find(params[:filter])
+      end
     @filter = nil
     @factoids = @topic.metrics
   end
 
   def topics_filtered
-    @topic = TaxonomyLevel.find(params[:filter])
+    @topic    = TaxonomyLevel.find(params[:filter])
     @factoids = @topic.metrics
-    @filter = "black"
+    @filter   = params[:race]
   end
 
   private

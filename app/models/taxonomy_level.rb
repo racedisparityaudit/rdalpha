@@ -20,6 +20,7 @@ class TaxonomyLevel < ApplicationRecord
   has_many :taxonomy_levels, foreign_key: :parent_id
   belongs_to :taxonomy_level, foreign_key: :parent_id
   has_many :measure_averages
+  HOMEPAGE_NAME = "homepage"
 
   def self.metrics
     all.select{ |t| t.metric_level?}
@@ -92,7 +93,7 @@ class TaxonomyLevel < ApplicationRecord
   end
 
   def display_name
-    name.downcase.tap{ |n| n[0] = n.first.upcase }.gsub("&","and")
+    title.downcase.tap{ |n| n[0] = n.first.upcase }.gsub("&","and")
   end
 
   def metric_level?
@@ -104,6 +105,10 @@ class TaxonomyLevel < ApplicationRecord
   end
 
   private
+
+  def title
+    name == HOMEPAGE_NAME ? "Entire public sector" : name
+  end
 
   def measure_average_for(group)
     measure_averages.select{ |a| a.subgroup_name.downcase == group.downcase }.first
