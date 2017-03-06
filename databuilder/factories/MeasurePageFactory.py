@@ -30,7 +30,7 @@ class MeasurePageFactory(object):
 
     def add_data_content(self, page):
         data = self.measure_set.get_measure(page.measure_name)
-        
+
     def tricep(self, dict, key, alternative = ''):
         try:
             return dict[key]
