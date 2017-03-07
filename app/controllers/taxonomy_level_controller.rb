@@ -10,6 +10,9 @@ class TaxonomyLevelController < ApplicationController
     when "/education/schoolsandcolleges/resultsandstudentprogress/attainment8"
       @presenter = Attainment8.new
       render("attainment8")
+    when "/work/employment/participationinthelabourmarket/unemploymentrate"
+      @presenter = Unemployment.new
+      render("unemployment")
     when "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16"
       render('question')
     else

@@ -1,0 +1,119 @@
+
+<div class="breadcrumbs">
+  <ol>
+    <% @taxonomy_level.breadcrumbs.each do |crumb| %>
+        <li> <a href="<%=crumb.link%>"><%=crumb.display_name%></a></li>
+    <% end %>
+  </ol>
+</div>
+
+<h1 class="heading-large"> Unemployment rates (in labour force)</h1>
+
+<div class="grid-row">
+  <div class="column-whole">
+    <div class="govuk-metadata">
+      <dl>
+        <dt> From:</dt> <dd><a href="<%= @presenter.source_link %>">
+        <%= @presenter.source_title %></a></dd>
+        <dt>First Published: </dt> <dd><%= @presenter.date %></dd>
+        <dt>Last Updated: </dt> <dd><%= @presenter.date %></dd>
+      </dl>
+    </div>
+  </div>
+</div>
+
+
+<p>
+ The rate of UK unemployment as a percentage of the potential labour force
+</p>
+
+<p>
+  Unemployed people are those without a job who have been actively seeking work in the past 4 weeks and are available to start work in the next 2 weeks. It also includes those who are out of work but have found a job and are waiting to start it in the next 2 weeks. Find out more about
+  <a href="https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment">how unemployment is measured.</a>
+</p>
+
+<p>The level and rate of UK unemployment are measured by the Labour Force Survey (LFS) using a definition of unemployment specified by the International Labour Organisation. </p>
+
+<div class="grid-row question-tabs" id="navigation-tabs">
+  <ul class="tabs-nav">
+    <li id="ethnicity-selector"><a href="#ethnicity-section"> All </a></li>
+    <li id="gender-selector"><a href="#gender-section">Gender </a></li>
+    <li id="age-bracket-selector"><a href="#age-section">Age bracket </a></li>
+    <li id="time-selector"><a href="#time-section">Over time </a></li>
+  </ul>
+</div>
+
+<div class="grid-row graph-section" id="ethnicity-section">
+  <div class="column-whole question-graph">
+  <div id="container" style="max-width: 800px; height: 600px; margin: 0 auto"></div>
+</div>
+<!--   <div class="column-one-half question-graph">
+    <img src="/assets/images/attainment8/Table_1_GCSE_Average_by_Ethnicity.png" alt="">
+  </div> -->
+</div>
+
+<div class="graph-section" id="gender-section">
+  <div class="grid-row" >
+    <div class="column-whole question-graph">
+      <div id="gender-container" style="max-width: 800px; height: 600px; margin: 0 auto"></div>
+    </div>
+  </div>
+</div>
+
+<div class="graph-section" id="age-section">
+  <div class="grid-row">
+    <div class="column-whole question-graph">
+        <div id="age-container" style="max-width: 800px; height: 500px; margin: 0 auto"></div>
+    </div>
+  </div>
+</div>
+
+<div class="graph-section" id="time-section">
+  <div class="grid-row">
+    <div class="column-whole question-graph">
+        <div id="time-container" style="max-width: 800px; height: 500px; margin: 0 auto"></div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-whole">
+  </div>
+
+    <p>Find out <a href= "https://www.ons.gov.uk/ons/guide-method/measuring-equality/equality/measuring-equality--a-guide/ethnic-group-statistics--a-guide-for-the-collection-and-classification-of-ethnicity-data.pdf">how we collect and report on race. </a> </p>
+
+    <p>
+      Race categories may be combined depending on how the information was collected or to show a value for the whole group. For example, Black Caribbean, Black African and Black other may sometimes be combined into one category, as "Black".
+    </p>
+
+    <h3 class="heading-medium"> Summary </h3>
+
+    <p>
+      Girls are ahead of boys and the highest-performing local authority areas for attainment 8 are concentrated in London and the south, while the majority of the lowest-performing areas are in the north and midlands.
+    </p>
+
+    <p>
+      The GCSE and equivalent results continue to vary between different race groups. Within each of these broader race groupings, the minor race groups show further variability:
+    </p>
+
+    <ul class="list-bullet">
+      <li>Chinese pupils are the highest achieving group.</li>
+      <li> Pupils from a black background are the lowest performing group although black pupils are progressing above the national average.</li>
+      <li>Pupils from an Asian background are performing above the national average.</li>
+      <li>Pupils from a mixed background are also performing above the national level.</li>
+      <li>Within the minor race groupings, Indian pupils are performing well above the national average </li>
+      <li>Gypsy/Roma pupils are the lowest performers.</li>
+    </ul>
+  <br>
+  <br>
+  <p> <a href="http://www.gov.uk">Download data in csv or xls format</a> for all of England or a local authority.</p>
+
+  <p>Read the <a href="/attainment8/metadata">further information and guidance </a>about the data in the tables.
+  </p>
+</div>
+
+
+
+<!-- Makes it run unemployment js, extremely hacky fix this TODO: TRI -->
+<div id="unemployment"></div>
+
