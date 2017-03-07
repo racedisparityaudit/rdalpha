@@ -39,12 +39,17 @@ class TaxonomyLevel < ApplicationRecord
   end
 
   def breadcrumbs
-    [TaxonomyLevel.homepage , top_level_parent]
+    crumbs = [TaxonomyLevel.homepage]
+    crumbs << top_level_parent if taxonomy_level
+    crumbs << self if metric_level?
+    crumbs
   end
 
   def link
     if uri == TaxonomyLevel.homepage.uri
       "/"
+    elsif metric_level?
+      "/#{ name }"
     else
       "/topics/#{top_level_parent.id}"
     end
@@ -69,7 +74,6 @@ class TaxonomyLevel < ApplicationRecord
   end
 
   def national_average
-
     return "-" unless national
     display_encode(national)
   end
@@ -88,6 +92,10 @@ class TaxonomyLevel < ApplicationRecord
     title.downcase.tap{ |n| n[0] = n.first.upcase }.gsub("&","and")
   end
 
+  def breadcrumb_name
+    name.downcase.tap{ |n| n[0] = n.first.upcase }.gsub("&","and")
+  end
+
   def metric_level?
     taxonomy_levels.empty?
   end
@@ -103,12 +111,13 @@ class TaxonomyLevel < ApplicationRecord
   end
 
   def measure_average_for(group)
-    measure_averages.select{ |a| a.subgroup_name.downcase == group.downcase }.first
+    measure_averages.select{ |a|
+      a.subgroup_name.split(" ").first.downcase == group.split(" ").first.downcase }.first
   end
 
   def display_encode(number_string)
     # TODO: awful it gets confused because of use of keyword
-    if self[:display] == "percent"
+    if self[:display] == "percent" || self[:display].nil?
       (number_string.to_d * 100).round(1).to_s + " %"
     else
       number_string.to_d.round(2).to_s

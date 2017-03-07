@@ -1,3 +1,11 @@
+<div class="breadcrumbs">
+  <ol>
+    <% @taxonomy_level.breadcrumbs.each do |crumb| %>
+      <li> <a href="<%=crumb.link%>"><%=crumb.breadcrumb_name%></a></li>
+    <% end %>
+  </ol>
+</div>
+
 <div class="grid-row">
   <div class="column-whole">
     <h1 class = heading-xlarge>

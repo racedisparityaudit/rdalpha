@@ -32,18 +32,19 @@ class TaxonomyLevelController < ApplicationController
   end
 
   def topics
-
     @topic =
       if params[:filter] == "all"
         TaxonomyLevel.homepage
       else
         TaxonomyLevel.find(params[:filter])
       end
+    @taxonomy_level = @topic
     @filter = nil
   end
 
   def topics_filtered
     @topic    = TaxonomyLevel.find(params[:filter])
+    @taxonomy_level = @topic
     @filter   = params[:race]
   end
 
