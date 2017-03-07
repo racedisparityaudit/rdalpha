@@ -1,13 +1,13 @@
 class TaxonomyImporter
 
-  MEASURE_AVERAGE_PATH = Rails.root.join("./data/output/measure_averages.csv").to_s
-  TOPIC_PATH           = Rails.root.join("./data/output/taxonomy.csv").to_s
-  MEASURE_PATH         = Rails.root.join("./data/output/taxonomy.csv").to_s
+  MEASURE_AVERAGE_PATH = Rails.root.join("./data/measure_averages.csv").to_s
+  TOPIC_PATH           = Rails.root.join("./data/taxonomy.csv").to_s
+  MEASURE_PATH         = Rails.root.join("./data/taxonomy.csv").to_s
 
   def import(path=nil)
     require 'csv'
     path ||= ENV["IMPORT_PATH"]
-    path = Rails.root.join("./data/output/taxonomy.csv").to_s
+    path = Rails.root.join("./data/taxonomy.csv").to_s
     puts(ENV["IMPORT_PATH"])
     fail ArgumentError.new("import csv does not exist") unless File.exist?(path.to_s)
 
@@ -20,7 +20,7 @@ class TaxonomyImporter
 
     taxonomy_csv.each{ |r| import_row r}
 
-    measure_path =  Rails.root.join("./data/output/measure_averages.csv").to_s
+    measure_path =  Rails.root.join("./data/measure_averages.csv").to_s
     measure_csv = CSV.read(measure_path, encoding: "ISO8859-1:utf-8")
     measure_csv.shift
 
