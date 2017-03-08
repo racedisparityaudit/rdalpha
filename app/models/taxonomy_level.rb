@@ -104,6 +104,25 @@ class TaxonomyLevel < ApplicationRecord
     taxonomy_level.name
   end
 
+  def topic_overview
+    case uri
+    when "/education"
+      "Government departments, local authorities, schools, colleges and universities collect and report the following education data which includes race."
+    when "/work"
+      "Government departments, local authorities and Job Centres collect and report the following work data which includes race."
+    when "/housingandlivingstandards"
+      "Government departments and local authorities collect and report the following housing data which includes race."
+    when "/health"
+      "Government departments, local authorities, hospitals, health trusts and organisations collect and report the following health data which includes race."
+    when "/securityandjustice"
+      "Government departments, local authorities, police, border controls, law courts and prisons collect and report the following security and justice data which includes race."
+    when "/privatelifeandcommunity"
+      "Government departments and local authorities collect and report the following data related to private life and communities which includes race."
+    else
+      ""
+    end
+  end
+
   private
 
   def title

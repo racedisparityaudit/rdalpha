@@ -6,14 +6,6 @@
   </ol>
 </div>
 
-<div class="grid-row">
-  <div class="column-whole">
-    <h1 class = heading-xlarge>
-      <%= @topic.display_name %>
-    </h1>
-  </div>
-</div>
-
 <div class = "grid-row">
   <div class = "column-third">
     <div>
@@ -54,6 +46,29 @@
   </div>
 
   <div class="column-two-thirds">
+    <h1 class = heading-xlarge>
+      <%= @topic.display_name %>
+    </h1>
+
+    <p>
+      <%= @topic.topic_overview %>
+    </p>
+
+    <p>
+      The numbers that you see underneath the national averages below may represent a score, a statistical measure, number of people or a percentage of the nation.
+    </p>
+
+    <p>
+      You can compare the national average with a particular category of race or ethnicity to see any differences between the two.
+    </p>
+
+    <p>
+      In order to understand why there are differences, you can find out more information on the measure by clicking on the relevant links.
+    </p>
+
+    <h3 class="heading-medium">
+      <%= @topic.measures.count %> measures available for <%= @topic.display_name %>
+    </h3>
 
     <h3 class="heading-medium">
       <%= @topic.measures.count %> measures available for <%= @topic.display_name %>
