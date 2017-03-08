@@ -10,33 +10,11 @@
   <div class = "column-third">
     <div>
       <h3 class="heading-medium">
-        Contents
-      </h3>
-      <ul class="list">
-        <% @topic.taxonomy_levels.each do |level| %>
-          <li> <a href="#<%=level.anchor%>"> <%= level.display_name %> </a> </li>
-        <% end %>
-      </ul>
-    </div>
-
-    <div>
-      <h3 class="heading-medium">
-        Compare to the national average
-      </h3>
-      <ul class="list">
-        <li> <a href="<%= @topic.id %>/white"> White </a></li>
-        <li> <a href="<%= @topic.id %>/black"> Black </a></li>
-        <li> <a href="<%= @topic.id %>/asian"> Asian </a></li>
-        <li> <a href="<%= @topic.id %>/mixed"> Mixed</a></li>
-        <li> <a href="<%= @topic.id %>/other"> Other </a></li>
-      </ul>
-    </div>
-
-    <div>
-      <h3 class="heading-medium">
         View a different Topic
       </h3>
       <ul class="list">
+        <li> <a href="all"> Entire public sector </a></li>
+
         <% TaxonomyLevel.topics.each do |t| %>
           <li> <a href="<%= t.id %>"> <%= t.display_name %> </a></li>
         <% end %>
@@ -64,6 +42,30 @@
     <p>
       In order to understand why there are differences, you can find out more information on the measure by clicking on the relevant links.
     </p>
+
+  </div>
+</div>
+
+<hr>
+
+<div class="grid-row">
+  <div class = "column-third">
+
+    <div>
+      <h3 class="heading-medium">
+        Compare to the national average
+      </h3>
+      <ul class="list">
+        <li> <a href="<%= @topic.id %>/white"> White </a></li>
+        <li> <a href="<%= @topic.id %>/black"> Black </a></li>
+        <li> <a href="<%= @topic.id %>/asian"> Asian </a></li>
+        <li> <a href="<%= @topic.id %>/mixed"> Mixed</a></li>
+        <li> <a href="<%= @topic.id %>/other"> Other </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="column-two-thirds">
 
     <h3 class="heading-medium">
       <%= @topic.measures.count %> measures available for <%= @topic.display_name %>
