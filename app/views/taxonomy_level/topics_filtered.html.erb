@@ -3,6 +3,10 @@
     <% @taxonomy_level.breadcrumbs.each do |crumb| %>
       <li> <a href="<%=crumb.link%>"><%=crumb.breadcrumb_name%></a></li>
     <% end %>
+
+    <% if @taxonomy_level.name == "homepage" %>
+      <li><a href="#"> Entire public sector </a></li>
+    <% end %>
   </ol>
 </div>
 
