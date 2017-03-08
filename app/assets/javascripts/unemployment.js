@@ -30,7 +30,13 @@
             }
         },
         tooltip: {
-            valueSuffix: ' percent'
+            formatter: function () {
+                        if (isNaN(this.y)) {
+                            return "We don't have enough data";
+                        } else {
+                            return '<b>' + this.key + ': ' + (100 * this.point.y).toFixed(1) + '</b>% <br>';
+                        }
+                    }
         },
         plotOptions: {
             bar: {
@@ -89,8 +95,17 @@ function drawGenderChart(){
                 }
             }
         },
+        legend: {
+            align: 'center'
+        },
         tooltip: {
-            valueSuffix: ' percent'
+            formatter: function () {
+                        if (isNaN(this.y)) {
+                            return "We don't have enough data";
+                        } else {
+                            return '<b>' + this.key + ': ' + (100 * this.point.y).toFixed(1) + '</b>% <br>';
+                        }
+                    }
         },
         plotOptions: {
             bar: {
@@ -105,9 +120,6 @@ function drawGenderChart(){
                     }
                 }
             }
-        },
-        legend: {
-            enabled:false
         },
         credits: {
             enabled: false
@@ -150,7 +162,13 @@ function drawGenderChart2(){
             }
         },
         tooltip: {
-            valueSuffix: ' average'
+            formatter: function () {
+                        if (isNaN(this.y)) {
+                            return "We don't have enough data";
+                        } else {
+                            return '<b>' + this.key + ': ' + (100 * this.point.y).toFixed(1) + '</b>% <br>';
+                        }
+                    }
         },
         plotOptions: {
             bar: {
@@ -162,8 +180,10 @@ function drawGenderChart2(){
                 }
             }
         },
-        legend: {
-        },
+    legend: {
+        align: 'center',
+        verticalAlign: 'bottom'
+    },
         credits: {
             enabled: false
         },
