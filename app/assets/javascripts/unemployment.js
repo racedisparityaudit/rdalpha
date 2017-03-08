@@ -379,8 +379,8 @@ function drawCharts(){
     drawGenderChart();
     drawAgeBracketDrilldown();
     drawTimeSeriesChart();
-    }
-
+    $("#ethnicity-selector").trigger("click")
+}
 
     $(document).ready(drawCharts)
     $(document).on('turbolinks:load', drawCharts)
