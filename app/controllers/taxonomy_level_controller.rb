@@ -39,13 +39,7 @@ class TaxonomyLevelController < ApplicationController
         TaxonomyLevel.find(params[:filter])
       end
     @taxonomy_level = @topic
-    @filter = nil
-  end
-
-  def topics_filtered
-    @topic    = TaxonomyLevel.find(params[:filter])
-    @taxonomy_level = @topic
-    @filter   = params[:race]
+    @race = params[:race]
   end
 
   private

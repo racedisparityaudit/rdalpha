@@ -5,7 +5,9 @@
     <% end %>
 
     <% if @taxonomy_level.name == "homepage" %>
-      <li><a href="#"> Entire public sector </a></li>
+      <li>
+        <a href="#"> Entire public sector </a>
+      </li>
     <% end %>
   </ol>
 </div>
@@ -16,12 +18,10 @@
       <h3 class="heading-medium">
         Topics
       </h3>
-
       <ul class="list">
-        <li> <a href="all"> Entire public sector </a></li>
-
+        <li> <a href="/topics/all/<%= @race %>"> Entire public sector </a></li>
         <% TaxonomyLevel.topics.each do |t| %>
-          <li> <a href="<%= t.id %>"> <%= t.display_name %> </a></li>
+          <li> <a href="/topics/<%= t.id %>/<%= @race %>"> <%=t.display_name %> </a></li>
         <% end %>
       </ul>
     </div>
@@ -30,12 +30,13 @@
       <h3 class="heading-medium">
         Compare to the national average
       </h3>
+
       <ul class="list">
-        <li> <a href="<%= @topic.id %>/white"> White </a></li>
-        <li> <a href="<%= @topic.id %>/black"> Black </a></li>
-        <li> <a href="<%= @topic.id %>/asian"> Asian </a></li>
-        <li> <a href="<%= @topic.id %>/mixed"> Mixed</a></li>
-        <li> <a href="<%= @topic.id %>/other"> Other </a></li>
+        <li> <a href="/topics/<%= @taxonomy_level.id %>/white"> White </a></li>
+        <li> <a href="/topics/<%= @taxonomy_level.id %>/black"> Black </a></li>
+        <li> <a href="/topics/<%= @taxonomy_level.id %>/asian"> Asian </a></li>
+        <li> <a href="/topics/<%= @taxonomy_level.id %>/mixed"> Mixed</a></li>
+        <li> <a href="/topics/<%= @taxonomy_level.id %>/other"> Other </a></li>
       </ul>
     </div>
   </div>
@@ -44,9 +45,9 @@
     <h1 class = heading-xlarge>
       <%= @topic.display_name %>
     </h1>
+
     <p>
       <%= @topic.topic_overview %>
-
     </p>
 
     <p>
@@ -60,7 +61,6 @@
     <p>
       In order to understand why there are differences, you can find out more information on the measure by clicking on the relevant links.
     </p>
-
 
     <h3 class="heading-medium">
       <%= @topic.measures.count %> measures available for <%= @topic.display_name %>
@@ -76,6 +76,12 @@
               </h3>
             </div>
 
+            <% if @race %>
+              <div class="factoid-result factoid-header">
+                <%= @race.titleize %> Average
+              </div>
+            <% end %>
+
             <div class="factoid-result factoid-header">
               National Average
             </div>
@@ -85,6 +91,12 @@
                 <div class="row-description">
                   <a href="/<%= f.name %>"><li> <%= f.description %></li></a>
                 </div>
+
+                <% if @race %>
+                  <div class="factoid-result">
+                     <%= f.group_average(@race) %>
+                  </div>
+                <% end %>
 
                 <div class="factoid-result">
                    <%= f.national_average %>
@@ -97,5 +109,4 @@
     </div>
   </div>
 </div>
-
 
