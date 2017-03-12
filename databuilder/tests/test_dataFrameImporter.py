@@ -8,14 +8,17 @@ import numpy as np
 class TestDataFrameImporter(TestCase):
 
     def test_import_data_frame_with_ks4_example(self):
-        data = DataFrameImporter().import_data_frame(excel_file='test_data/example_ks4.xlsx')
+        data_categories = ['Race', 'Race_type', 'Location', 'Location_type', 'Income', 'Income_type', 'Time',
+                           'Time_type']
+        data = DataFrameImporter().import_data_frame(excel_file='test_data/example_ks4.xlsx',
+                                                     data_page_categories=data_categories)
         self.assertIsNotNone(data)
         self.assertIsNot(0, len(data.index))
 
         expected_columns = ['Code', 'Measure', 'Time', 'Time_type', 'Race', 'Race_type',
                             'Location', 'Location_type', 'Income', 'Income_type',
-                            'Gender', 'Age Bracket', 'Value']
-        self.assertListEqual(list(data), expected_columns)
+                            'Gender', 'Value']
+        self.assertListEqual(sorted(list(data)), sorted(expected_columns))
 
     def test_import_data_frame_with_unemployment_example(self):
         data_categories = ['Race', 'Race_type', 'Location', 'Location_type', 'Income', 'Income_type', 'Gender', 'Age Bracket']
