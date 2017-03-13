@@ -1,0 +1,176 @@
+@import "_conditionals";
+@import "_colours";
+@import "_css3";
+@import "_typography";
+
+.category-children {
+  color: $secondary-text-colour;
+  margin-top: -5px;
+  padding-bottom: 5px;
+}
+
+.block-label-loose {
+  padding-bottom: 15px;
+}
+
+.block-label-with-child {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.panel-chid {
+  margin-top: -15px;
+}
+
+.form-group {
+  margin-top: 2px;
+}
+
+.categories-typeahead > div {
+  width: 100%;
+}
+
+.categories {
+  margin-top: 27px;
+}
+
+.typeahead__input {
+  @include box-sizing(border-box);
+  @include core-19;
+  width: 100%;
+
+  padding: 5px 4px 4px;
+  color: inherit;
+  background-color: transparent;
+  border: 2px solid;
+
+  // Remove inner shadow
+  -webkit-appearance: none;
+  // Remove rounded corners
+  border-radius: 0;
+}
+
+.typeahead__menu {
+  background-color: #fff;
+  border: 2px solid #6f777b;
+  border-top: 0;
+  margin: 0;
+  max-height: 342px;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+  width: calc(100% - 4px);
+}
+
+.typeahead__option {
+  border: solid #bfc1c3;
+  border-width: 1px 0;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.typeahead__option:first-of-type {
+  border-top-width: 0;
+}
+
+.typeahead__option:last-of-type {
+  border-bottom-width: 0;
+}
+
+.typeahead__option:focus {
+  background-color: #2b8cc4;
+  border-color: #2b8cc4;
+  color: white;
+  outline: none;
+}
+
+.typeahead__input,
+.typeahead__option {
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 4px;
+}
+
+@media (min-width: 641px) {
+  .typeahead__input,
+  .typeahead__option {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
+
+.block-label.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.js-enabled .shown {
+  display: block;
+  visibility: visible;
+}
+
+.white-space {
+  height: 27px;
+}
+
+// Details
+// ==========================================================================
+
+  #last-label {
+    margin-bottom: 10px
+  }
+
+details {
+  position: relative;
+  display: block;
+  clear: both;
+  margin-top: 30px;
+  summary {
+    display: inline-block;
+    color: $govuk-blue;
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: 0;
+    top: -1.3em;
+    left: 0;
+    margin-left: 45px;
+
+    &:hover {
+      color: $link-hover-colour;
+    }
+
+    &:focus {
+      outline: 3px solid $focus-colour;
+    }
+  }
+
+  // Underline only summary text (not the arrow)
+  .summary {
+    text-decoration: underline;
+  }
+
+  // Match fallback arrow spacing with -webkit default
+  .arrow {
+    margin-right: .35em;
+    font-style: normal;
+  }
+
+}
+details.panel {
+  padding: 0;
+  margin: 0;
+}
+details[open].panel {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+
+.content-fixed {
+  position: fixed;
+  top: 0;
+}
+.shim {
+  display: block;
+}
