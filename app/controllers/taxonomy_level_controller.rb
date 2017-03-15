@@ -12,11 +12,12 @@ class TaxonomyLevelController < ApplicationController
       render("attainment8")
     when "/work/employment/participationinthelabourmarket/unemploymentrate"
       @presenter = Unemployment.new
-      render("unemployment")
+      render("show")
     when "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16"
       render('question')
+    else
+      render("missing")
     end
-    @presenter = Attainment8.new
   end
 
   def metadata
