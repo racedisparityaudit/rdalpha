@@ -33,6 +33,12 @@ class TestDataFrameImporter(TestCase):
                             'Gender', 'Age Bracket', 'Value']
         self.assertListEqual(list(data), expected_columns)
 
+#
+# class TestMeasureBuilder(TestCase):
+#
+#     def test_measure_build_does_build_measure(self):
+#         builder = MeasureBuilder()
+
 
 
 if __name__ == '__main__':
