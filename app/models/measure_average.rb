@@ -14,7 +14,6 @@
 #
 
 class MeasureAverage < ApplicationRecord
-  belongs_to :measure
 
   RACE_CATEGORIES = [
       "White All",
