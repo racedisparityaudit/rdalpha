@@ -4,7 +4,7 @@ class HomepageController < ApplicationController
   LOCATION = "location".freeze
 
   def index
-    @topics = Topic.topic_level
+    #@topics = Topic.topic_level
   end
 
   def navigation_form
