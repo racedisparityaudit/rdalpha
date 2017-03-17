@@ -31,10 +31,6 @@
           <a href="#">Topic</a>
         </li>
 
-        <li id="<%= HomepageController::RACE %>-selector">
-           <a href="#"> Race </a>
-        </li>
-
         <li id="<%=HomepageController::LOCATION %>-selector">
           <a href="#">Location</a>
         </li>
@@ -43,174 +39,17 @@
   </div>
 </div>
 
-<div class="grid-row radios-container" id="race-section">
-  <div class="column-two-thirds">
-    <%= form_tag(class: "form-group", action:"navigation_form", method: "POST") do %>
-      <fieldset>
-        <input type="hidden" name="filter_type" value="<%= HomepageController::RACE%>">
-        <p>Select one of the options below.</p>
-
-        <label class="block-label selection-button-radio" for="radio-1">
-          <input id="radio-1" type="radio" name="radio-group" value="White">
-          <span class="heading-small">White All</span>
-        </label>
-
-        <details class="panel panel-border-narrow">
-          <summary>3 subcategories</summary>
-
-          <label class="block-label selection-button-radio" for="radio-2">
-            <input id="radio-2" type="radio" name="radio-group" value="EnglishWelshScottishNorthernIrishOrWhiteBritish">
-            <span class="heading-small">
-              English / Welsh / Scottish / Northern Irish / White British
-            </span>
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-3">
-            <input id="radio-3" type="radio" name="radio-group" value="Irish">
-            <span class="heading-small">Irish</span>
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-4">
-            <input id="radio-4" type="radio" name="radio-group" value="GypsyOrIrishTraveller">
-            <span class="heading-small">Gypsy or Irish Traveller</span>
-          </label>
-        </details>
-
-
-        <label class="block-label selection-button-radio" for="radio-5">
-          <input id="radio-5" type="radio" name="radio-group" value="Mixed">
-          <span class="heading-small">Mixed All</span>
-        </label>
-        <details class="panel panel-border-narrow">
-          <summary>4 subcategories</summary>
-
-          <label class="block-label selection-button-radio" for="radio-6">
-            <input id="radio-6" type="radio" name="radio-group" value="WhiteAndCaribbean">
-            <span class="heading-small">White and Black Caribbean</span>
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-7">
-            <input id="radio-7" type="radio" name="radio-group" value="WhiteAndAfrican">
-            <span class="heading-small">White and Black African</span>
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-8">
-            <input id="radio-8" type="radio" name="radio-group" value="WhiteAndAsian">
-            <span class="heading-small">White and Asian</span>
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-9">
-            <input id="radio-9" type="radio" name="radio-group" value="MixedOther">
-            <span class="heading-small">Any other Mixed / Multiple ethnic background</span>
-          </label>
-        </details>
-
-        <label class="block-label selection-button-radio" for="radio-10">
-          <input id="radio-10" type="radio" name="radio-group" value="Asian">
-          <span class="heading-small">Asian All</span>
-        </label>
-
-        <details class="panel panel-border-narrow">
-          <summary> 5 subcategories</summary>
-
-          <label class="block-label selection-button-radio" for="radio-11">
-            <input id="radio-11" type="radio" name="radio-group" value="Indian">
-            <span class="heading-small">Indian</span>
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-12">
-            <input id="radio-12" type="radio" name="radio-group" value="Pakistani">
-            <span class="heading-small">Pakistani</span>
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-13">
-            <input id="radio-13" type="radio" name="radio-group" value="Bangladeshi">
-            <span class="heading-small">Bangladeshi</span>
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-14">
-            <input id="radio-14" type="radio" name="radio-group" value="Chinese">
-            <span class="heading-small">Chinese</span>
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-15">
-            <input id="radio-15" type="radio" name="radio-group" value="AsianOther">
-            <span class="heading-small">Any other Asian background</span>
-          </label>
-        </details>
-
-        <label class="block-label selection-button-radio" for="radio-16">
-          <input id="radio-16" type="radio" name="radio-group" value="Black">
-          <span class="heading-small">Black All</span>
-        </label>
-        <details class="panel panel-border-narrow">
-          <summary>3 subcategories</summary>
-          <label class="block-label selection-button-radio" for="radio-17">
-            <input id="radio-17" type="radio" name="radio-group" value="African">
-            <span class="heading-small">African</span>
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-18">
-            <input id="radio-18" type="radio" name="radio-group" value="Caribbean">
-            <span class="heading-small">Caribbean</span>
-          </label>
-
-          <label class="block-label selection-button-radio" for="radio-19">
-            <input id="radio-19" type="radio" name="radio-group" value="BlackOther">
-            <span class="heading-small">Any other Black / African / Caribbean background</span>
-          </label>
-
-        </details>
-
-        <label class="block-label selection-button-radio" for="radio-21" id="last-label">
-          <input id="radio-21" type="radio" name="radio-group" value="Other">
-          <span class="heading-small">Other</span>
-        </label>
-        <details class="panel panel-border-narrow">
-         <summary>1 subcategory</summary>
-
-          <label class="block-label selection-button-radio" for="radio-20">
-            <input id="radio-20" type="radio" name="radio-group" value="Arab">
-            <span class="heading-small">Arab</span>
-          </label>
-        </details>
-
-      </fieldset>
-      <br>
-      <br>
-      <div>
-        <input class="button button-get-started" type="submit" value="Browse">
-      </div>
-    <% end %>
-  </div>
-</div>
-
 <div class="grid-row radios-container" id="topic-section">
   <div class="column-two-thirds">
-    <%= form_tag(class: "form-group", action:"navigation_form", method: "POST") do %>
-      <fieldset>
-        <input type="hidden" name="filter_type" value="<%=HomepageController::TOPIC%>">
-        <p>Select one of the options below.</p>
+    <input type="hidden" name="filter_type" value="<%=HomepageController::TOPIC%>">
+    <p>Select one of the options below.</p>
 
-        <label class="block-label selection-button-radio" for="topic-radio-all">
-          <input id="topic-radio-all" type="radio" name="topic-radio-group" value="all">
-          <span class="heading-small">All</span>
-          <p> See the full list of data available </p>
-        </label>
+    <span class="heading-small"><a href="/topics/all">All</a></span>
+    <p> See the full list of data available </p>
 
-        <% TaxonomyLevel.homepage.taxonomy_levels.each_with_index do |topic, index| %>
-          <label class="block-label selection-button-radio" for="topic-radio-<%= index %>">
-            <input id="topic-radio-<%= index %>" type="radio" name="topic-radio-group" value="<%= topic.id %>">
-            <span class="heading-small"><%= topic.display_name %></span>
-            <p> <%= topic.description %> </p>
-          </label>
-        <% end %>
-      </fieldset>
-      <br>
-      <br>
-      <div>
-        <input class="button button-get-started" type="submit" value="Browse">
-      </div>
+    <% TaxonomyLevel.homepage.taxonomy_levels.each_with_index do |topic, index| %>
+        <span class="heading-small"><a href="/topics/<%= topic.id %>"><%= topic.display_name %></a></span>
+        <p> <%= topic.description %></p>
     <% end %>
   </div>
 </div>

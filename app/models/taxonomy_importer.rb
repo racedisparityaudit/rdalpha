@@ -41,7 +41,6 @@ class TaxonomyImporter
   end
 
   def import_row(csv_row)
-
     taxonomy_name = csv_row.first
 
     parent_name = csv_row.second.try(:downcase)
