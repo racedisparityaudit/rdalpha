@@ -346,7 +346,9 @@ function drawTimeSeriesChart() {
 
     plotOptions: {
         series: {
-            pointStart: 2002
+            pointStart: 2002,
+            connectNulls: true
+
         }
     },
 
