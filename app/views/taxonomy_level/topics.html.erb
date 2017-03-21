@@ -32,10 +32,11 @@
       <%= @topic.display_name %>
     </h1>
 
-    <p>
-      <%= @topic.topic_overview %>
-    </p>
-
+    <% @topic.topic_overview.each do |p| %>
+      <p>
+        <%= p %>
+      </p>
+    <% end %>
 
     <h3 class="heading-medium">
       <%= @topic.measures.count %> measures available for <%= @topic.display_name %>
