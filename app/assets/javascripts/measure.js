@@ -28,7 +28,6 @@
         $("#accordion-all-control").text("Open all")
         $(".accordion__body").hide()
       }
-      console.log(a)
     })
   }
 

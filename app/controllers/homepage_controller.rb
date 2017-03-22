@@ -4,6 +4,17 @@ class HomepageController < ApplicationController
   LOCATION = "location".freeze
 
   def index
+    @title =
+      case params[:number]
+      when nil
+        "Race disparity in the public sector"
+      when "1"
+        "some other title"
+      when "2"
+        ""
+      when "3"
+        ""
+      end
   end
 
   def navigation_form

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   #TODO: KASM make roots
   root 'homepage#index'
 
+  get '/homepage/:number' => 'homepage#index'
   post 'navigation_form' => 'homepage#navigation_form'
   get 'attainment8/metadata' => 'taxonomy_level#metadata'
   get 'factoids/:race' => 'taxonomy_level#factoids'

@@ -1,6 +1,6 @@
 <div class = "grid-row">
   <div class= "column-whole">
-   <h1 class="heading-xlarge"> Race disparity in the public sector </h1>
+   <h1 class="heading-xlarge"> <%= @title %> </h1>
   </div>
 </div>
 
@@ -8,38 +8,41 @@
   <div class="column-two-thirds">
 
     <p>
-      Government departments measure how people from different races access public services.
+      Government departments collect data and run surveys which include information on ethnicity. This is the first time that this data has been collected together and shown openly in one place.
     </p>
 
     <p>
-      This data will help to reflect the realities of people living in the UK, and feed into policy issues relating to race disparity.
+      Black people are six times more likely to be stopped and searched by police. Young Bangladeshis and Pakistanis are <a href="/unemployment rate">twice as likely to be unemployed </a> as white people of the same age.
     </p>
 
     <p>
-      Over time, more information will be collected and reported here.
+      Now government departments and other organisations can see where there are differences and where there is a need for change in order to have a fairer Britain.
+    </p>
+
+    <p>
+      Members of the public will be able to see how experiences and outcomes differ for people of various ethnicities across public sector services, which cover important areas of their life such as health, work and education.
     </p>
 
     <h3 class="heading-medium">
-      Browse the available data
+      Browse by topic:
     </h3>
+  </div>
 
-    <p > You can browse all the available data or find something more specific using the options and filters below. </p>
-
-    <div id="navigation-tabs" class="homepage">
-      <ul class = "tabs-nav">
-        <li id="<%= HomepageController::TOPIC %>-selector" class="selected">
-          <a href="#">Topic</a>
-        </li>
-
-        <li id="<%=HomepageController::LOCATION %>-selector">
-          <a href="#">Location</a>
-        </li>
+  <div class="column-one-third">
+    <div class="related-items-section">
+      <h2 class="heading-small">Further information:</h2>
+      <ul class="list">
+        <li> <a href="https://www.gov.uk/government/news/prime-minister-orders-government-audit-to-tackle-racial-disparities-in-public-service-outcomes">Prime Minister orders government audit to tackle racial disparities in public service outcomes </a></li>
+        <li> <a href="">Ethnicity and identity in the UK </a></li>
+        <li> <a href="">Methodology for collecting and displaying the data </a></li>
+        <li> <a href="">Future releases and updates </a></li>
+        <li> <strong><a href="">More </a></strong></li>
       </ul>
     </div>
   </div>
 </div>
 
-<div class="grid-row radios-container" id="topic-section">
+<div class="grid-row" id="topic-section">
   <div class="column-two-thirds">
     <input type="hidden" name="filter_type" value="<%=HomepageController::TOPIC%>">
     <p>Select one of the options below.</p>
@@ -51,27 +54,6 @@
         <span class="heading-small"><a href="/topics/<%= topic.id %>"><%= topic.display_name %></a></span>
         <p> <%= topic.description %></p>
     <% end %>
-  </div>
-</div>
-
-<div class="grid-row radios-container" id="location-section">
-  <div class= "column-two-thirds">
-
-    <p>
-    Information is collected differently, depending on the organisation and the reason for measuring it. Some of the information we publish on race disparity is only available at a national level, and some is available at a more detailed level (e.g. for a local authority, postcode, or for a specific school or prison).
-    </p>
-
-    <p>
-    You can find information and data on race disparity for a specific area - where the data is available at that level. If it isn't available, you may need to broaden your search to a larger regional area.
-    </p>
-
-    <div class= "location-search">
-      <label for="search-main"><h4 class="heading-small">Explore by area:</h4>
-
-        <input type="search" id="search-main">
-      </label>
-      <button type="submit" class="button"> Search </button>
-    </div>
   </div>
 </div>
 

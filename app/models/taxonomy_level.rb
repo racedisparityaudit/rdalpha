@@ -107,26 +107,26 @@ class TaxonomyLevel < ApplicationRecord
   def topic_overview
     case uri
     when "/education"
-      ["Government departments, local authorities, schools, colleges and universities collect and report the following education data which includes race.",
+      ["Government departments, local authorities, schools, colleges and universities collect and report the following education data which includes ethnicity.",
         "This covers school and college results and progress, higher education, adult education, and where students go after leaving education."
       ]
     when "/work"
-      ["Government departments, local authorities and Job Centres collect and report the following work data which includes race.",
+      ["Government departments, local authorities and Job Centres collect and report the following work data which includes ethnicity.",
         "This covers employment, pay and professions, benefits, workplace discrimination, Job Centres, and the public sector workforce diversity."]
     when "/housingandlivingstandards"
-      ["Government departments and local authorities collect and report the following housing data which includes race.",
+      ["Government departments and local authorities collect and report the following housing data which includes ethnicity.",
         "This covers home ownership and private renting, social housing, being homeless and losing your home, housing conditions and standard of living."]
     when "/health"
-      ["Government departments, local authorities, hospitals, health trusts and organisations collect and report the following health data which includes race.",
+      ["Government departments, local authorities, hospitals, health trusts and organisations collect and report the following health data which includes ethnicity.",
         "This covers physical and mental health, preventing illness, quality of care, access to treatment, patient experiences, and patient outcomes."]
     when "/securityandjustice"
-      ["Government departments, local authorities, police, border controls, law courts and prisons collect and report the following security and justice data which includes race.",
+      ["Government departments, local authorities, police, border controls, law courts and prisons collect and report the following security and justice data which includes ethnicity.",
         "This covers justice, crimes, the police, and customs."]
     when "/privatelifeandcommunity"
-      ["Government departments and local authorities collect and report the following data related to private life and communities which includes race.",
+      ["Government departments and local authorities collect and report the following data related to private life and communities which includes ethnicity.",
         "This covers home ownership and private renting, social housing, being homeless and losing your home, housing conditions and standard of living."]
     else
-      ["Government departments, local authorities and related organisations collect and report the following data which includes race."]
+      ["Government departments, local authorities and related organisations collect and report the following data which includes ethnicity."]
     end
   end
 
