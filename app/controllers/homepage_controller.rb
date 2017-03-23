@@ -9,11 +9,15 @@ class HomepageController < ApplicationController
       when nil
         "Race disparity in the public sector"
       when "1"
-        "some other title"
+        "Government data on ethnicity"
       when "2"
-        ""
+        "Ethnicity in Britain today"
       when "3"
-        ""
+        "Ethnic inequality statistics"
+      when "4"
+        "Public services ethnicity metrics"
+      when "5"
+        "Ethnicity statistics "
       end
   end
 

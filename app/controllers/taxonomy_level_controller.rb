@@ -6,7 +6,6 @@ class TaxonomyLevelController < ApplicationController
 
   def show
     @taxonomy_level = TaxonomyLevel.find_by_name(params[:taxonomy_name])
-    print @taxonomy_level.uri
     case @taxonomy_level.uri
     when "/education/schoolsandcolleges/1/averagegcsegradeattainment8"
       @presenter = Attainment8.new
@@ -16,6 +15,8 @@ class TaxonomyLevelController < ApplicationController
       render("show")
     when "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16"
       render('question')
+    when "/health/preventingillness/1/youngsmokersunder16yearsold"
+      render('smoking')
     else
       render("missing")
     end
