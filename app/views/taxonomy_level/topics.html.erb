@@ -46,11 +46,10 @@
       <% @topic.taxonomy_levels.each do |sub_topic| %>
         <div class="row-container grid-row" >
           <div class="column-whole">
-            <div class="factoid-question" >
-              <h3 class="heading-medium" id="<%= sub_topic.anchor %>">
-                <%= sub_topic.display_name %>
-              </h3>
-            </div>
+
+            <h3 class="heading-medium" id="<%= sub_topic.anchor %>">
+              <%= sub_topic.display_name %>
+            </h3>
 
             <% sub_topic.measures.each do |f| %>
               <ul class = "list">
