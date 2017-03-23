@@ -1,16 +1,17 @@
 class TaxonomyLevelController < ApplicationController
   FILLED_OUT_URIS = [
-     "/education/schoolsandcolleges/resultsandstudentprogress/attainment8",
+     "/education/schoolsandcolleges/1/averagegcsegradeattainment8",
      "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16"
   ]
 
   def show
     @taxonomy_level = TaxonomyLevel.find_by_name(params[:taxonomy_name])
+    print @taxonomy_level.uri
     case @taxonomy_level.uri
-    when "/education/schoolsandcolleges/resultsandstudentprogress/attainment8"
+    when "/education/schoolsandcolleges/1/averagegcsegradeattainment8"
       @presenter = Attainment8.new
       render("attainment8")
-    when "/work/employment/participationinthelabourmarket/unemploymentrate"
+    when "/work/employment/1/unemploymentintheuk"
       @presenter = Unemployment.new
       render("show")
     when "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16"
