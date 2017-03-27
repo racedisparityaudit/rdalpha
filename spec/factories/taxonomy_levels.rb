@@ -18,6 +18,6 @@
 
 FactoryGirl.define do
   factory :taxonomy_level do
-    
+
   end
 end

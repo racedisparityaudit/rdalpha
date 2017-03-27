@@ -34,6 +34,19 @@ class TaxonomyLevel < ApplicationRecord
     TaxonomyLevel.where(parent_id: homepage.id)
   end
 
+  def js_flag
+    json_file["js_flag"]
+  end
+
+  def json_file
+    return nil unless metric_level?
+    @json_file ||= JSON.parse(File.read(json_uri))
+  end
+
+  def json_uri
+    Rails.root.join("data/pages#{uri}/data.json")
+  end
+
   def anchor
     name.split(" ").join("")
   end
