@@ -27,6 +27,7 @@ group :development, :test do
   gem 'govuk_elements_rails', git: "https://github.com/alphagov/govuk_elements_rails.git", submodules: true
   gem 'govuk_template'
   gem 'govuk_frontend_toolkit'
+  gem 'govspeak', '~> 3.4.0'
   gem 'rb-readline'
   gem 'jasmine-rails'
   gem 'phantomjs'

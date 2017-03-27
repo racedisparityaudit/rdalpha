@@ -1,3 +1,26 @@
 {
- "js_flag":"unemployment"
+ "js_flag":"unemployment",
+ "chart_tabs":[
+   {
+      "title":"All",
+      "id":"container",
+      "container":"container"
+   },
+   {
+      "title":"Gender",
+      "id":"gender",
+      "container":"gender-container"
+   },
+   {
+      "title":"Age Bracket",
+      "id":"age",
+      "container":"age-container"
+   },
+   {
+      "title":"Time Series",
+      "id":"time",
+      "container":"time-container"
+   }
+ ],
+  "measure_summary": "The rate of UK unemployment as a percentage of the potential labour force.  \n\n Unemployed people are those without a job who have been actively seeking work in the past 4 weeks and are available to start work in the next 2 weeks. It also includes those who are out of work but have found a job and are waiting to start it in the next 2 weeks. Find out more about how unemployment is measured.  \n\n The rate of UK unemployment are measured by the Labour Force Survey (LFS) using a definition of unemployment specified by the International Labour Organisation."
 }

@@ -34,6 +34,10 @@ class TaxonomyLevel < ApplicationRecord
     TaxonomyLevel.where(parent_id: homepage.id)
   end
 
+  def chart_tabs
+    json_file["chart_tabs"]
+  end
+
   def js_flag
     json_file["js_flag"]
   end
@@ -41,6 +45,10 @@ class TaxonomyLevel < ApplicationRecord
   def json_file
     return nil unless metric_level?
     @json_file ||= JSON.parse(File.read(json_uri))
+  end
+
+  def measure_summary
+    json_file["measure_summary"]
   end
 
   def json_uri
@@ -73,7 +81,6 @@ class TaxonomyLevel < ApplicationRecord
   end
 
   def top_level_parent
-    # TODO: will blow up if there is no taxonomy_level
     return self if topic_level?
     return taxonomy_level.top_level_parent
   end

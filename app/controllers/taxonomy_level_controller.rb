@@ -6,21 +6,11 @@ class TaxonomyLevelController < ApplicationController
 
   def show
     @taxonomy_level = TaxonomyLevel.find_by_name(params[:taxonomy_name])
-    # case @taxonomy_level.uri
-    # when "/education/schoolsandcolleges/1/averagegcsegradeattainment8"
-    #   @presenter = Attainment8.new
-    #   render("attainment8")
-    # when "/work/employment/1/unemploymentintheuk"
-    # @present  er = Unemployment.new
-    # render("show")
-    # when "/housingandlivingstandards/socialandaffordablehousing/accesstosocialhousing/housingandliving16"
-    #   render('question')
-    # when "/health/preventingillness/1/youngsmokersunder16yearsold"
-    #   render('smoking')
-    # else
-    #   render("missing")
-    # end
+    @chart_tabs = @taxonomy_level.chart_tabs
     @js_flag = @taxonomy_level.js_flag
+
+    doc = Govspeak::Document.new @taxonomy_level.measure_summary
+    @measure_summary = doc.to_html
   end
 
   def metadata
