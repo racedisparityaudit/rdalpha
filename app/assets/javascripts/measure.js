@@ -7,9 +7,12 @@
 
     $(".accordion__header").click(function(e){
         var body = $(e.currentTarget).parent().find(".accordion__body")
+        console.log(body)
         $(e.currentTarget).find(".plus-minus-icon").toggleClass("open")
         $(body).toggle()
     })
+
+
     $(".accordion__body").hide()
 
     $("#accordion-all-control").click(function(){

@@ -40,8 +40,10 @@ class TaxonomyLevel < ApplicationRecord
 
   def breadcrumbs
     crumbs = [TaxonomyLevel.homepage]
-    crumbs << top_level_parent if taxonomy_level
-    crumbs << self if metric_level?
+    unless topic_level?
+      crumbs << top_level_parent if taxonomy_level
+    end
+    # crumbs << self if metric_level?
     crumbs
   end
 
@@ -93,7 +95,11 @@ class TaxonomyLevel < ApplicationRecord
   end
 
   def breadcrumb_name
-    name.downcase.tap{ |n| n[0] = n.first.upcase }.gsub("&","and")
+    if name == "homepage"
+      "Data on race disparity in public services"
+    else
+      name.downcase.tap{ |n| n[0] = n.first.upcase }.gsub("&","and")
+    end
   end
 
   def metric_level?

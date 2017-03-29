@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import 'colours';
+@import 'typography';
 
 .question-graph {
   img { width: 80%; }
@@ -96,7 +97,8 @@
 #hero-container {
   background-color: $govuk-blue;
   width: 100%;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
   #content {
     padding-bottom: 0px;
   }
@@ -108,8 +110,7 @@
   }
 
   .proposition {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 19px;
   }
   .phase-banner {
     border-bottom: 1px solid $govuk-blue;
@@ -133,4 +134,29 @@
 
 .topics {
   padding-bottom: 10px;
-} 
+}
+
+.metadata {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  dt {
+    float: left;
+    clear: left;
+    width: auto;
+    min-width: 120px;
+  }
+}
+
+table {
+  @include core-24($tabular-numbers: true);
+  border-collapse: collapse;
+  width: 100%;
+  tbody {
+    tr {
+      td {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
