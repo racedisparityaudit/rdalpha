@@ -64,16 +64,46 @@
     </header>
     <% end %>
 
+    <% if @homepage %>
+      <div id="hero-container">
+        <main id="content">
+         <div class="phase-banner">
+          <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+          </p>
+          </div>
+          <div class = "grid-row">
+            <div class= "column-two-thirds">
+             <h1 class="heading-xlarge"> 
+              <!--%= @title %--> 
+              Race disparity in public&nbsp;services
+            </h1>
+             <p class='proposition'>
+              Find data about how people are treated by public services
+             </p>
+            </div>
+          </div>
+        </main>
+      </div>
+    <% end %>
+
+
+    <% unless @homepage %>
+      <div id="global-header-bar"></div>
+    <% end %>
+      
+    <main id="content" role="main">
     <%= yield :after_header %>
 
-    <div id="global-header-bar"></div>
-    <main id="content" role="main">
-      <div class="phase-banner">
-        <p>
-          <strong class="phase-tag">ALPHA</strong>
-          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
-        </p>
-      </div>
+      <% unless @homepage %>
+        <div class="phase-banner">
+          <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+          </p>
+        </div>
+      <% end %>
 
       <%= content_for?(:content) ? yield(:content) : yield %>
     </main>

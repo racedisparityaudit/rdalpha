@@ -1,17 +1,15 @@
-<div class = "grid-row">
-  <div class= "column-whole">
-   <h1 class="heading-xlarge"> <%= @title %> </h1>
-  </div>
-</div>
+
 
 <div class="grid-row">
   <div class="column-two-thirds">
 
-    <p>
-      Government departments collect data and run surveys which include information on ethnicity. This is the first time that this data has been collected together and shown openly in one place.
-    </p>
+    <div class='introduction'>
+      <p class=''>
+        As part of how services provided by government operate, they collect data on ethnicity. This data has been brought together to show how public services treat people from different backgrounds.
+      </p>
+    </div>
 
-    <div class="grid-row">
+    <!--div class="grid-row">
       <div class="column-half quote">
         Black people are six times more likely to be stopped and searched by police.
       </div>
@@ -27,14 +25,14 @@
 
     <p>
       Members of the public will be able to see how experiences and outcomes differ for people of various ethnicities across public sector services, which cover important areas of their life such as health, work and education.
-    </p>
+    </p-->
 
-    <h3 class="heading-medium">
-      Browse by topic:
-    </h3>
+    <!--h3 class="heading-medium">
+      View data by topic:
+    </h3-->
   </div>
 
-  <div class="column-one-third">
+  <!--div class="column-one-third">
     <div class="related-items-section">
       <h2 class="heading-small">Further information:</h2>
       <ul class="list">
@@ -45,20 +43,26 @@
         <li> <strong><a href="">More </a></strong></li>
       </ul>
     </div>
-  </div>
+  </div-->
 </div>
 
 <div class="grid-row" id="topic-section">
   <div class="column-two-thirds">
     <input type="hidden" name="filter_type" value="<%=HomepageController::TOPIC%>">
+  </div>
 
-    <span class="heading-small"><a href="/topics/all">All</a></span>
-    <p> See the full list of data available </p>
+    <!--span class="heading-small"><a href="/topics/all">All</a></span>
+    <p> See the full list of data available </p-->
 
     <% TaxonomyLevel.homepage.taxonomy_levels.each_with_index do |topic, index| %>
-        <span class="heading-small"><a href="/topics/<%= topic.id %>"><%= topic.display_name %></a></span>
+      <div class='column-one-third topics'>
+        <span class="heading-small">
+          <a href="/topics/<%= topic.id %>">
+            <%= topic.display_name %>
+          </a>
+        </span>
         <p> <%= topic.description %></p>
+      </div>
     <% end %>
-  </div>
 </div>
 

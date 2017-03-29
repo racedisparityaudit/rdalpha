@@ -92,3 +92,45 @@
 .site-search {
   float:right;
 }
+
+#hero-container {
+  background-color: $govuk-blue;
+  width: 100%;
+  margin-bottom: 40px;
+  #content {
+    padding-bottom: 0px;
+  }
+  h1, p {
+    color: white;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .proposition {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .phase-banner {
+    border-bottom: 1px solid $govuk-blue;
+    p, a { 
+      color: white;
+      &:visited {
+       color: white;
+      }
+    }
+    .phase-tag {
+      background-color: white;
+      color: $govuk-blue;
+    }
+  }
+}  
+
+.introduction {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.topics {
+  padding-bottom: 10px;
+} 

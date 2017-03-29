@@ -4,10 +4,11 @@ class HomepageController < ApplicationController
   LOCATION = "location".freeze
 
   def index
+    @homepage = true
     @title =
       case params[:number]
       when nil
-        "Race disparity in the public sector"
+        "Race disparity in public services"
       when "1"
         "Government data on ethnicity"
       when "2"
