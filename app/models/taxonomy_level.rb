@@ -47,8 +47,11 @@ class TaxonomyLevel < ApplicationRecord
     @json_file ||= JSON.parse(File.read(json_uri))
   end
 
-  def measure_summary
-    json_file["measure_summary"]
+  def measure_explanation
+    json_file["measure_explanation"]
+  end
+  def overall_summary
+    json_file["overall_summary"]
   end
 
   def json_uri

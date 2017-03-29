@@ -9,8 +9,13 @@ class TaxonomyLevelController < ApplicationController
     @chart_tabs = @taxonomy_level.chart_tabs
     @js_flag = @taxonomy_level.js_flag
 
-    doc = Govspeak::Document.new @taxonomy_level.measure_summary
-    @measure_summary = doc.to_html
+    @measure_explanation = markdown_to_html(@taxonomy_level.measure_explanation)
+    @overall_summary = markdown_to_html(@taxonomy_level.overall_summary)
+  end
+
+  def markdown_to_html(markdown)
+    doc = Govspeak::Document.new markdown
+    doc.to_html
   end
 
   def metadata
