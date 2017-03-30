@@ -149,14 +149,33 @@
 }
 
 table {
-  @include core-19;
+  @include core-16;
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+
+  table-layout: fixed;
+
+  .triangle {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid $link-colour;
+  }
+
+  .js-rotate {
+    transform: rotate(90deg);
+  }
+
+  td {
+    vertical-align: text-top;
+  }
 
   thead {
     td {
-      font-weight: bold;
     }
     .data-title {
       text-align: right;
@@ -171,6 +190,10 @@ table {
     }
   }
 
+  .first-column {
+    padding-left: 0px;
+  }
+
   .race-breakdown {
     @include core-16;
     td {
@@ -183,7 +206,7 @@ table {
 
   .data {
     text-align: right;
-    @include core-19($tabular-numbers: true)
+    @include core-16($tabular-numbers: true)
   }  
 
   .breakdown {
@@ -197,6 +220,12 @@ table {
     border-bottom: 1px solid $border-colour;
     td {
       padding-bottom: 5px;
+    }
+  }
+
+  tr {
+    td {
+      padding-left: 10px;
     }
   }
 
