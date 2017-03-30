@@ -32,6 +32,10 @@ Set the remote git branch to match your new app
 
 
 You should then be able to deploy with :
+Before you deploy you'll need to manually compile the css and javascript if you've made any changes
+`rails assets:precompile`
+
+then commit the resulting compiled files before deploying.
 
 `git push heroku master`
 or
