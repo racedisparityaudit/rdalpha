@@ -149,14 +149,62 @@
 }
 
 table {
-  @include core-24($tabular-numbers: true);
+  @include core-19;
   border-collapse: collapse;
   width: 100%;
-  tbody {
-    tr {
-      td {
-        border-bottom: 1px solid black;
-      }
+  margin-bottom: 40px;
+
+  thead {
+    td {
+      font-weight: bold;
+    }
+    .data-title {
+      text-align: right;
+    }
+  }
+  
+  .primary, .race-breakdown {
+    td {
+      border-bottom: 1px solid $border-colour;
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .race-breakdown {
+    @include core-16;
+    td {
+      padding-left: 20px;
+    }
+    .data {
+      @include core-16($tabular-numbers: true)
+    }
+  }
+
+  .data {
+    text-align: right;
+    @include core-19($tabular-numbers: true)
+  }  
+
+  .breakdown {
+    @include core-16($tabular-numbers: true);
+    td {
+      padding-left: 20px;
+    }
+  }
+
+  .breakdown-row {
+    border-bottom: 1px solid $border-colour;
+    td {
+      padding-bottom: 5px;
+    }
+  }
+
+  .breakdown-controller {
+    color: $link-colour;
+    &:hover {
+      color: $link-hover-colour;
+      cursor: pointer;
     }
   }
 }
