@@ -1,0 +1,59 @@
+@import 'colours';
+@import 'typography';
+
+table {
+  @include core-16;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  
+  td {
+    @include core-16($tabular-numbers: true);
+    text-align: right;
+    vertical-align: text-top;
+    padding: 10px 0 5px 0px;
+    
+    &:first-of-type {
+      @include core-16($tabular-numbers: false);
+      text-align: left;
+    }
+  }
+
+  tbody {
+    td {
+      border-bottom: 1px solid $border-colour;
+    }
+  }
+
+  .breakdown-controller {
+    color: $link-colour;
+    &:hover {
+      color: $link-hover-colour;
+      cursor: pointer;
+    }
+  }
+
+  .breakdown {
+    td {
+    padding-left: 20px;
+    }
+  }
+}
+
+.expand-triangle {
+  display: inline-block;
+  width: 0; 
+  height: 0; 
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 8px solid $link-colour;
+  transition-duration: .2s;
+  margin-right: 10px;
+  margin-left: -19px;
+  margin-bottom: 2px;
+}
+
+.rotate {
+  transition-duration: .2s;
+  transform: rotate(90deg);
+}

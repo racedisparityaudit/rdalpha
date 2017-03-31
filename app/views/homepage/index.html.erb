@@ -2,9 +2,13 @@
 
 <div class="grid-row" id="topic-section">
   <div class="column-two-thirds">
-    <input type="hidden" name="filter_type" value="<%=HomepageController::TOPIC%>">
+    <h2 class='heading-medium'>
+      View government data on ethnicity
+    </h2>
   </div>
+</div>
 
+<div class='grid-row'>
     <% TaxonomyLevel.homepage.taxonomy_levels.each_with_index do |topic, index| %>
       <div class='column-one-third topics'>
         <span class="heading-small">
@@ -17,3 +21,22 @@
     <% end %>
 </div>
 
+<div class='grid-row'>
+  <div class='column-two-thirds'>
+    <h2 class='heading-medium'>
+      Find out more about the audit of government data on ethnicity
+    </h2>
+    <ul class='no-bullets loose-list'>
+      <li>
+        <a href='https://www.gov.uk/government/news/prime-minister-orders-government-audit-to-tackle-racial-disparities-in-public-service-outcomes'>
+          Prime Minister orders government audit to tackle racial disparities in public service outcomes
+        </a>
+      </li>
+      <li>
+        <a href='##'>
+          Methodology for collecting and displaying data
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

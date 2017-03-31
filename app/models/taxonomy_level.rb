@@ -96,7 +96,7 @@ class TaxonomyLevel < ApplicationRecord
 
   def breadcrumb_name
     if name == "homepage"
-      "Data on race disparity in public services"
+      "Government data on ethnicity"
     else
       name.downcase.tap{ |n| n[0] = n.first.upcase }.gsub("&","and")
     end

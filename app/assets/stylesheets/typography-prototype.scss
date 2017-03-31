@@ -1,0 +1,43 @@
+@import 'colours';
+@import 'typography';
+
+.metadata {
+  @include core-16;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  dt {
+    float: left;
+    clear: left;
+    width: auto;
+    min-width: 120px;
+  }
+}
+
+.bigger-data {
+  @include core-19;
+  dt {
+    min-width: 200px;
+  }
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.loose-list {
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.no-bullets {
+  list-style: none;
+  li {
+    margin-left: -20px !important;
+  }
+}
+
+.supporting-information {
+  margin-top: 40px;
+  border-top: 1px solid $border-colour;
+}
