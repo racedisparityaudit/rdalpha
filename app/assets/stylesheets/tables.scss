@@ -20,12 +20,20 @@ table {
     }
   }
 
+  .border-bottom {
+    border-bottom: 1px solid $border-colour;
+  }
+
   thead {
     td {
       font-weight: bold !important;
     }
   }
   
+  .right-border {
+      border-right: 1px solid $border-colour;
+      padding-right: 10px;
+    }
 
   tbody {
     td {
@@ -39,6 +47,10 @@ table {
       color: $link-hover-colour;
       cursor: pointer;
     }
+  }
+
+  .not-bold {
+    font-weight: 400 !important;
   }
 
   .breakdown {
