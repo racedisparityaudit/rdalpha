@@ -1,7 +1,7 @@
 development: &defaults
   adapter: postgresql
   database: rda_alpha_dev
-  username: ralph
+  username: akinegb
   password:
   encoding: utf8
 
