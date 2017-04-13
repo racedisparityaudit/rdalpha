@@ -77,3 +77,72 @@ table {
   transition-duration: .2s;
   transform: rotate(90deg);
 }
+
+
+//responsive table
+
+$breakpoint-alpha: 480px; // adjust to your needs
+
+.rwd-table {
+  min-width: 300px; // adjust to your needs
+  table-layout: auto;
+
+  th {
+    display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
+    font-weight: bold;
+  }
+  
+  td {
+    display: block; 
+    
+    &:before {
+      content: attr(data-th); // who knew you could do this? The internet, that's who.
+      font-weight: bold;
+      padding-left: 0px;
+
+      // optional stuff to make it look nicer
+      width: 50%; // magic number :( adjust according to your own content
+      display: inline-block;
+      // end options
+      
+      @media (min-width: $breakpoint-alpha) {
+        display: none;
+      }
+    }
+  }
+  
+  th, td {
+    text-align: left;
+    padding-left: 0px;
+    
+    @media (min-width: $breakpoint-alpha) {
+      display: table-cell;
+      
+      &:first-child {
+        padding-left: 0;
+      }
+      
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.ethnicity {
+        font-size: 24px !important;
+        padding-top: 20px;
+      }
+
+// presentational styling
+
+body {
+}
+
+.rwd-table {
+  overflow: hidden;
+  th, td {
+    @media (min-width: $breakpoint-alpha) { 
+    }
+  }
+}
