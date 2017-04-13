@@ -1,3 +1,15 @@
+<!-- @scss ../stylesheets/application.css -->
+@title GOV.UK - The best place to find government services and information
+
+@import **/body.html.lsg
+@import **/attainment8.html.lsg
+
+@require govuk_elements_rails
+@require govuk_template
+@require govuk_frontend_toolkit
+
+@scss ../stylesheets/app.scss
+<!-- @javascript ../javascripts/application.js -->
 
 <link href="/assets/stylesheets/govuk-template.css" media="screen" rel="stylesheet" />
 <link href="/assets/stylesheets/fonts.css" media="all" rel="stylesheet" />
@@ -18,9 +30,3 @@
 		display: none;
 	}
 </style>
-    
-
-<!-- @scss ../stylesheets/application.css -->
-@title GOV.UK - The best place to find government services and information
-@import **/*.lsg
-

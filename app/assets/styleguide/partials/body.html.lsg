@@ -1,9 +1,7 @@
 <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
 <div id="skiplink-container">
-  <div>
-    <a href="#content" class="skiplink">Skip to main content</a>
-  </div>
+  <a href="#content" class="skiplink">Skip to main content</a>
 </div>
 
 <div id="global-cookie-message">
@@ -27,10 +25,9 @@
 <main id="content" role="main">
   <div id="global-header-bar"></div>
 
-  <!-- Page content goes here -->
   <h1 class="heading-xlarge">Visualisations</h1>
 
-  <p class="lede">
+  <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -41,34 +38,14 @@
 
   <h2 class="heading-large">Map example</h2>
 
-  <div id="map" style="min-height: 450px; margin: 30px 0 60px; width: 50%"></div>
+  <div class="">
+    <div id="map_1" style="min-height: 320px; margin: 30px 0 60px" class="column-one-third"></div>
+  <div id="map_2" style="min-height: 320px; margin: 30px 0 60px" class="column-one-third"></div>
+  <div id="map_3" style="min-height: 320px; margin: 30px 0 60px" class="column-one-third"></div>
+  </div>
   <p id="show-data"></p>
 </main>
 
-
-<footer class="group js-footer" id="footer" role="contentinfo">
-
-  <div class="footer-wrapper">
-
-
-    <div class="footer-meta">
-      <div class="footer-meta-inner">
-
-
-        <div class="open-government-licence">
-          <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
-
-          <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
-
-        </div>
-      </div>
-
-      <div class="copyright">
-        <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">© Crown copyright</a>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <div id="global-app-error" class="app-error hidden"></div>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -87,43 +64,120 @@
     var options = {
       maxBounds: [[58.16745, -7.52916], [49.00275, -7.26308], [49.0525, 2.87146], [58.20681, 2.7386]],
       minZoom: 5,
-      maxZoom: 13
+      maxZoom: 5,
+      zoomControl: false
     }
 
-    var map = L.map('map', options)
-    .setView([51.505, -0.09], 5);
+    var attr = { attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' };
+    var tiles = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png';
+    var regionDataWhite = {
+      'North East': 4.86,
+      'North West': 4.92,
+      'Yorkshire and The Humber': 4.92,
+      'East Midlands': 4.86,
+      'West Midlands': 4.90,
+      'Eastern': 5.00,
+      'South West': 0,
+      'South East': 5.07,
+      'London': 5.17
+    }
 
-    var topoLayer = new L.TopoJSON();
+    var mapColor = '#08306b';
 
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    function ColorLuminance(hex, lum) {
 
-    topoLayer.addData(mapData);
-    topoLayer.setStyle({
-      color: '#005ea5',
-      opacity: 1,
-      weight: 1,
-      stroke: true
-    });
-    topoLayer.addTo(map);
+      // validate hex string
+      hex = String(hex).replace(/[^0-9a-f]/gi, '');
+      if (hex.length < 6) {
+        hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+      }
+      lum = lum || 0;
 
-    topoLayer.eachLayer(function (layer) {
-
-      function mouseOverHandler() {
-        this.setStyle({ weight: 2 })
+      // convert to decimal and change luminosity
+      var rgb = "#", c, i;
+      for (i = 0; i < 3; i++) {
+        c = parseInt(hex.substr(i*2,2), 16);
+        c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+        rgb += ("00"+c).substr(c.length);
       }
 
-      function mouseOutHandler() {
-        this.setStyle({ weight: 1 })
-      }
+      return rgb;
+    }
 
-      layer.on({
-        mouseover: mouseOverHandler,
-        mouseout: mouseOutHandler
+    function getPercent(min, max, value) {
+      return (value - min) / (max - min);
+    }
+
+    function round10(value) {
+      return Math.round(value * 100) / 100;
+    }
+
+    function Map(id, options, tiles, attr, regionData) {
+      
+      var _map = L.map(id, options)
+        .setView([51.505, -0.09], 5);
+
+      var topoLayer = new L.TopoJSON();
+
+      var i = 1;
+
+      L.tileLayer(tiles, attr).addTo(_map);
+
+      topoLayer.addTo(_map);
+      topoLayer.addData(mapData);
+
+      topoLayer.eachLayer(function (layer) {
+
+        if (regionData !== 'undefined') {
+          var index = layer.feature.properties.EER13NM;
+          var percent = round10(getPercent(4.8, 5.2, regionData[index]));
+          var color = ColorLuminance(mapColor, percent);
+          console.log(percent);
+        }
+        else {
+          var color = mapColor;
+        }
+
+        function mouseOverHandler() {
+          this.setStyle({ fillOpacity: .9 })
+        }
+
+        function mouseOutHandler() {
+          this.setStyle({ weight: 1, fillColor: color, fillOpacity: .8 })
+        }
+
+        function onClick() {
+          if (regionData !== 'undefined') {
+            var index = this.feature.properties.EER13NM;
+            alert(regionData[index]);
+          }
+        }
+
+        layer.setStyle({
+          color: color,
+          fillOpacity: .8,
+          weight: 1,
+          stroke: true
+        });
+
+        layer.on({
+          mouseover: mouseOverHandler,
+          mouseout: mouseOutHandler,
+          click: onClick
+        });
+
       });
 
-    });
+      topoLayer.resetStyle({
+        stroke: false
+      });
+
+      return _map;
+    }
+
+    new Map('map_1', options, tiles, attr, regionDataWhite);
+    new Map('map_2', options, tiles, attr, regionDataWhite);
+    new Map('map_3', options, tiles, attr, regionDataWhite);
 
   }
 
