@@ -122,18 +122,16 @@
   }
 
 details {
-  position: relative;
-  display: block;
-  clear: both;
-  margin-top: 30px;
+  &.normalize {
+    summary {
+      margin-left: 0;
+    }
+  }
+
   summary {
     display: inline-block;
     color: $govuk-blue;
     cursor: pointer;
-    position: absolute;
-    margin-bottom: 0;
-    top: -1.3em;
-    left: 0;
     margin-left: 45px;
 
     &:hover {
