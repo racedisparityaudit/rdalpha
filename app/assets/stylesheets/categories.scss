@@ -124,7 +124,8 @@
 details {
   &.normalize {
     summary {
-      margin-left: 0;
+      margin-left: 0 !important;
+      position: relative !importart; // overiding gem to fix clash
     }
   }
 
