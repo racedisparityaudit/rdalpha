@@ -37,6 +37,9 @@
 @import 'elements/phase-banner';
 @import 'elements/components';
 
+// local files
+@import 'categories';
+
 .phase-banner {
   @include phase-banner();
 }
