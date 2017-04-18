@@ -1,4 +1,4 @@
-@import 'colours';
+// @import 'colours';
 @import 'font_stack';
 @import 'measurements';
 @import 'conditionals';
@@ -36,9 +36,6 @@
 @import 'elements/breadcrumbs';
 @import 'elements/phase-banner';
 @import 'elements/components';
-
-// local files
-@import 'categories';
 
 .phase-banner {
   @include phase-banner();
