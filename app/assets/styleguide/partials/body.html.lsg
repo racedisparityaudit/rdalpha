@@ -1,0 +1,60 @@
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+<div id="skiplink-container">
+  <a href="#content" class="skiplink">Skip to main content</a>
+</div>
+
+<div id="global-cookie-message">
+
+  <p>GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a></p>
+
+</div>
+
+<header role="banner" id="global-header" class="">
+  <div class="header-wrapper">
+    <div class="header-global">
+      <div class="header-logo">
+        <a href="https://www.gov.uk/" title="Go to the GOV.UK homepage" id="logo" class="content">
+          <img src="/assets/images/gov.uk_logotype_crown_invert_trans.png" width="36" height="32" alt=""> GOV.UK
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="content" role="main">
+  <div id="global-header-bar"></div>
+
+  <h1 class="heading-xlarge">Visualisations</h1>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <h2 class="heading-medium">Attainment 8 results by ethnicity and region</h2>
+
+  <div class="grid-row">
+  </div>
+</main>
+
+
+
+<div id="global-app-error" class="app-error hidden"></div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+<script src="/assets/javascripts/govuk-template.js"></script>
+<script src="/assets/javascripts/leaflet-src.js"></script>
+<script src="/assets/javascripts/topojson.min.js"></script>
+<script src="/assets/javascripts/L.TopoJSON.js"></script>
+
+<script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+<style>
+  main { max-width: 960px; margin: 0 15px; }
+  @media (min-width: 641px) { main { margin: 0 30px; } }
+  @media (min-width: 1020px) { main { margin: 0 auto; } }
+</style>

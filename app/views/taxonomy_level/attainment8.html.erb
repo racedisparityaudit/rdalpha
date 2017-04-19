@@ -238,7 +238,110 @@
         The smallest difference in attainment 8 scores between genders was in the Gypsy and Roma ethnic group where girls scored 2.50 points higher. The largest difference was for ‘any other Black background’ where girls scored 7.2 points higher.
       </li>
     </ul>
+  </div>
 
+<!-- maps -->
+
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="column-full">
+        <h2 class="heading-medium">Attainment 8 score by ethnicity and region</h2>
+      </div>
+
+      <div class="column-one-third">
+        <h3 class="heading-small">
+          Chinese
+        </h3>
+        <div id="map_4" style="min-height: 280px; margin: 15px 0 0" class="map"></div>
+      </div>
+      <div class="column-one-third">
+        <h3 class="heading-small">
+          Asian
+        </h3>
+        <div id="map_3" style="min-height: 280px; margin: 15px 0 0" class="map"></div>
+      </div>
+      <div class="column-one-third">
+        <h3 class="heading-small">
+          Mixed
+        </h3>
+        <div id="map_5" style="min-height: 280px; margin: 15px 0 0" class="map"></div>
+      </div>
+      <div class="column-one-third">
+        <h3 class="heading-small">
+          White
+        </h3>
+        <div id="map_1" style="min-height: 280px; margin: 15px 0 0" class="map"></div>
+      </div>
+      <div class="column-one-third">
+        <h3 class="heading-small">
+          Black
+        </h3>
+        <div id="map_2" style="min-height: 280px; margin: 15px 0 0" class="map"></div>
+      </div>
+      <div class="column-one-third" style="height: 280px;">
+        <h3 class="heading-small">
+          Attainment 8 score
+        </h3>
+        <div class="map-grad">
+        </div>
+        <div class="numbers">
+            <span>4.4</span>
+            <span>4.8</span>
+            <span>5.2</span>
+            <span>5.6</span>
+            <span>6.0</span>
+            <span>6.4</span>
+            <span>6.8</span>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <style type="text/css">
+    .map-grad {
+      background: rgb(0, 57, 101); /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* Standard syntax */
+      width: 25px;
+      height: 251px;
+      margin-top: 20px;
+      border: 1px solid grey;
+    }
+
+    .map-grad, .numbers {
+      float: left;
+    }
+
+    .numbers {
+      width: 40px;
+      margin-top: 10px;
+    }
+
+    .numbers span {
+      display: inline-block;
+      margin-bottom: 19px;
+      margin-left: 20px;
+      position: relative;
+      font-size: 16px;
+    }
+
+    .numbers span:before {
+      background: grey;
+      content: "";
+      display: block;
+      height: 1px;
+      left: -20px;
+      top: 8px;
+      position: absolute;
+      width: 8px;
+    }
+  </style>
+
+<!-- end of maps -->
+  
+  <div class='column-two-thirds'>
     <h2 class='table-name heading-medium'>
       Attainment 8 score by ethnicity and location
     </h2>
