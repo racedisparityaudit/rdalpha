@@ -36,15 +36,94 @@
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
 
-  <h2 class="heading-large">Map example</h2>
+  <h2 class="heading-medium">Attainment 8 results by region</h2>
 
-  <div class="">
-    <div id="map_1" style="min-height: 320px; margin: 30px 0 60px" class="column-one-third"></div>
-  <div id="map_2" style="min-height: 320px; margin: 30px 0 60px" class="column-one-third"></div>
-  <div id="map_3" style="min-height: 320px; margin: 30px 0 60px" class="column-one-third"></div>
+  <div class="grid-row">
+    <div class="column-one-third">
+      <h3 class="heading-small">
+        White
+      </h3>
+      <div id="map_1" style="min-height: 320px; margin: 15px 0 0" class="map"></div>
+    </div>
+    <div class="column-one-third">
+      <h3 class="heading-small">
+        Black
+      </h3>
+      <div id="map_2" style="min-height: 320px; margin: 15px 0 0" class="map"></div>
+    </div>
+    <div class="column-one-third">
+      <h3 class="heading-small">
+        Asian
+      </h3>
+      <div id="map_3" style="min-height: 320px; margin: 15px 0 0" class="map"></div>
+    </div>
+    <div class="column-one-third">
+      <h3 class="heading-small">
+        Chinese
+      </h3>
+      <div id="map_4" style="min-height: 320px; margin: 15px 0 0" class="map"></div>
+    </div>
+    <div class="column-one-third">
+      <h3 class="heading-small">
+        Mixed
+      </h3>
+      <div id="map_5" style="min-height: 320px; margin: 15px 0 0" class="map"></div>
+    </div>
+    <div class="column-one-third" style="height: 320px; margin: 60px 0 0;">
+      <div class="map-grad">
+      </div>
+      <div class="numbers">
+          <span>4.4</span>
+          <span>4.8</span>
+          <span>5.2</span>
+          <span>5.6</span>
+          <span>6.0</span>
+          <span>6.4</span>
+          <span>6.8</span>
+        </div>
+    </div>
   </div>
-  <p id="show-data"></p>
 </main>
+
+<style type="text/css">
+  .map-grad {
+    background: rgb(0, 57, 101); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* Standard syntax */
+    width: 25px;
+    height: 299px;
+    margin-top: 10px;
+    border: 1px solid grey;
+  }
+
+  .map-grad, .numbers {
+    float: left;
+  }
+
+  .numbers {
+    width: 40px;
+  }
+
+  .numbers span {
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    position: relative;
+  }
+
+  .numbers span:before {
+    background: grey;
+    content: "";
+    display: block;
+    height: 1px;
+    left: -20px;
+    top: 10px;
+    position: absolute;
+    width: 8px;
+  }
+</style>
 
 
 <div id="global-app-error" class="app-error hidden"></div>
@@ -57,9 +136,15 @@
 
 <script type="text/javascript">
 
-  $.get('javascripts/uk_map.json', init);
+  var mapData = $.ajax('javascripts/uk_map.json');
+  var ethnicityData = $.ajax('javascripts/ethnicitydata.json');
 
-  function init(mapData) {
+  $.when(mapData, ethnicityData).done(init);
+
+  function init(mapData, ethnicityData) {
+
+    var mapData = mapData[0];
+    var ethnicityData = ethnicityData[0];
 
     var options = {
       maxBounds: [[58.16745, -7.52916], [49.00275, -7.26308], [49.0525, 2.87146], [58.20681, 2.7386]],
@@ -70,19 +155,8 @@
 
     var attr = { attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' };
     var tiles = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png';
-    var regionDataWhite = {
-      'North East': 4.86,
-      'North West': 4.92,
-      'Yorkshire and The Humber': 4.92,
-      'East Midlands': 4.86,
-      'West Midlands': 4.90,
-      'Eastern': 5.00,
-      'South West': 0,
-      'South East': 5.07,
-      'London': 5.17
-    }
 
-    var mapColor = '#08306b';
+    var mapColor = '#005EA5';
 
     function ColorLuminance(hex, lum) {
 
@@ -102,6 +176,11 @@
       }
 
       return rgb;
+    }
+
+    function shadeColor(color, percent) {   
+        var f=parseInt(color.slice(1),16),t=percent<0?0:255,p=percent<0?percent*-1:percent,R=f>>16,G=f>>8&0x00FF,B=f&0x0000FF;
+        return "#"+(0x1000000+(Math.round((t-R)*p)+R)*0x10000+(Math.round((t-G)*p)+G)*0x100+(Math.round((t-B)*p)+B)).toString(16).slice(1);
     }
 
     function getPercent(min, max, value) {
@@ -130,20 +209,19 @@
 
         if (regionData !== 'undefined') {
           var index = layer.feature.properties.EER13NM;
-          var percent = round10(getPercent(4.8, 5.2, regionData[index]));
+          var percent = round10(getPercent(5.1, 6.2, regionData[index]));
           var color = ColorLuminance(mapColor, percent);
-          console.log(percent);
         }
         else {
           var color = mapColor;
         }
 
         function mouseOverHandler() {
-          this.setStyle({ fillOpacity: .9 })
+          this.setStyle({ fillOpacity: 1 })
         }
 
         function mouseOutHandler() {
-          this.setStyle({ weight: 1, fillColor: color, fillOpacity: .8 })
+          this.setStyle({ weight: 1, fillColor: color, fillOpacity: .95 })
         }
 
         function onClick() {
@@ -155,7 +233,7 @@
 
         layer.setStyle({
           color: color,
-          fillOpacity: .8,
+          fillOpacity: .95,
           weight: 1,
           stroke: true
         });
@@ -175,9 +253,13 @@
       return _map;
     }
 
-    new Map('map_1', options, tiles, attr, regionDataWhite);
-    new Map('map_2', options, tiles, attr, regionDataWhite);
-    new Map('map_3', options, tiles, attr, regionDataWhite);
+    console.log(ethnicityData);
+
+    new Map('map_1', options, tiles, attr, ethnicityData.white);
+    new Map('map_2', options, tiles, attr, ethnicityData.black);
+    new Map('map_3', options, tiles, attr, ethnicityData.asian);
+    new Map('map_4', options, tiles, attr, ethnicityData.chinese);
+    new Map('map_5', options, tiles, attr, ethnicityData.mixed);
 
   }
 

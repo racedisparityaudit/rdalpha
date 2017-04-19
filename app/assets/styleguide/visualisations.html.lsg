@@ -2,7 +2,6 @@
 @title GOV.UK - The best place to find government services and information
 
 @import **/body.html.lsg
-@import **/attainment8.html.lsg
 
 @require govuk_elements_rails
 @require govuk_template

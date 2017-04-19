@@ -1,0 +1,57 @@
+{
+	"white": {
+		"North East": 4.86,
+		"North West": 4.92,
+		"Yorkshire and The Humber": 4.92,
+		"East Midlands": 4.86,
+		"West Midlands": 4.90,
+		"Eastern": 5.00,
+		"South West": 5.16,
+		"South East": 5.07,
+		"London": 5.17
+	},
+	"black": {
+		"North East": 5.23,
+		"North West": 4.95,
+		"Yorkshire and The Humber": 4.81,
+		"East Midlands": 4.84,
+		"West Midlands": 4.85,
+		"Eastern": 5.08,
+		"South West": 5.26,
+		"South East": 5.21,
+		"London": 5.20
+	},
+	"chinese": {
+		"North East": 6.12,
+		"North West": 6.19,
+		"Yorkshire and The Humber": 6.31,
+		"East Midlands": 6.12,
+		"West Midlands": 6.13,
+		"Eastern": 6.23,
+		"South West": 6.48,
+		"South East": 6.41,
+		"London": 6.44
+	},
+	"asian": {
+		"North East": 5.31,
+		"North West": 5.12,
+		"Yorkshire and The Humber": 4.77,
+		"East Midlands": 5.21,
+		"West Midlands": 5.08,
+		"Eastern": 5.37,
+		"South West": 5.70,
+		"South East": 5.56,
+		"London": 5.58
+	},
+	"mixed": {
+		"North East": 5.10,
+		"North West": 4.86,
+		"Yorkshire and The Humber": 4.67,
+		"East Midlands": 4.75,
+		"West Midlands": 4.75,
+		"Eastern": 4.92,
+		"South West": 4.96,
+		"South East": 4.96,
+		"London": 4.92
+	}
+}
