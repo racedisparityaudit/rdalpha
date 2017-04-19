@@ -238,7 +238,110 @@
         The smallest difference in attainment 8 scores between genders was in the Gypsy and Roma ethnic group where girls scored 2.50 points higher. The largest difference was for ‘any other Black background’ where girls scored 7.2 points higher.
       </li>
     </ul>
+  </div>
 
+<!-- maps -->
+
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="column-full">
+        <h2 class="heading-medium">Attainment 8 score by ethnicity and region</h2>
+      </div>
+
+      <div class="column-one-third">
+        <h3 class="heading-small">
+          Chinese
+        </h3>
+        <div id="map_4" style="min-height: 280px; margin: 15px 0 0" class="map"></div>
+      </div>
+      <div class="column-one-third">
+        <h3 class="heading-small">
+          Asian
+        </h3>
+        <div id="map_3" style="min-height: 280px; margin: 15px 0 0" class="map"></div>
+      </div>
+      <div class="column-one-third">
+        <h3 class="heading-small">
+          Mixed
+        </h3>
+        <div id="map_5" style="min-height: 280px; margin: 15px 0 0" class="map"></div>
+      </div>
+      <div class="column-one-third">
+        <h3 class="heading-small">
+          White
+        </h3>
+        <div id="map_1" style="min-height: 280px; margin: 15px 0 0" class="map"></div>
+      </div>
+      <div class="column-one-third">
+        <h3 class="heading-small">
+          Black
+        </h3>
+        <div id="map_2" style="min-height: 280px; margin: 15px 0 0" class="map"></div>
+      </div>
+      <div class="column-one-third" style="height: 280px;">
+        <h3 class="heading-small">
+          Attainment 8 score
+        </h3>
+        <div class="map-grad">
+        </div>
+        <div class="numbers">
+            <span>4.4</span>
+            <span>4.8</span>
+            <span>5.2</span>
+            <span>5.6</span>
+            <span>6.0</span>
+            <span>6.4</span>
+            <span>6.8</span>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <style type="text/css">
+    .map-grad {
+      background: rgb(0, 57, 101); /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(rgb(0, 57, 101), rgb(0, 212, 255)); /* Standard syntax */
+      width: 25px;
+      height: 251px;
+      margin-top: 20px;
+      border: 1px solid grey;
+    }
+
+    .map-grad, .numbers {
+      float: left;
+    }
+
+    .numbers {
+      width: 40px;
+      margin-top: 10px;
+    }
+
+    .numbers span {
+      display: inline-block;
+      margin-bottom: 19px;
+      margin-left: 20px;
+      position: relative;
+      font-size: 16px;
+    }
+
+    .numbers span:before {
+      background: grey;
+      content: "";
+      display: block;
+      height: 1px;
+      left: -20px;
+      top: 8px;
+      position: absolute;
+      width: 8px;
+    }
+  </style>
+
+<!-- end of maps -->
+  
+  <div class='column-two-thirds'>
     <h2 class='table-name heading-medium'>
       Attainment 8 score by ethnicity and location
     </h2>
@@ -329,90 +432,90 @@
       </tbody>
     </table>
 
-    <h2 class='table-name heading-medium'>
+    <h2 class='table-name heading-medium' style="display: none;">
       Attainment 8 score by ethnicity and location
     </h2>
 
-<table class="rwd-table">
-  <tr>
-    <th class='visually-hidden'>Ethnicity</th>
-    <th class=''>North east</th>
-    <th class=''>North west</th>
-    <th class=''>Yorkshire and the Humber</th>
-    <th class=''>East Midlands</th>
-    <th class=''>West Midlands</th>
-    <th class=''>East</th>
-    <th class=''>London</th>
-    <th class=''>Inner London</th>
-    <th class=''>Outer London</th>
-    <th class=''>South East</th>
-  </tr>
-  <tr>
-    <td class='ethnicity' data-th='Chinese'></td>
-    <td data-th='North east'>6.12</td>
-    <td data-th='North west'>6.19</td>
-    <td data-th='Yorkshire and the Humber'>6.31</td>
-    <td data-th='East Midlands'>6.12</td>
-    <td data-th='West Midlands'>6.13</td>
-    <td data-th='East'>6.23</td>
-    <td data-th='London'>6.44</td>
-    <td data-th='Inner London'>6.34</td>
-    <td data-th='Outer London'>6.48</td>
-    <td data-th='South East'>6.41</td>
-  </tr>
-  <tr class=''>
-      <td class='ethnicity' data-th='Asian'></td>
-      <td data-th='North east'>5.31</td>
-      <td data-th='North west'>5.12</td>
-      <td data-th='Yorkshire and the Humber'>4.77</td>
-      <td data-th='East Midlands'>5.21</td>
-      <td data-th='West Midlands'>5.08</td>
-      <td data-th='East'>5.37</td>
-      <td data-th='London'>5.58</td>
-      <td data-th='Inner London'>5.35</td>
-      <td data-th='Outer London'>5.70</td>
-      <td data-th='South East'>5.56</td>
-    </tr>
-    <tr>
-      <td class='ethnicity' data-th='Mixed'></td>
-      <td data-th='North east'>5.10</td>
-      <td data-th='North west'>4.86</td>
-      <td data-th='Yorkshire and the Humber'>4.67</td>
-      <td data-th='East Midlands'>4.75</td>
-      <td data-th='West Midlands'>4.75</td>
-      <td data-th='East'>5.19</td>
-      <td data-th='London'>4.92</td>
-      <td data-th='Inner London'>4.87</td>
-      <td data-th='Outer London'>4.96</td>
-      <td data-th='South East'>4.96</td>
-    </tr>
-    <tr>
-      <td class='ethnicity' data-th='White'></td>
-      <td data-th='North east'>4.86</td>
-      <td data-th='North west'>4.92</td>
-      <td data-th='Yorkshire and the Humber'>4.92</td>
-      <td data-th='East Midlands'>4.86</td>
-      <td data-th='West Midlands'>4.90</td>
-      <td data-th='East'>5.00</td>
-      <td data-th='London'>5.17</td>
-      <td data-th='Inner London'>5.21</td>
-      <td data-th='Outer London'>5.16</td>
-      <td data-th='South East'>5.07</td>
-    </tr>
-    <tr>
-      <td class='ethnicity' data-th='Black'></td>
-      <td data-th='North east'>5.23</td>
-      <td data-th='North west'>4.95</td>
-      <td data-th='Yorkshire and the Humber'>4.81</td>
-      <td data-th='East Midlands'>4.84</td>
-      <td data-th='West Midlands'>4.85</td>
-      <td data-th='East'>5.08</td>
-      <td data-th='London'>5.20</td>
-      <td data-th='Inner London'>5.10</td>
-      <td data-th='Outer London'>5.26</td>
-      <td data-th='South East'>5.21</td>
-    </tr>
-</table>
+    <table class="rwd-table" style="display: none;">
+      <tr>
+        <th class='visually-hidden'>Ethnicity</th>
+        <th class=''>North east</th>
+        <th class=''>North west</th>
+        <th class=''>Yorkshire and the Humber</th>
+        <th class=''>East Midlands</th>
+        <th class=''>West Midlands</th>
+        <th class=''>East</th>
+        <th class=''>London</th>
+        <th class=''>Inner London</th>
+        <th class=''>Outer London</th>
+        <th class=''>South East</th>
+      </tr>
+      <tr>
+        <td class='ethnicity' data-th='Chinese'></td>
+        <td data-th='North east'>6.12</td>
+        <td data-th='North west'>6.19</td>
+        <td data-th='Yorkshire and the Humber'>6.31</td>
+        <td data-th='East Midlands'>6.12</td>
+        <td data-th='West Midlands'>6.13</td>
+        <td data-th='East'>6.23</td>
+        <td data-th='London'>6.44</td>
+        <td data-th='Inner London'>6.34</td>
+        <td data-th='Outer London'>6.48</td>
+        <td data-th='South East'>6.41</td>
+      </tr>
+      <tr class=''>
+          <td class='ethnicity' data-th='Asian'></td>
+          <td data-th='North east'>5.31</td>
+          <td data-th='North west'>5.12</td>
+          <td data-th='Yorkshire and the Humber'>4.77</td>
+          <td data-th='East Midlands'>5.21</td>
+          <td data-th='West Midlands'>5.08</td>
+          <td data-th='East'>5.37</td>
+          <td data-th='London'>5.58</td>
+          <td data-th='Inner London'>5.35</td>
+          <td data-th='Outer London'>5.70</td>
+          <td data-th='South East'>5.56</td>
+        </tr>
+        <tr>
+          <td class='ethnicity' data-th='Mixed'></td>
+          <td data-th='North east'>5.10</td>
+          <td data-th='North west'>4.86</td>
+          <td data-th='Yorkshire and the Humber'>4.67</td>
+          <td data-th='East Midlands'>4.75</td>
+          <td data-th='West Midlands'>4.75</td>
+          <td data-th='East'>5.19</td>
+          <td data-th='London'>4.92</td>
+          <td data-th='Inner London'>4.87</td>
+          <td data-th='Outer London'>4.96</td>
+          <td data-th='South East'>4.96</td>
+        </tr>
+        <tr>
+          <td class='ethnicity' data-th='White'></td>
+          <td data-th='North east'>4.86</td>
+          <td data-th='North west'>4.92</td>
+          <td data-th='Yorkshire and the Humber'>4.92</td>
+          <td data-th='East Midlands'>4.86</td>
+          <td data-th='West Midlands'>4.90</td>
+          <td data-th='East'>5.00</td>
+          <td data-th='London'>5.17</td>
+          <td data-th='Inner London'>5.21</td>
+          <td data-th='Outer London'>5.16</td>
+          <td data-th='South East'>5.07</td>
+        </tr>
+        <tr>
+          <td class='ethnicity' data-th='Black'></td>
+          <td data-th='North east'>5.23</td>
+          <td data-th='North west'>4.95</td>
+          <td data-th='Yorkshire and the Humber'>4.81</td>
+          <td data-th='East Midlands'>4.84</td>
+          <td data-th='West Midlands'>4.85</td>
+          <td data-th='East'>5.08</td>
+          <td data-th='London'>5.20</td>
+          <td data-th='Inner London'>5.10</td>
+          <td data-th='Outer London'>5.26</td>
+          <td data-th='South East'>5.21</td>
+        </tr>
+    </table>
 
   </div>
   <div class='column-two-thirds'>
