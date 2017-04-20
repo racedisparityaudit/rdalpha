@@ -89,7 +89,7 @@ function init(mapData, ethnicityData) {
 			function onClick() {
 				if (regionData !== 'undefined') {
 					var index = this.feature.properties.EER13NM;
-					alert(regionData[index]);
+					console.log(regionData[index]);
 				}
 			}
 
