@@ -94,8 +94,39 @@
     </details>
   </div>
 
-
   <div class="column-two-thirds">
+
+    <div class="accordions-container container">
+      <div class="accordion">
+        <div class="accordion__header">
+          <h2>
+            <button>
+              Things you need to know
+            </button>
+          </h2>
+          <span class="plus-minus-icon"></span>
+        </div>
+
+        <div class="accordion__body" style="display: none;">
+          <p>
+            These unemployment figures are estimates based on a national survey and therefore are subject to sampling error and in some cases may not reflect the actual population.
+          </p>
+          <p>
+            Smaller numbers of survey respondents from ethnic minority backgrounds mean that unemployment estimates for ethnic minorities are more unreliable than estimates for White people.
+          </p>
+          <p>
+            Results derived from a low number of responses are more likely to be affected by statistical variation, so observed changes might not reflect real differences. As such, caution is needed when interpreting short-term trends in the data especially for sub groups (for example, a particular ethnic group, age group and gender). Any values based on fewer than five responses have been completely suppressed. Values based on 5-10 responses are shown, but marked by an asterisk (*). These should be used with particular caution.
+          </p>
+          <p>
+            Estimates for unemployement rates by ethnicity by age by gender are given as annual estimates rather than quarterly estimates as sample sizes are not large enough to give reliable quarterly estimates.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="column-two-thirds" style="display: none;">
     <h2 class='heading-medium'>
       Things you need to know
     </h2>
@@ -106,7 +137,7 @@
           These unemployment figures are estimates based on a national survey and therefore are subject to sampling error and in some cases may not reflect the actual population.
         </p>
         <p>
-          Smaller numbers of survey respondents from ethnic minority backgrounds mean that unemployment estimates for ethnic minorities are more unreliable than estimates for White people.
+          Smaller numbers of see respondents from ethnic minority backgrounds mean that unemployment estimates for ethnic minorities are more unreliable than estimates for White people.
         </p>
         <p>
           Results derived from a low number of responses are more likely to be affected by statistical variation, so observed changes might not reflect real differences. As such, caution is needed when interpreting short-term trends in the data especially for sub groups (for example, a particular ethnic group, age group and gender). Any values based on fewer than five responses have been completely suppressed. Values based on 5-10 responses are shown, but marked by an asterisk (*). These should be used with particular caution.
@@ -154,7 +185,11 @@
     <%= render 'graphs/unemployment_rate_by_ethnicity.html' %>
 
   </div>
-
+  <div class="column-full">
+    <h3 class='heading-small'>
+      Table
+    </h3>
+  </div>
   <details class="normalize">
     <summary><span class="summary">See data in table</span></summary>
     <div class="panel panel-border-narrow">
@@ -250,7 +285,11 @@
     <%= render 'graphs/unemployment_rate_by_ethnicity_gender.html' %>
 
   </div>
-
+  <div class="column-full">
+    <h3 class='heading-small'>
+      Table
+    </h3>
+  </div>
   <details class="normalize">
     <summary><span class="summary">See data in table</span></summary>
     <div class="panel panel-border-narrow">
@@ -434,6 +473,11 @@
     </div>
   </div>
 
+  <div class="column-full">
+    <h3 class='heading-small'>
+      Table
+    </h3>
+  </div>
   <details class="normalize">
     <summary><span class="summary">See data in table</span></summary>
     <div class="panel panel-border-narrow">
@@ -591,7 +635,12 @@
     </h3>
     <img src="/assets/graphs/unemployment-time-white.svg">
   </div>
-
+  
+  <div class="column-full">
+    <h3 class='heading-small'>
+      Table
+    </h3>
+  </div>
   <details class="normalize" style="padding-top: 15px;">
     <summary><span class="summary">See data in table</span></summary>
     <div class="panel panel-border-narrow">
