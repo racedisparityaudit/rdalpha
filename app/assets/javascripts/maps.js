@@ -118,6 +118,7 @@ function init(mapData, ethnicityData) {
 	$(window).ready(function() {
 		// validation
 		if ($("#map_1").length) {
+			console.log("load maps");
 			new Map('map_1', options, tiles, attr, ethnicityData.white);
 			new Map('map_2', options, tiles, attr, ethnicityData.black);
 			new Map('map_3', options, tiles, attr, ethnicityData.asian);
